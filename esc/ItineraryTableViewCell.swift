@@ -14,6 +14,10 @@ class ItineraryTableViewCell: UITableViewCell {
     
     let arrowPic = UIImage(named: "Images")
     
+    @IBOutlet weak var titleField: UILabel!
+    
+    @IBOutlet weak var descriptionField: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

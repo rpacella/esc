@@ -27,13 +27,13 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCt-hL-Q2n">
                         <rect key="frame" x="188" y="46" width="53" height="25"/>
                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="25"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxD-Uk-OY5">
                         <rect key="frame" x="188" y="91" width="97" height="17"/>
                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="PHO-ty-TI7">
@@ -54,6 +54,9 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="arrowImages" destination="PHO-ty-TI7" id="Z1k-pO-DuB"/>
+                <outlet property="descriptionField" destination="lxD-Uk-OY5" id="xKC-gm-ydX"/>
+                <outlet property="imageView" destination="n1q-e3-9KP" id="AMk-IA-LiW"/>
+                <outlet property="titleField" destination="WCt-hL-Q2n" id="5Z2-TA-tCQ"/>
             </connections>
             <point key="canvasLocation" x="509" y="369"/>
         </tableViewCell>
