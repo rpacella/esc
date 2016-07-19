@@ -6,7 +6,7 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesViewController" customModule="escapeXibs" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesViewController" customModule="esc" customModuleProvider="target">
             <connections>
                 <outlet property="diningButton" destination="M1a-R6-S5W" id="Lnu-xm-nEg"/>
                 <outlet property="entertainmentButton" destination="rdj-jv-PwT" id="Muz-MM-jfj"/>

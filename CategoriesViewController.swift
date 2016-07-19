@@ -11,12 +11,14 @@ import CoreLocation
 
 class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
     
-    // need background image
+    // need background image?
 
     // might want to change this representation
     var timeSpan: Int?
+    var latitude: String?
+    var longitude: String?
     
-     var locationManager = CLLocationManager()
+    var locationManager = CLLocationManager()
     
     @IBOutlet weak var entertainmentButton: UIButton!
     @IBOutlet weak var museumButton: UIButton!
@@ -50,8 +52,6 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
         
         locationManager.startUpdatingLocation()
         
-        
-        
         // determine what fields have been selected
         
         var categoriesArray = [String]()
@@ -83,7 +83,7 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
             print(element)
         }
         
-        // make post request with these fields
+        // make post request with these fields and the location
         
         //let itineraryViewController = ItineraryViewController(nibName: "ItineraryViewController", bundle: nil)
         
@@ -121,18 +121,9 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
         
         let location = locations.last
         
-        let latitude = String(location?.coordinate.latitude)
-        let longitude = String(location?.coordinate.longitude)
+        self.latitude = String(location?.coordinate.latitude)
+        self.longitude = String(location?.coordinate.longitude)
+        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
