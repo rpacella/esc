@@ -43,8 +43,11 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         // need reuseID
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier", forIndexPath: indexPath) as! ItineraryTableViewCell
         
-        // fill in relevant fields of itinerary table view cell
+        let title = array[indexPath.row]
         
+        // fill in relevant fields of itinerary table view cell
+        cell.titleField.text = title
+        cell.descriptionField.text = "put description here"
         
         return cell
         
