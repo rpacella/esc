@@ -16,8 +16,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mD4-9I-kBd" userLabel="randomImage">
-                        <rect key="frame" x="0.0" y="0.0" width="230" height="74.5"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mD4-9I-kBd" userLabel="randomImage">
+                        <rect key="frame" x="0.0" y="0.0" width="228" height="74.5"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYL-gj-Ln4">
                         <rect key="frame" x="230" y="0.0" width="90" height="75.5"/>
@@ -56,7 +56,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="imageView" destination="mD4-9I-kBd" id="XwY-G8-Enf"/>
+                <outlet property="cellImageView" destination="mD4-9I-kBd" id="Rae-TO-7Tp"/>
+                <outlet property="dayNumberLabel" destination="rPy-iB-cOD" id="eQu-e9-iYG"/>
             </connections>
             <point key="canvasLocation" x="139" y="233.5"/>
         </tableViewCell>

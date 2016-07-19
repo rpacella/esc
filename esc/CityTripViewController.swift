@@ -55,5 +55,9 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         //push to itenerary for day
         //decode itenerary for day
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100.0
+    }
 
 }
