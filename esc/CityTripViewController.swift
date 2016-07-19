@@ -8,7 +8,13 @@
 
 import UIKit
 
+<<<<<<< HEAD
 class CityTripViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+=======
+class CityTripViewController: UIViewController {
+    
+    // need add button to present PlanDayViewController
+>>>>>>> 970aa7393665c5ce85fde9f9638ab7444cf76791
 
     @IBOutlet weak var tableView: UITableView!
     
