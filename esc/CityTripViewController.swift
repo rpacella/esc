@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CityTripViewController.swift
 //  esc
 //
 //  Created by Riley Pacella on 7/18/16.
@@ -8,18 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CityTripViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        navigationController?.navigationBarHidden = false
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
-

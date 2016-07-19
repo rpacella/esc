@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */; };
-		BFE4A6FC1D3D063B00A24F10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A6FB1D3D063B00A24F10 /* ViewController.swift */; };
-		BFE4A6FF1D3D063B00A24F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A6FD1D3D063B00A24F10 /* Main.storyboard */; };
 		BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7001D3D063B00A24F10 /* Assets.xcassets */; };
-		BFE4A7041D3D063B00A24F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7021D3D063B00A24F10 /* LaunchScreen.storyboard */; };
+		BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */; };
+		BFE4A70E1D3D076F00A24F10 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */; };
+		BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */; };
+		BFE4A7121D3D08A900A24F10 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7101D3D08A900A24F10 /* LoginView.xib */; };
+		BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */; };
+		BFE4A75C1D3D71A400A24F10 /* CityTripView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */; };
+		BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */; };
+		BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFE4A6F61D3D063B00A24F10 /* esc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFE4A6FB1D3D063B00A24F10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BFE4A6FE1D3D063B00A24F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFE4A7001D3D063B00A24F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BFE4A7031D3D063B00A24F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFE4A7051D3D063B00A24F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = esc/LoginViewController.swift; sourceTree = "<group>"; };
+		BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegisterView.xib; path = esc/RegisterView.xib; sourceTree = "<group>"; };
+		BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = esc/RegisterViewController.swift; sourceTree = "<group>"; };
+		BFE4A7101D3D08A900A24F10 /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginView.xib; path = esc/LoginView.xib; sourceTree = "<group>"; };
+		BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityTripViewController.swift; path = esc/CityTripViewController.swift; sourceTree = "<group>"; };
+		BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CityTripView.xib; path = esc/CityTripView.xib; sourceTree = "<group>"; };
+		BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTripsViewController.swift; path = esc/UserTripsViewController.swift; sourceTree = "<group>"; };
+		BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserTripsView.xib; path = esc/UserTripsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				BFE4A6F81D3D063B00A24F10 /* esc */,
+				BFE4A75F1D3D71C500A24F10 /* Views */,
+				BFE4A75D1D3D71B200A24F10 /* Controllers */,
 				BFE4A6F71D3D063B00A24F10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,13 +67,32 @@
 			isa = PBXGroup;
 			children = (
 				BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */,
-				BFE4A6FB1D3D063B00A24F10 /* ViewController.swift */,
-				BFE4A6FD1D3D063B00A24F10 /* Main.storyboard */,
 				BFE4A7001D3D063B00A24F10 /* Assets.xcassets */,
-				BFE4A7021D3D063B00A24F10 /* LaunchScreen.storyboard */,
 				BFE4A7051D3D063B00A24F10 /* Info.plist */,
 			);
 			path = esc;
+			sourceTree = "<group>";
+		};
+		BFE4A75D1D3D71B200A24F10 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
+				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
+				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
+				BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BFE4A75F1D3D71C500A24F10 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */,
+				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
+				BFE4A7101D3D08A900A24F10 /* LoginView.xib */,
+				BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE4A7041D3D063B00A24F10 /* LaunchScreen.storyboard in Resources */,
 				BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */,
-				BFE4A6FF1D3D063B00A24F10 /* Main.storyboard in Resources */,
+				BFE4A70E1D3D076F00A24F10 /* RegisterView.xib in Resources */,
+				BFE4A7121D3D08A900A24F10 /* LoginView.xib in Resources */,
+				BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */,
+				BFE4A75C1D3D71A400A24F10 /* CityTripView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE4A6FC1D3D063B00A24F10 /* ViewController.swift in Sources */,
+				BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */,
+				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
+				BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */,
+				BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */,
 				BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		BFE4A6FD1D3D063B00A24F10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFE4A6FE1D3D063B00A24F10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		BFE4A7021D3D063B00A24F10 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BFE4A7031D3D063B00A24F10 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BFE4A7061D3D063B00A24F10 /* Debug */ = {
