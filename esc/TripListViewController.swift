@@ -34,7 +34,7 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
             NSForegroundColorAttributeName: UIColor.blackColor()],
                                            forState: UIControlState.Normal)
         
-        let listLabel = UIBarButtonItem(title: "List | ", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        let listLabel = UIBarButtonItem(title: "List |", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
         listLabel.tintColor = UIColor.blackColor()
         listLabel.setTitleTextAttributes([
             NSFontAttributeName: UIFont(name: "Hiragino Sans W6", size: 22.0)!,

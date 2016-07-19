@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let registerViewController = RegisterViewController(nibName: "RegisterView", bundle: nil)
+        
+        let registerViewController = RegisterViewController (nibName: "RegisterViewController", bundle: nil)
         let navigationController = UINavigationController(rootViewController: registerViewController)
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = navigationController

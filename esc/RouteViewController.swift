@@ -34,7 +34,7 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             NSForegroundColorAttributeName: UIColor.blackColor()],
                                            forState: UIControlState.Normal)
         
-        let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
         
         
         navigationItem.leftBarButtonItem = backbutton
@@ -45,9 +45,9 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
     }
     
-    //    func backAction() {
-    //        self.navigationController?.popViewControllerAnimated(true)
-    //    }
+        func backAction() {
+            self.navigationController?.popViewControllerAnimated(true)
+        }
     
         func listAction() {
             let viewcontroller = TripListViewController (nibName: "TripListViewController", bundle: nil)
