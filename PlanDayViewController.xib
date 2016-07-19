@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlanDayViewController" customModule="escapeXibs" customModuleProvider="target">
+            <connections>
+                <outlet property="AfternoonPlan" destination="v25-Bv-WUq" id="yLm-R2-09y"/>
+                <outlet property="AllDayPlan" destination="0kN-MN-Eli" id="GD0-2x-v8I"/>
+                <outlet property="EveningPlan" destination="bFo-Ov-Acx" id="Fob-Xx-TUo"/>
+                <outlet property="MorningPlan" destination="jqK-0P-3gM" id="Mit-Qy-1hg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capetownDayPlanned" translatesAutoresizingMaskIntoConstraints="NO" id="TTc-iZ-9UA">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What part of your day needs to be planned?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-qE-bXr">
+                    <rect key="frame" x="0.0" y="170" width="600" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kN-MN-Eli">
+                    <rect key="frame" x="100" y="225" width="400" height="30"/>
+                    <size key="titleShadowOffset" width="2" height="2"/>
+                    <state key="normal" title="All Day">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="presentCategoryPage:" destination="-1" eventType="touchUpInside" id="L30-PD-fSW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqK-0P-3gM">
+                    <rect key="frame" x="100" y="285" width="400" height="30"/>
+                    <state key="normal" title="Morning">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="presentCategoryPage:" destination="-1" eventType="touchUpInside" id="gYa-sn-cOz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v25-Bv-WUq">
+                    <rect key="frame" x="100" y="345" width="400" height="30"/>
+                    <state key="normal" title="Afternoon">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="presentCategoryPage:" destination="-1" eventType="touchUpInside" id="HB5-HZ-5LM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-Ov-Acx">
+                    <rect key="frame" x="100" y="405" width="400" height="30"/>
+                    <state key="normal" title="Evening">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="presentCategoryPage:" destination="-1" eventType="touchUpInside" id="XWB-ii-xwJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YF9-qE-bXr" secondAttribute="trailing" id="8SX-PB-knZ"/>
+                <constraint firstItem="TTc-iZ-9UA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Zp-Uk-q9c"/>
+                <constraint firstItem="v25-Bv-WUq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.2" id="AG9-le-GYH"/>
+                <constraint firstAttribute="trailing" secondItem="v25-Bv-WUq" secondAttribute="trailing" constant="100" id="Gzm-vY-FCD"/>
+                <constraint firstItem="TTc-iZ-9UA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H0T-si-FfA"/>
+                <constraint firstAttribute="trailing" secondItem="bFo-Ov-Acx" secondAttribute="trailing" constant="100" id="HEY-Iq-Rm4"/>
+                <constraint firstItem="bFo-Ov-Acx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ITZ-Ms-Ypr"/>
+                <constraint firstItem="v25-Bv-WUq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LV6-pK-jB3"/>
+                <constraint firstItem="0kN-MN-Eli" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="Nfw-JT-RQd"/>
+                <constraint firstItem="bFo-Ov-Acx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.4" id="Rww-1o-oYY"/>
+                <constraint firstItem="0kN-MN-Eli" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W2I-w6-3d5"/>
+                <constraint firstItem="jqK-0P-3gM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wku-3e-YHX"/>
+                <constraint firstAttribute="trailing" secondItem="TTc-iZ-9UA" secondAttribute="trailing" id="ZGS-vw-RoH"/>
+                <constraint firstAttribute="trailing" secondItem="0kN-MN-Eli" secondAttribute="trailing" constant="100" id="agB-jq-oI9"/>
+                <constraint firstItem="YF9-qE-bXr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.6" id="dS7-Pt-AhA"/>
+                <constraint firstItem="jqK-0P-3gM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="e0A-AV-UG3"/>
+                <constraint firstAttribute="trailing" secondItem="jqK-0P-3gM" secondAttribute="trailing" constant="100" id="eMB-wp-hCy"/>
+                <constraint firstAttribute="bottom" secondItem="TTc-iZ-9UA" secondAttribute="bottom" id="fn2-GK-t7p"/>
+                <constraint firstItem="v25-Bv-WUq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="iAd-RA-97E"/>
+                <constraint firstItem="bFo-Ov-Acx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="iTk-px-PmY"/>
+                <constraint firstItem="YF9-qE-bXr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kwu-4E-WLh"/>
+                <constraint firstItem="0kN-MN-Eli" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="mZ7-JN-92P"/>
+                <constraint firstItem="YF9-qE-bXr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o9O-hs-I7J"/>
+                <constraint firstItem="jqK-0P-3gM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="uIN-QG-ZuT"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="capetownDayPlanned" width="591" height="444"/>
+    </resources>
+</document>

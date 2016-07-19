@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EFD51941D3E6BCB00DE931F /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51921D3E6BCB00DE931F /* ItineraryViewController.swift */; };
-		4EFD51951D3E6BCB00DE931F /* ItineraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51931D3E6BCB00DE931F /* ItineraryViewController.xib */; };
-		4EFD519A1D3E6BE700DE931F /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51961D3E6BE700DE931F /* CategoriesViewController.swift */; };
-		4EFD519B1D3E6BE700DE931F /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51971D3E6BE700DE931F /* CategoriesViewController.xib */; };
-		4EFD519C1D3E6BE700DE931F /* PlanDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51981D3E6BE700DE931F /* PlanDayViewController.swift */; };
-		4EFD519D1D3E6BE700DE931F /* PlanDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51991D3E6BE700DE931F /* PlanDayViewController.xib */; };
+		4EFD51A21D3E8D1800DE931F /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51A01D3E8D1800DE931F /* ItineraryViewController.swift */; };
+		4EFD51A31D3E8D1800DE931F /* ItineraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51A11D3E8D1800DE931F /* ItineraryViewController.xib */; };
+		4EFD51A81D3E8D3800DE931F /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51A41D3E8D3800DE931F /* CategoriesViewController.swift */; };
+		4EFD51A91D3E8D3800DE931F /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51A51D3E8D3800DE931F /* CategoriesViewController.xib */; };
+		4EFD51AA1D3E8D3800DE931F /* PlanDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51A61D3E8D3800DE931F /* PlanDayViewController.swift */; };
+		4EFD51AB1D3E8D3800DE931F /* PlanDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51A71D3E8D3800DE931F /* PlanDayViewController.xib */; };
 		BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */; };
 		BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7001D3D063B00A24F10 /* Assets.xcassets */; };
 		BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */; };
@@ -28,12 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4EFD51921D3E6BCB00DE931F /* ItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItineraryViewController.swift; path = ../Documents/Coursework/escapeXibs/ItineraryViewController.swift; sourceTree = "<group>"; };
-		4EFD51931D3E6BCB00DE931F /* ItineraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItineraryViewController.xib; path = ../Documents/Coursework/escapeXibs/ItineraryViewController.xib; sourceTree = "<group>"; };
-		4EFD51961D3E6BE700DE931F /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesViewController.swift; path = ../Documents/Coursework/escapeXibs/escapeXibs/CategoriesViewController.swift; sourceTree = "<group>"; };
-		4EFD51971D3E6BE700DE931F /* CategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoriesViewController.xib; path = ../Documents/Coursework/escapeXibs/escapeXibs/CategoriesViewController.xib; sourceTree = "<group>"; };
-		4EFD51981D3E6BE700DE931F /* PlanDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanDayViewController.swift; path = ../Documents/Coursework/escapeXibs/escapeXibs/PlanDayViewController.swift; sourceTree = "<group>"; };
-		4EFD51991D3E6BE700DE931F /* PlanDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlanDayViewController.xib; path = ../Documents/Coursework/escapeXibs/escapeXibs/PlanDayViewController.xib; sourceTree = "<group>"; };
+		4EFD51A01D3E8D1800DE931F /* ItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
+		4EFD51A11D3E8D1800DE931F /* ItineraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItineraryViewController.xib; sourceTree = "<group>"; };
+		4EFD51A41D3E8D3800DE931F /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		4EFD51A51D3E8D3800DE931F /* CategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		4EFD51A61D3E8D3800DE931F /* PlanDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDayViewController.swift; sourceTree = "<group>"; };
+		4EFD51A71D3E8D3800DE931F /* PlanDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanDayViewController.xib; sourceTree = "<group>"; };
 		BFE4A6F61D3D063B00A24F10 /* esc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE4A7001D3D063B00A24F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,9 +93,9 @@
 		BFE4A75D1D3D71B200A24F10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4EFD51921D3E6BCB00DE931F /* ItineraryViewController.swift */,
-				4EFD51961D3E6BE700DE931F /* CategoriesViewController.swift */,
-				4EFD51981D3E6BE700DE931F /* PlanDayViewController.swift */,
+				4EFD51A41D3E8D3800DE931F /* CategoriesViewController.swift */,
+				4EFD51A01D3E8D1800DE931F /* ItineraryViewController.swift */,
+				4EFD51A61D3E8D3800DE931F /* PlanDayViewController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
@@ -107,9 +107,9 @@
 		BFE4A75F1D3D71C500A24F10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4EFD51931D3E6BCB00DE931F /* ItineraryViewController.xib */,
-				4EFD51971D3E6BE700DE931F /* CategoriesViewController.xib */,
-				4EFD51991D3E6BE700DE931F /* PlanDayViewController.xib */,
+				4EFD51A51D3E8D3800DE931F /* CategoriesViewController.xib */,
+				4EFD51A71D3E8D3800DE931F /* PlanDayViewController.xib */,
+				4EFD51A11D3E8D1800DE931F /* ItineraryViewController.xib */,
 				BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */,
 				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
 				BFE4A7101D3D08A900A24F10 /* LoginView.xib */,
@@ -188,12 +188,12 @@
 			files = (
 				BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */,
 				BFE4A7671D3E56E900A24F10 /* DayV1Cell.xib in Resources */,
+				4EFD51A91D3E8D3800DE931F /* CategoriesViewController.xib in Resources */,
+				4EFD51A31D3E8D1800DE931F /* ItineraryViewController.xib in Resources */,
 				BFE4A70E1D3D076F00A24F10 /* RegisterView.xib in Resources */,
-				4EFD519D1D3E6BE700DE931F /* PlanDayViewController.xib in Resources */,
-				4EFD519B1D3E6BE700DE931F /* CategoriesViewController.xib in Resources */,
+				4EFD51AB1D3E8D3800DE931F /* PlanDayViewController.xib in Resources */,
 				BFE4A7121D3D08A900A24F10 /* LoginView.xib in Resources */,
 				BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */,
-				4EFD51951D3E6BCB00DE931F /* ItineraryViewController.xib in Resources */,
 				BFE4A75C1D3D71A400A24F10 /* CityTripView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,14 +205,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EFD51941D3E6BCB00DE931F /* ItineraryViewController.swift in Sources */,
 				BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */,
 				BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
 				BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */,
 				BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */,
-				4EFD519A1D3E6BE700DE931F /* CategoriesViewController.swift in Sources */,
-				4EFD519C1D3E6BE700DE931F /* PlanDayViewController.swift in Sources */,
+				4EFD51A21D3E8D1800DE931F /* ItineraryViewController.swift in Sources */,
+				4EFD51AA1D3E8D3800DE931F /* PlanDayViewController.swift in Sources */,
+				4EFD51A81D3E8D3800DE931F /* CategoriesViewController.swift in Sources */,
 				BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

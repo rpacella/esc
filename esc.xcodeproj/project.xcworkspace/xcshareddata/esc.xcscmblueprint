@@ -4,15 +4,25 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "760C407543CE82E13654609B034738B90DE24655" : 0,
+    "E325ABA19577B12AB3F0D831BA59FC7E991ABA08" : 0,
     "22BFD2825B75D801FED6F64BFE3ABEEA198C2F84" : 0,
-    "0BE8D191DF4EB02CB9A5145D5245E1F3479C0849" : 0
+    "3FF4F63DCF28AAC903AE38A69CB0BBD4897A066B" : 0,
+    "760C407543CE82E13654609B034738B90DE24655" : 0,
+    "8F43C3B8C40FB1ED3D25B35A6BD0EE6242CCD7EC" : 0,
+    "0BE8D191DF4EB02CB9A5145D5245E1F3479C0849" : 0,
+    "B577F928D30D1B7B1F381AC26DB534023C6014E0" : 0,
+    "B0E7C873910C33E75F33B32880C8FCCCB3DDF023" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DD8D9B77-A86F-4D27-9C23-14BABDBADCB2",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "760C407543CE82E13654609B034738B90DE24655" : "Documents\/Coursework\/iXplore\/",
+    "E325ABA19577B12AB3F0D831BA59FC7E991ABA08" : "GitShow\/",
     "22BFD2825B75D801FED6F64BFE3ABEEA198C2F84" : "Documents\/Coursework\/textfieldPlay\/",
-    "0BE8D191DF4EB02CB9A5145D5245E1F3479C0849" : "Escape\/"
+    "3FF4F63DCF28AAC903AE38A69CB0BBD4897A066B" : "o_X\/",
+    "760C407543CE82E13654609B034738B90DE24655" : "Documents\/Coursework\/iXplore\/",
+    "8F43C3B8C40FB1ED3D25B35A6BD0EE6242CCD7EC" : "ArtOfWar\/",
+    "0BE8D191DF4EB02CB9A5145D5245E1F3479C0849" : "Escape\/",
+    "B577F928D30D1B7B1F381AC26DB534023C6014E0" : "CodeChallenge\/",
+    "B0E7C873910C33E75F33B32880C8FCCCB3DDF023" : "IxperienceFeedbackApp\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "esc",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -29,9 +39,34 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22BFD2825B75D801FED6F64BFE3ABEEA198C2F84"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larissaclopton\/Noughts-and-Crosses",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3FF4F63DCF28AAC903AE38A69CB0BBD4897A066B"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larissaclopton\/iXplore",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "760C407543CE82E13654609B034738B90DE24655"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larissaclopton\/ArtOfWar",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F43C3B8C40FB1ED3D25B35A6BD0EE6242CCD7EC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larissaclopton\/IxperienceFeedbackApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0E7C873910C33E75F33B32880C8FCCCB3DDF023"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larissaclopton\/CodeChallenge",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B577F928D30D1B7B1F381AC26DB534023C6014E0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/anansi\/GitShow",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E325ABA19577B12AB3F0D831BA59FC7E991ABA08"
     }
   ]
 }
