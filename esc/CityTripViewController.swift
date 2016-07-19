@@ -9,6 +9,8 @@
 import UIKit
 
 class CityTripViewController: UIViewController {
+    
+    // need add button to present PlanDayViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
