@@ -85,11 +85,11 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
         
         // make post request with these fields and the location
         
-        //let itineraryViewController = ItineraryViewController(nibName: "ItineraryViewController", bundle: nil)
+        let itineraryViewController = ItineraryViewController(nibName: "ItineraryViewController", bundle: nil)
         
         // set data in itineraryViewController table view based on pull request
         
-        //navigationController?.pushViewController(itineraryViewController, animated: true)
+        navigationController?.pushViewController(itineraryViewController, animated: true)
         
     }
 
