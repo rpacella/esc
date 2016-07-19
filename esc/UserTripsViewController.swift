@@ -24,6 +24,7 @@ class UserTripsViewController: UIViewController, UITableViewDelegate, UITableVie
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
 
         let backImage = UIImage(named: "backArrow")
         let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: nil)
@@ -33,11 +34,8 @@ class UserTripsViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     override func viewWillAppear(animated: Bool) {
+        tableView.reloadData()
         navigationController?.navigationBarHidden = true
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
@@ -46,8 +44,7 @@ class UserTripsViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cityTripViewController = CityTripViewController(nibName: "CityTripView", bundle: nil)
         navigationController!.pushViewController(cityTripViewController, animated: true)
-        navigationController?.navigationBarHidden = false
-        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
