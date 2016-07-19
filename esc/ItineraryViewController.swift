@@ -47,7 +47,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         
         // fill in relevant fields of itinerary table view cell
         cell.titleField.text = title
-        cell.descriptionField.text = "put description here"
+        cell.descriptionField.text = "Entertainment"
         
         return cell
         
@@ -80,6 +80,10 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         // bring to relevant description page, filling in apropriate values
         
         
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 150.0
     }
     
     @IBAction func regenerateItinerary(sender: UIButton) {

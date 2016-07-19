@@ -24,32 +24,32 @@
                             <constraint firstAttribute="height" constant="130" id="ehw-Xf-pld"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCt-hL-Q2n">
-                        <rect key="frame" x="188" y="46" width="53" height="25"/>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="25"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCt-hL-Q2n">
+                        <rect key="frame" x="143" y="55" width="42" height="20"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxD-Uk-OY5">
-                        <rect key="frame" x="188" y="91" width="97" height="17"/>
-                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxD-Uk-OY5" userLabel="Tag Field">
+                        <rect key="frame" x="143" y="95" width="25" height="14"/>
+                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="PHO-ty-TI7">
-                        <rect key="frame" x="319" y="52" width="41" height="46"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="PHO-ty-TI7">
+                        <rect key="frame" x="311" y="50" width="41" height="50"/>
                         <color key="backgroundColor" red="0.87118011713027954" green="0.88114869594573975" blue="0.96563488245010376" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="WCt-hL-Q2n" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="B62-GA-4jZ"/>
                     <constraint firstItem="n1q-e3-9KP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CGF-bq-srw"/>
-                    <constraint firstItem="WCt-hL-Q2n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WC2-3p-f5e"/>
+                    <constraint firstItem="WCt-hL-Q2n" firstAttribute="leading" secondItem="n1q-e3-9KP" secondAttribute="trailing" constant="5" id="TsD-FL-Hk2"/>
                     <constraint firstItem="PHO-ty-TI7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZlJ-5K-RBg"/>
                     <constraint firstItem="lxD-Uk-OY5" firstAttribute="top" secondItem="WCt-hL-Q2n" secondAttribute="bottom" constant="20" id="edp-Qz-xd2"/>
                     <constraint firstAttribute="trailingMargin" secondItem="PHO-ty-TI7" secondAttribute="trailing" constant="10" id="m8g-km-bSS"/>
+                    <constraint firstItem="lxD-Uk-OY5" firstAttribute="leading" secondItem="n1q-e3-9KP" secondAttribute="trailing" constant="5" id="n82-Wa-HJg"/>
                     <constraint firstAttribute="leadingMargin" secondItem="n1q-e3-9KP" secondAttribute="leading" id="w9o-RF-Ymu"/>
-                    <constraint firstItem="lxD-Uk-OY5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="zro-nZ-svT"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
