@@ -35,19 +35,21 @@
 		BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */; };
 		BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7641D3E56E900A24F10 /* DayV1Cell.swift */; };
 		BFE4A7671D3E56E900A24F10 /* DayV1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */; };
+		BFE4A7C51D3EDE5C00A24F10 /* DayV2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7C31D3EDE5C00A24F10 /* DayV2Cell.swift */; };
+		BFE4A7C61D3EDE5C00A24F10 /* DayV2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7C41D3EDE5C00A24F10 /* DayV2Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesViewController.swift; path = esc/CategoriesViewController.swift; sourceTree = "<group>"; };
 		36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoriesViewController.xib; path = esc/CategoriesViewController.xib; sourceTree = "<group>"; };
-		36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItineraryTableViewCell.swift; path = esc/ItineraryTableViewCell.swift; sourceTree = "<group>"; };
-		36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItineraryTableViewCell.xib; path = esc/ItineraryTableViewCell.xib; sourceTree = "<group>"; };
+		36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryTableViewCell.swift; sourceTree = "<group>"; };
+		36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItineraryTableViewCell.xib; sourceTree = "<group>"; };
 		36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItineraryViewController.swift; path = esc/ItineraryViewController.swift; sourceTree = "<group>"; };
 		36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItineraryViewController.xib; path = esc/ItineraryViewController.xib; sourceTree = "<group>"; };
 		36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanDayViewController.swift; path = esc/PlanDayViewController.swift; sourceTree = "<group>"; };
 		36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlanDayViewController.xib; path = esc/PlanDayViewController.xib; sourceTree = "<group>"; };
-		36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteTableViewCell.swift; path = esc/RouteTableViewCell.swift; sourceTree = "<group>"; };
-		36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RouteTableViewCell.xib; path = esc/RouteTableViewCell.xib; sourceTree = "<group>"; };
+		36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteTableViewCell.swift; sourceTree = "<group>"; };
+		36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouteTableViewCell.xib; sourceTree = "<group>"; };
 		36A08AF91D3ECC6500E39127 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteViewController.swift; path = esc/RouteViewController.swift; sourceTree = "<group>"; };
 		36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RouteViewController.xib; path = esc/RouteViewController.xib; sourceTree = "<group>"; };
 		36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripListViewController.swift; path = esc/TripListViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserTripsView.xib; path = esc/UserTripsView.xib; sourceTree = "<group>"; };
 		BFE4A7641D3E56E900A24F10 /* DayV1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayV1Cell.swift; sourceTree = "<group>"; };
 		BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayV1Cell.xib; sourceTree = "<group>"; };
+		BFE4A7C31D3EDE5C00A24F10 /* DayV2Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayV2Cell.swift; sourceTree = "<group>"; };
+		BFE4A7C41D3EDE5C00A24F10 /* DayV2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayV2Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,22 +88,6 @@
 		BFE4A6ED1D3D063B00A24F10 = {
 			isa = PBXGroup;
 			children = (
-				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
-				36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */,
-				36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */,
-				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
-				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
-				36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */,
-				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
-				36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */,
-				36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */,
-				36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */,
-				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
-				36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */,
-				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
-				36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */,
-				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
-				36A08AFE1D3ECC6500E39127 /* EventViewController.xib */,
 				BFE4A6F81D3D063B00A24F10 /* esc */,
 				BFE4A7681D3E570E00A24F10 /* Cells */,
 				BFE4A75F1D3D71C500A24F10 /* Views */,
@@ -129,6 +117,12 @@
 		BFE4A75D1D3D71B200A24F10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
+				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
+				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
+				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
+				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
+				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
@@ -140,10 +134,16 @@
 		BFE4A75F1D3D71C500A24F10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */,
-				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
 				BFE4A7101D3D08A900A24F10 /* LoginView.xib */,
 				BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */,
+				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
+				BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */,
+				36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */,
+				36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */,
+				36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */,
+				36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */,
+				36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */,
+				36A08AFE1D3ECC6500E39127 /* EventViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -153,6 +153,12 @@
 			children = (
 				BFE4A7641D3E56E900A24F10 /* DayV1Cell.swift */,
 				BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */,
+				BFE4A7C31D3EDE5C00A24F10 /* DayV2Cell.swift */,
+				BFE4A7C41D3EDE5C00A24F10 /* DayV2Cell.xib */,
+				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
+				36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */,
+				36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */,
+				36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */,
 			);
 			name = Cells;
 			path = esc;
@@ -218,6 +224,7 @@
 			files = (
 				BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */,
 				BFE4A7671D3E56E900A24F10 /* DayV1Cell.xib in Resources */,
+				BFE4A7C61D3EDE5C00A24F10 /* DayV2Cell.xib in Resources */,
 				36A08B0C1D3ECC6500E39127 /* TripListViewController.xib in Resources */,
 				36A08B001D3ECC6500E39127 /* CategoriesViewController.xib in Resources */,
 				BFE4A70E1D3D076F00A24F10 /* RegisterView.xib in Resources */,
@@ -243,6 +250,7 @@
 				36A08B071D3ECC6500E39127 /* RouteTableViewCell.swift in Sources */,
 				36A08B031D3ECC6500E39127 /* ItineraryViewController.swift in Sources */,
 				36A08B091D3ECC6500E39127 /* RouteViewController.swift in Sources */,
+				BFE4A7C51D3EDE5C00A24F10 /* DayV2Cell.swift in Sources */,
 				BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */,
 				36A08B011D3ECC6500E39127 /* ItineraryTableViewCell.swift in Sources */,
 				BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */,
