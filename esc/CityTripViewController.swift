@@ -19,7 +19,7 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.registerNib(UINib(nibName: "DayV1Cell", bundle: nil), forCellReuseIdentifier: "reuseCell")
+        tableView.registerNib(UINib(nibName: "DayV1Cell", bundle: nil), forCellReuseIdentifier: "day1cell")
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add , target: self, action: #selector(addButtonClicked))
         
@@ -42,22 +42,25 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         /*
          if section % 2 == 0 {
+         cell?.imageView = dataArray.image
          return DayV1Cell
          }
          if section % 2 != 0 {
+         cell?.imagView = dataArrat.image
          return DayV2Cell
          }
          
          */
         
-       let cell = tableView.dequeueReusableCellWithIdentifier("reuseCell")
+       let cell = tableView.dequeueReusableCellWithIdentifier("day1cell")
+        
         return cell!
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        //calulation to see how many days there are in NSCoding
+        //calulation to see how many days there are in NSCoding file
         /*
          return CityTripDaysArray.count
          */
@@ -73,7 +76,7 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 100.0
+        return 150.0
     }
 
 }
