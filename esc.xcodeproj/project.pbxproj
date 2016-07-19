@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EFD51A21D3E8D1800DE931F /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51A01D3E8D1800DE931F /* ItineraryViewController.swift */; };
-		4EFD51A31D3E8D1800DE931F /* ItineraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51A11D3E8D1800DE931F /* ItineraryViewController.xib */; };
-		4EFD51A81D3E8D3800DE931F /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51A41D3E8D3800DE931F /* CategoriesViewController.swift */; };
-		4EFD51A91D3E8D3800DE931F /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51A51D3E8D3800DE931F /* CategoriesViewController.xib */; };
-		4EFD51AA1D3E8D3800DE931F /* PlanDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD51A61D3E8D3800DE931F /* PlanDayViewController.swift */; };
-		4EFD51AB1D3E8D3800DE931F /* PlanDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EFD51A71D3E8D3800DE931F /* PlanDayViewController.xib */; };
+		36A08AFF1D3ECC6500E39127 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */; };
+		36A08B001D3ECC6500E39127 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */; };
+		36A08B011D3ECC6500E39127 /* ItineraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */; };
+		36A08B021D3ECC6500E39127 /* ItineraryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */; };
+		36A08B031D3ECC6500E39127 /* ItineraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */; };
+		36A08B041D3ECC6500E39127 /* ItineraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */; };
+		36A08B051D3ECC6500E39127 /* PlanDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */; };
+		36A08B061D3ECC6500E39127 /* PlanDayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */; };
+		36A08B071D3ECC6500E39127 /* RouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */; };
+		36A08B081D3ECC6500E39127 /* RouteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */; };
+		36A08B091D3ECC6500E39127 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AF91D3ECC6500E39127 /* RouteViewController.swift */; };
+		36A08B0A1D3ECC6500E39127 /* RouteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */; };
+		36A08B0B1D3ECC6500E39127 /* TripListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */; };
+		36A08B0C1D3ECC6500E39127 /* TripListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */; };
+		36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AFD1D3ECC6500E39127 /* EventViewController.swift */; };
+		36A08B0E1D3ECC6500E39127 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AFE1D3ECC6500E39127 /* EventViewController.xib */; };
 		BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */; };
 		BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7001D3D063B00A24F10 /* Assets.xcassets */; };
 		BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */; };
@@ -28,12 +38,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4EFD51A01D3E8D1800DE931F /* ItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryViewController.swift; sourceTree = "<group>"; };
-		4EFD51A11D3E8D1800DE931F /* ItineraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItineraryViewController.xib; sourceTree = "<group>"; };
-		4EFD51A41D3E8D3800DE931F /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
-		4EFD51A51D3E8D3800DE931F /* CategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
-		4EFD51A61D3E8D3800DE931F /* PlanDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanDayViewController.swift; sourceTree = "<group>"; };
-		4EFD51A71D3E8D3800DE931F /* PlanDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlanDayViewController.xib; sourceTree = "<group>"; };
+		36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesViewController.swift; path = esc/CategoriesViewController.swift; sourceTree = "<group>"; };
+		36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoriesViewController.xib; path = esc/CategoriesViewController.xib; sourceTree = "<group>"; };
+		36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItineraryTableViewCell.swift; path = esc/ItineraryTableViewCell.swift; sourceTree = "<group>"; };
+		36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItineraryTableViewCell.xib; path = esc/ItineraryTableViewCell.xib; sourceTree = "<group>"; };
+		36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItineraryViewController.swift; path = esc/ItineraryViewController.swift; sourceTree = "<group>"; };
+		36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ItineraryViewController.xib; path = esc/ItineraryViewController.xib; sourceTree = "<group>"; };
+		36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlanDayViewController.swift; path = esc/PlanDayViewController.swift; sourceTree = "<group>"; };
+		36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlanDayViewController.xib; path = esc/PlanDayViewController.xib; sourceTree = "<group>"; };
+		36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteTableViewCell.swift; path = esc/RouteTableViewCell.swift; sourceTree = "<group>"; };
+		36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RouteTableViewCell.xib; path = esc/RouteTableViewCell.xib; sourceTree = "<group>"; };
+		36A08AF91D3ECC6500E39127 /* RouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteViewController.swift; path = esc/RouteViewController.swift; sourceTree = "<group>"; };
+		36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RouteViewController.xib; path = esc/RouteViewController.xib; sourceTree = "<group>"; };
+		36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripListViewController.swift; path = esc/TripListViewController.swift; sourceTree = "<group>"; };
+		36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TripListViewController.xib; path = esc/TripListViewController.xib; sourceTree = "<group>"; };
+		36A08AFD1D3ECC6500E39127 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = esc/EventViewController.swift; sourceTree = "<group>"; };
+		36A08AFE1D3ECC6500E39127 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = esc/EventViewController.xib; sourceTree = "<group>"; };
 		BFE4A6F61D3D063B00A24F10 /* esc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE4A7001D3D063B00A24F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +84,22 @@
 		BFE4A6ED1D3D063B00A24F10 = {
 			isa = PBXGroup;
 			children = (
+				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
+				36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */,
+				36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */,
+				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
+				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
+				36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */,
+				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
+				36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */,
+				36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */,
+				36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */,
+				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
+				36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */,
+				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
+				36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */,
+				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
+				36A08AFE1D3ECC6500E39127 /* EventViewController.xib */,
 				BFE4A6F81D3D063B00A24F10 /* esc */,
 				BFE4A7681D3E570E00A24F10 /* Cells */,
 				BFE4A75F1D3D71C500A24F10 /* Views */,
@@ -93,9 +129,6 @@
 		BFE4A75D1D3D71B200A24F10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4EFD51A41D3E8D3800DE931F /* CategoriesViewController.swift */,
-				4EFD51A01D3E8D1800DE931F /* ItineraryViewController.swift */,
-				4EFD51A61D3E8D3800DE931F /* PlanDayViewController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
@@ -107,9 +140,6 @@
 		BFE4A75F1D3D71C500A24F10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4EFD51A51D3E8D3800DE931F /* CategoriesViewController.xib */,
-				4EFD51A71D3E8D3800DE931F /* PlanDayViewController.xib */,
-				4EFD51A11D3E8D1800DE931F /* ItineraryViewController.xib */,
 				BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */,
 				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
 				BFE4A7101D3D08A900A24F10 /* LoginView.xib */,
@@ -188,13 +218,18 @@
 			files = (
 				BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */,
 				BFE4A7671D3E56E900A24F10 /* DayV1Cell.xib in Resources */,
-				4EFD51A91D3E8D3800DE931F /* CategoriesViewController.xib in Resources */,
-				4EFD51A31D3E8D1800DE931F /* ItineraryViewController.xib in Resources */,
+				36A08B0C1D3ECC6500E39127 /* TripListViewController.xib in Resources */,
+				36A08B001D3ECC6500E39127 /* CategoriesViewController.xib in Resources */,
 				BFE4A70E1D3D076F00A24F10 /* RegisterView.xib in Resources */,
-				4EFD51AB1D3E8D3800DE931F /* PlanDayViewController.xib in Resources */,
+				36A08B0E1D3ECC6500E39127 /* EventViewController.xib in Resources */,
+				36A08B061D3ECC6500E39127 /* PlanDayViewController.xib in Resources */,
+				36A08B041D3ECC6500E39127 /* ItineraryViewController.xib in Resources */,
 				BFE4A7121D3D08A900A24F10 /* LoginView.xib in Resources */,
+				36A08B021D3ECC6500E39127 /* ItineraryTableViewCell.xib in Resources */,
 				BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */,
 				BFE4A75C1D3D71A400A24F10 /* CityTripView.xib in Resources */,
+				36A08B0A1D3ECC6500E39127 /* RouteViewController.xib in Resources */,
+				36A08B081D3ECC6500E39127 /* RouteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,14 +240,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A08B071D3ECC6500E39127 /* RouteTableViewCell.swift in Sources */,
+				36A08B031D3ECC6500E39127 /* ItineraryViewController.swift in Sources */,
+				36A08B091D3ECC6500E39127 /* RouteViewController.swift in Sources */,
 				BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */,
+				36A08B011D3ECC6500E39127 /* ItineraryTableViewCell.swift in Sources */,
 				BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */,
+				36A08B051D3ECC6500E39127 /* PlanDayViewController.swift in Sources */,
+				36A08B0B1D3ECC6500E39127 /* TripListViewController.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
+				36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */,
 				BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */,
 				BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */,
-				4EFD51A21D3E8D1800DE931F /* ItineraryViewController.swift in Sources */,
-				4EFD51AA1D3E8D3800DE931F /* PlanDayViewController.swift in Sources */,
-				4EFD51A81D3E8D3800DE931F /* CategoriesViewController.swift in Sources */,
+				36A08AFF1D3ECC6500E39127 /* CategoriesViewController.swift in Sources */,
 				BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
