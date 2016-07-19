@@ -46,8 +46,10 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
         func backAction() {
-            self.navigationController?.popViewControllerAnimated(true)
-        }
+            let cityView = CityTripViewController (nibName: "CityTripView", bundle: nil)
+            self.navigationController?.pushViewController(cityView, animated: true)
+            cityView.navigationItem.hidesBackButton = true
+    }
     
         func listAction() {
             let viewcontroller = TripListViewController (nibName: "TripListViewController", bundle: nil)
