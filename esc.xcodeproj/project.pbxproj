@@ -17,6 +17,8 @@
 		BFE4A75C1D3D71A400A24F10 /* CityTripView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */; };
 		BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */; };
 		BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */; };
+		BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7641D3E56E900A24F10 /* DayV1Cell.swift */; };
+		BFE4A7671D3E56E900A24F10 /* DayV1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CityTripView.xib; path = esc/CityTripView.xib; sourceTree = "<group>"; };
 		BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserTripsViewController.swift; path = esc/UserTripsViewController.swift; sourceTree = "<group>"; };
 		BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserTripsView.xib; path = esc/UserTripsView.xib; sourceTree = "<group>"; };
+		BFE4A7641D3E56E900A24F10 /* DayV1Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayV1Cell.swift; sourceTree = "<group>"; };
+		BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayV1Cell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				BFE4A6F81D3D063B00A24F10 /* esc */,
+				BFE4A7681D3E570E00A24F10 /* Cells */,
 				BFE4A75F1D3D71C500A24F10 /* Views */,
 				BFE4A75D1D3D71B200A24F10 /* Controllers */,
 				BFE4A6F71D3D063B00A24F10 /* Products */,
@@ -93,6 +98,16 @@
 				BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		BFE4A7681D3E570E00A24F10 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BFE4A7641D3E56E900A24F10 /* DayV1Cell.swift */,
+				BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */,
+			);
+			name = Cells;
+			path = esc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */,
+				BFE4A7671D3E56E900A24F10 /* DayV1Cell.xib in Resources */,
 				BFE4A70E1D3D076F00A24F10 /* RegisterView.xib in Resources */,
 				BFE4A7121D3D08A900A24F10 /* LoginView.xib in Resources */,
 				BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */,
@@ -169,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */,
+				BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
 				BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */,
 				BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */,
