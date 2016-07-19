@@ -20,7 +20,19 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         tableView.registerNib(UINib(nibName: "DayV1Cell", bundle: nil), forCellReuseIdentifier: "reuseCell")
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add , target: self, action: #selector(addButtonClicked))
+        
+        self.navigationItem.rightBarButtonItem = addButton
 
+    }
+    
+    func addButtonClicked() {
+        
+        let planDayViewController = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
+        
+        navigationController?.pushViewController(planDayViewController, animated: true)
+        
     }
     
     override func viewWillAppear(animated: Bool) {

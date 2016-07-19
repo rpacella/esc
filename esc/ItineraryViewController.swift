@@ -22,7 +22,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.dataSource = self
         
         // use Michelle's table view cell, get reuseID
-        //tableView.registerNib(UINib(nibName: "ItineraryTableViewCell", bundle: nil), forCellReuseIdentifier: "")
+        tableView.registerNib(UINib(nibName: "ItineraryTableViewCell", bundle: nil), forCellReuseIdentifier: "cellidentifier")
         
     }
 
@@ -41,11 +41,10 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // need reuseID
-        //let cell = tableView.dequeueReusableCellWithIdentifier("", forIndexPath: indexPath) as! ItineraryTableViewCell
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("unknown", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier", forIndexPath: indexPath) as! ItineraryTableViewCell
         
         // fill in relevant fields of itinerary table view cell
+        
         
         return cell
         
@@ -71,6 +70,10 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         
         print(chosenEvent)
         
+        let eventViewController = EventViewController(nibName: "EventViewController", bundle: nil)
+        
+        navigationController?.pushViewController(eventViewController, animated: true)
+        
         // bring to relevant description page, filling in apropriate values
         
         
@@ -86,6 +89,10 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         // save the trip in appropriate format to the database
         // go to TripViewListController
         print("saved trip to database")
+        
+        let tripListViewController = TripListViewController(nibName: "TripListViewController", bundle: nil)
+        
+        navigationController?.pushViewController(tripListViewController, animated: true)
     }
 
 }
