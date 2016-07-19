@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0BE8D191DF4EB02CB9A5145D5245E1F3479C0849",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "760C407543CE82E13654609B034738B90DE24655" : 0,
+    "22BFD2825B75D801FED6F64BFE3ABEEA198C2F84" : 0,
+    "0BE8D191DF4EB02CB9A5145D5245E1F3479C0849" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DD8D9B77-A86F-4D27-9C23-14BABDBADCB2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "760C407543CE82E13654609B034738B90DE24655" : "Documents\/Coursework\/iXplore\/",
+    "22BFD2825B75D801FED6F64BFE3ABEEA198C2F84" : "Documents\/Coursework\/textfieldPlay\/",
+    "0BE8D191DF4EB02CB9A5145D5245E1F3479C0849" : "Escape\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "esc",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "esc.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rpacella\/esc",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0BE8D191DF4EB02CB9A5145D5245E1F3479C0849"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larissaclopton\/textfieldPlay",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22BFD2825B75D801FED6F64BFE3ABEEA198C2F84"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/larissaclopton\/iXplore",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "760C407543CE82E13654609B034738B90DE24655"
+    }
+  ]
+}
