@@ -68,6 +68,8 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         //push to itenerary for day
         //decode itenerary for day
+        let tripListViewController = TripListViewController(nibName: "TripListViewController", bundle: nil)
+        navigationController?.pushViewController(tripListViewController, animated: true)
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
