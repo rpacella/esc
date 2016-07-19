@@ -41,7 +41,7 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
             NSForegroundColorAttributeName: UIColor.blackColor()],
                                            forState: UIControlState.Normal)
         
-        let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: nil)
+        let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
         
         navigationItem.leftBarButtonItem = backbutton
         navigationItem.setRightBarButtonItems([routeButton, listLabel], animated: true)
@@ -54,7 +54,9 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     func backAction() {
-        self.navigationController?.popViewControllerAnimated(true)
+        let cityView = CityTripViewController (nibName: "CityTripView", bundle: nil)
+        self.navigationController?.pushViewController(cityView, animated: true)
+        cityView.navigationItem.hidesBackButton = true
     }
     
     func routeAction() {

@@ -36,8 +36,12 @@
                             <constraint firstAttribute="width" constant="100" id="wgE-lr-569"/>
                         </constraints>
                     </imageView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-t0-LZP">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="3g7-t0-LZP">
                         <rect key="frame" x="341" y="25" width="41" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="41" id="77Z-4e-pM3"/>
+                            <constraint firstAttribute="height" constant="46" id="LhL-1a-Q0o"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>

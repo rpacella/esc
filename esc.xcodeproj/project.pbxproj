@@ -117,6 +117,7 @@
 		BFE4A75D1D3D71B200A24F10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
 				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
 				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
@@ -125,8 +126,18 @@
 				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
+=======
+>>>>>>> 7105f93f9918953fadc5b77375c7bb7176a16e3e
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
+				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
+				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */,
+				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
+				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
+				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
+				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
+				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
+				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +145,7 @@
 		BFE4A75F1D3D71C500A24F10 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				BFE4A7101D3D08A900A24F10 /* LoginView.xib */,
 				BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */,
 				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
@@ -142,8 +154,6 @@
 				36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */,
 				36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */,
 				36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */,
-				36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */,
-				36A08AFE1D3ECC6500E39127 /* EventViewController.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -153,6 +163,7 @@
 			children = (
 				BFE4A7641D3E56E900A24F10 /* DayV1Cell.swift */,
 				BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */,
+<<<<<<< HEAD
 				BFE4A7C31D3EDE5C00A24F10 /* DayV2Cell.swift */,
 				BFE4A7C41D3EDE5C00A24F10 /* DayV2Cell.xib */,
 				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
