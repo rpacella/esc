@@ -9,14 +9,14 @@
 import UIKit
 import CoreLocation
 
-class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
+class CategoriesViewController: UIViewController, WebService, CLLocationManagerDelegate {
     
     // need background image?
 
     // might want to change this representation
     var timeSpan: Int?
-    var latitude: String?
-    var longitude: String?
+    var latitude: Double?
+    var longitude: Double?
     
     var locationManager = CLLocationManager()
     
@@ -59,19 +59,20 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
         for view in self.view.subviews{
             if let item = view as? UIButton {
                 if item.currentImage == UIImage(named:"checked.png") {
+                    
                     switch item.tag {
                     case 0:
-                        categoriesArray += ["Entertainment"]
+                        categoriesArray += ["entertainment"]
                     case 1:
-                        categoriesArray += ["Museum"]
+                        categoriesArray += ["museum"]
                     case 2:
-                        categoriesArray += ["Outdoors"]
+                        categoriesArray += ["outdoors"]
                     case 3:
-                        categoriesArray += ["Nightlife"]
+                        categoriesArray += ["nightlife"]
                     case 4:
-                        categoriesArray += ["Shopping"]
+                        categoriesArray += ["shopping"]
                     case 5:
-                        categoriesArray += ["Dining"]
+                        categoriesArray += ["dining"]
                     default:
                         break
                     }
@@ -79,15 +80,51 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
             }
         }
         
-        for element in categoriesArray {
-            print(element)
-        }
+        let subtypes = ["subtypes":categoriesArray]
+        let long = ["long":self.longitude]
+        let lat = ["lat":self.latitude]
         
         // make post request with these fields and the location
+        let request = createMutableAnonRequest(NSURL(string: "http://ec2-52-33-4-120.us-west-2.compute.amazonaws.com:8000/hello"), method: "POST", parameters: subtypes, long, lat)
+        
+        executeRequest(request, requestCompletionFunction: {(responseCode, json) in
+            
+            if (responseCode/100 == 2)   {
+                
+                print(json)
+                
+                /*var eventList = [Event]()
+                
+                for event in json.arrayValue {
+                    
+                    let newEvent = Event()
+                    //newEvent.image
+                    //newEvent.title
+                    //newEvent.location
+                    //newEvent.description
+                    //newEvent.tags
+                    //newEvent.starttime
+                    //newEvent.endtime
+                    
+                    eventList.append(newEvent)
+                    
+                }
+                
+                onCompletion(list,nil)*/
+            }
+            /*else {
+                //the web service to create a user failed. Lets extract the error message to be displayed
+                let errorMessage = json["errors"]["full_messages"][0].stringValue
+                print(errorMessage)
+                //execute the closure in the ViewController
+                onCompletion(nil,errorMessage)
+            }*/
+        })
         
         let itineraryViewController = ItineraryViewController(nibName: "ItineraryViewController", bundle: nil)
         
         // set data in itineraryViewController table view based on pull request
+        // itineraryViewController.eventList = eventList
         
         navigationController?.pushViewController(itineraryViewController, animated: true)
         
@@ -100,7 +137,7 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
     
     func configureButton(button: UIButton) {
         button.setImage(UIImage(named:"unchecked.png"), forState: .Normal)
-        button.tintColor = UIColor.blackColor()
+        button.tintColor = UIColor.whiteColor()
 
     }
     
@@ -113,7 +150,7 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
             sender.setImage(UIImage(named:"unchecked.png"), forState: .Normal)
         }
     
-        sender.tintColor = UIColor.blackColor()
+        sender.tintColor = UIColor.whiteColor()
     
     }
     
@@ -121,8 +158,8 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
         
         let location = locations.last
         
-        self.latitude = String(location?.coordinate.latitude)
-        self.longitude = String(location?.coordinate.longitude)
+        self.latitude = Double((location?.coordinate.latitude)!)
+        self.longitude = Double((location?.coordinate.longitude)!)
         
     }
     

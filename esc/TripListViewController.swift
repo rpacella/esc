@@ -46,7 +46,7 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
         let backText = UIBarButtonItem(title: cityName, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
         backText.tintColor = UIColor.blackColor()
         backText.setTitleTextAttributes([
-            NSFontAttributeName: UIFont(name: "Hiragino Sans W3", size: 17.0)!,
+            NSFontAttributeName: UIFont(name: "Hiragino Sans W3", size: 13.0)!,
             NSForegroundColorAttributeName: UIColor.blackColor()], forState: UIControlState.Normal)
         
         navigationItem.setLeftBarButtonItems([backbutton, backText], animated: false)

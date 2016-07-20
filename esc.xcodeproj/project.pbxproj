@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0893CD89E67774F57C916CD5 /* Pods_esc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FAF02657BC0A4236C09BFA /* Pods_esc.framework */; };
 		36A08AFF1D3ECC6500E39127 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */; };
 		36A08B001D3ECC6500E39127 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */; };
 		36A08B011D3ECC6500E39127 /* ItineraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */; };
@@ -23,6 +24,12 @@
 		36A08B0C1D3ECC6500E39127 /* TripListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */; };
 		36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AFD1D3ECC6500E39127 /* EventViewController.swift */; };
 		36A08B0E1D3ECC6500E39127 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AFE1D3ECC6500E39127 /* EventViewController.xib */; };
+		36A08B111D3F910300E39127 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08B0F1D3F910300E39127 /* SearchViewController.swift */; };
+		36A08B121D3F910300E39127 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08B101D3F910300E39127 /* SearchViewController.xib */; };
+		4E914A631D3FA3720042CD42 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A621D3FA3720042CD42 /* WebService.swift */; };
+		4E914A671D3FA5AF0042CD42 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A661D3FA5AF0042CD42 /* Event.swift */; };
+		4E914A691D3FAA2B0042CD42 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A681D3FAA2B0042CD42 /* Trip.swift */; };
+		4E914A6B1D3FAC1F0042CD42 /* TripController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A6A1D3FAC1F0042CD42 /* TripController.swift */; };
 		BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */; };
 		BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7001D3D063B00A24F10 /* Assets.xcassets */; };
 		BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */; };
@@ -56,6 +63,15 @@
 		36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TripListViewController.xib; path = esc/TripListViewController.xib; sourceTree = "<group>"; };
 		36A08AFD1D3ECC6500E39127 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = esc/EventViewController.swift; sourceTree = "<group>"; };
 		36A08AFE1D3ECC6500E39127 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = esc/EventViewController.xib; sourceTree = "<group>"; };
+		36A08B0F1D3F910300E39127 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = esc/SearchViewController.swift; sourceTree = "<group>"; };
+		36A08B101D3F910300E39127 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchViewController.xib; path = esc/SearchViewController.xib; sourceTree = "<group>"; };
+		3CA19FFAD79ED4E860399ECB /* Pods-esc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-esc.release.xcconfig"; path = "Pods/Target Support Files/Pods-esc/Pods-esc.release.xcconfig"; sourceTree = "<group>"; };
+		4E914A621D3FA3720042CD42 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		4E914A661D3FA5AF0042CD42 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4E914A681D3FAA2B0042CD42 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		4E914A6A1D3FAC1F0042CD42 /* TripController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripController.swift; sourceTree = "<group>"; };
+		84C9FBE407E9E39BFE3EA3DD /* Pods-esc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-esc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-esc/Pods-esc.debug.xcconfig"; sourceTree = "<group>"; };
+		A1FAF02657BC0A4236C09BFA /* Pods_esc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_esc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE4A6F61D3D063B00A24F10 /* esc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE4A7001D3D063B00A24F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -79,12 +95,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0893CD89E67774F57C916CD5 /* Pods_esc.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047DBC3A590586F7EEBE56AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84C9FBE407E9E39BFE3EA3DD /* Pods-esc.debug.xcconfig */,
+				3CA19FFAD79ED4E860399ECB /* Pods-esc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5D7B7CFFF767A7BCB434C63E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1FAF02657BC0A4236C09BFA /* Pods_esc.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BFE4A6ED1D3D063B00A24F10 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +127,8 @@
 				BFE4A75F1D3D71C500A24F10 /* Views */,
 				BFE4A75D1D3D71B200A24F10 /* Controllers */,
 				BFE4A6F71D3D063B00A24F10 /* Products */,
+				047DBC3A590586F7EEBE56AB /* Pods */,
+				5D7B7CFFF767A7BCB434C63E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,16 +153,21 @@
 		BFE4A75D1D3D71B200A24F10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
-				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
-				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
-				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
-				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
-				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
-				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
+				4E914A661D3FA5AF0042CD42 /* Event.swift */,
+				4E914A621D3FA3720042CD42 /* WebService.swift */,
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
+				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */,
+				36A08B0F1D3F910300E39127 /* SearchViewController.swift */,
+				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
+				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
+				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
+				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
+				4E914A681D3FAA2B0042CD42 /* Trip.swift */,
+				4E914A6A1D3FAC1F0042CD42 /* TripController.swift */,
+				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
+				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -138,10 +179,11 @@
 				BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */,
 				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
 				BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */,
-				36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */,
+				36A08B101D3F910300E39127 /* SearchViewController.xib */,
 				36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */,
 				36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */,
 				36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */,
+				36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */,
 				36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */,
 				36A08AFE1D3ECC6500E39127 /* EventViewController.xib */,
 			);
@@ -155,8 +197,8 @@
 				BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */,
 				BFE4A7C31D3EDE5C00A24F10 /* DayV2Cell.swift */,
 				BFE4A7C41D3EDE5C00A24F10 /* DayV2Cell.xib */,
-				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
 				36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */,
+				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
 				36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */,
 				36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */,
 			);
@@ -171,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFE4A7081D3D063B00A24F10 /* Build configuration list for PBXNativeTarget "esc" */;
 			buildPhases = (
+				6E89E9BDEC32E698FC009628 /* 📦 Check Pods Manifest.lock */,
 				BFE4A6F21D3D063B00A24F10 /* Sources */,
 				BFE4A6F31D3D063B00A24F10 /* Frameworks */,
 				BFE4A6F41D3D063B00A24F10 /* Resources */,
+				B9E5910A8FBFB56394B41C95 /* 📦 Embed Pods Frameworks */,
+				745808A582D6EBCF905A22A2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,11 +281,60 @@
 				BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */,
 				BFE4A75C1D3D71A400A24F10 /* CityTripView.xib in Resources */,
 				36A08B0A1D3ECC6500E39127 /* RouteViewController.xib in Resources */,
+				36A08B121D3F910300E39127 /* SearchViewController.xib in Resources */,
 				36A08B081D3ECC6500E39127 /* RouteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E89E9BDEC32E698FC009628 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		745808A582D6EBCF905A22A2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-esc/Pods-esc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E5910A8FBFB56394B41C95 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-esc/Pods-esc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFE4A6F21D3D063B00A24F10 /* Sources */ = {
@@ -251,16 +345,21 @@
 				36A08B031D3ECC6500E39127 /* ItineraryViewController.swift in Sources */,
 				36A08B091D3ECC6500E39127 /* RouteViewController.swift in Sources */,
 				BFE4A7C51D3EDE5C00A24F10 /* DayV2Cell.swift in Sources */,
+				4E914A631D3FA3720042CD42 /* WebService.swift in Sources */,
 				BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */,
 				36A08B011D3ECC6500E39127 /* ItineraryTableViewCell.swift in Sources */,
 				BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */,
 				36A08B051D3ECC6500E39127 /* PlanDayViewController.swift in Sources */,
 				36A08B0B1D3ECC6500E39127 /* TripListViewController.swift in Sources */,
+				4E914A691D3FAA2B0042CD42 /* Trip.swift in Sources */,
+				4E914A671D3FA5AF0042CD42 /* Event.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
+				36A08B111D3F910300E39127 /* SearchViewController.swift in Sources */,
 				36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */,
 				BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */,
 				BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */,
 				36A08AFF1D3ECC6500E39127 /* CategoriesViewController.swift in Sources */,
+				4E914A6B1D3FAC1F0042CD42 /* TripController.swift in Sources */,
 				BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +452,7 @@
 		};
 		BFE4A7091D3D063B00A24F10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C9FBE407E9E39BFE3EA3DD /* Pods-esc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = esc/Info.plist;
@@ -364,6 +464,7 @@
 		};
 		BFE4A70A1D3D063B00A24F10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CA19FFAD79ED4E860399ECB /* Pods-esc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = esc/Info.plist;
