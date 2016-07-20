@@ -171,6 +171,6 @@
         </view>
     </objects>
     <resources>
-        <image name="mtfuji" width="476" height="525"/>
+        <image name="mtfuji" width="340" height="520"/>
     </resources>
 </document>

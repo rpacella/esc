@@ -28,6 +28,8 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         
         let cityName = "Cape Town, South Africa" // get name from data array
         self.navigationItem.title = cityName
+        
+        
 }
 
     

@@ -62,6 +62,11 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         tableView.dataSource = self
     }
     
+    override func viewDidAppear(animated: Bool) {
+//        mapView.addAnnotations(Trip.sharedInstance.getEvents())
+        tableView.reloadData()
+    }
+    
 
     class Restaurant: NSObject, MKAnnotation {
         var title: String? = ""
