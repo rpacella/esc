@@ -13,6 +13,9 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     // dummy data
     var array = ["V&A Waterfront", "Cape Town Comedy Club", "Two Oceans Aquarium", "Robben Island"]
     
+    // real data
+    // var eventList = [Event]()
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -93,7 +96,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     @IBAction func saveItinerary(sender: UIButton) {
-        // save the trip in appropriate format to the database
+        // save trip with NSCoding
         // go to TripViewListController
         print("saved trip to database")
         

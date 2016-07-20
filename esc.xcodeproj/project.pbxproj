@@ -26,6 +26,10 @@
 		36A08B0E1D3ECC6500E39127 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AFE1D3ECC6500E39127 /* EventViewController.xib */; };
 		36A08B111D3F910300E39127 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08B0F1D3F910300E39127 /* SearchViewController.swift */; };
 		36A08B121D3F910300E39127 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08B101D3F910300E39127 /* SearchViewController.xib */; };
+		4E914A631D3FA3720042CD42 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A621D3FA3720042CD42 /* WebService.swift */; };
+		4E914A671D3FA5AF0042CD42 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A661D3FA5AF0042CD42 /* Event.swift */; };
+		4E914A691D3FAA2B0042CD42 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A681D3FAA2B0042CD42 /* Trip.swift */; };
+		4E914A6B1D3FAC1F0042CD42 /* TripController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A6A1D3FAC1F0042CD42 /* TripController.swift */; };
 		BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */; };
 		BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7001D3D063B00A24F10 /* Assets.xcassets */; };
 		BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */; };
@@ -62,6 +66,10 @@
 		36A08B0F1D3F910300E39127 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = esc/SearchViewController.swift; sourceTree = "<group>"; };
 		36A08B101D3F910300E39127 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchViewController.xib; path = esc/SearchViewController.xib; sourceTree = "<group>"; };
 		3CA19FFAD79ED4E860399ECB /* Pods-esc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-esc.release.xcconfig"; path = "Pods/Target Support Files/Pods-esc/Pods-esc.release.xcconfig"; sourceTree = "<group>"; };
+		4E914A621D3FA3720042CD42 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		4E914A661D3FA5AF0042CD42 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4E914A681D3FAA2B0042CD42 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		4E914A6A1D3FAC1F0042CD42 /* TripController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripController.swift; sourceTree = "<group>"; };
 		84C9FBE407E9E39BFE3EA3DD /* Pods-esc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-esc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-esc/Pods-esc.debug.xcconfig"; sourceTree = "<group>"; };
 		A1FAF02657BC0A4236C09BFA /* Pods_esc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_esc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE4A6F61D3D063B00A24F10 /* esc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +153,8 @@
 		BFE4A75D1D3D71B200A24F10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4E914A661D3FA5AF0042CD42 /* Event.swift */,
+				4E914A621D3FA3720042CD42 /* WebService.swift */,
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
@@ -154,6 +164,8 @@
 				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
 				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
 				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
+				4E914A681D3FAA2B0042CD42 /* Trip.swift */,
+				4E914A6A1D3FAC1F0042CD42 /* TripController.swift */,
 				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
 				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
 			);
@@ -333,17 +345,21 @@
 				36A08B031D3ECC6500E39127 /* ItineraryViewController.swift in Sources */,
 				36A08B091D3ECC6500E39127 /* RouteViewController.swift in Sources */,
 				BFE4A7C51D3EDE5C00A24F10 /* DayV2Cell.swift in Sources */,
+				4E914A631D3FA3720042CD42 /* WebService.swift in Sources */,
 				BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */,
 				36A08B011D3ECC6500E39127 /* ItineraryTableViewCell.swift in Sources */,
 				BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */,
 				36A08B051D3ECC6500E39127 /* PlanDayViewController.swift in Sources */,
 				36A08B0B1D3ECC6500E39127 /* TripListViewController.swift in Sources */,
+				4E914A691D3FAA2B0042CD42 /* Trip.swift in Sources */,
+				4E914A671D3FA5AF0042CD42 /* Event.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
 				36A08B111D3F910300E39127 /* SearchViewController.swift in Sources */,
 				36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */,
 				BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */,
 				BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */,
 				36A08AFF1D3ECC6500E39127 /* CategoriesViewController.swift in Sources */,
+				4E914A6B1D3FAC1F0042CD42 /* TripController.swift in Sources */,
 				BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
