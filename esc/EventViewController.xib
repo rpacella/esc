@@ -45,25 +45,25 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-Nn-yyC">
-                    <rect key="frame" x="30" y="400" width="540" height="170"/>
+                    <rect key="frame" x="0.0" y="400" width="600" height="150"/>
                 </mapView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="top" secondItem="lfr-Oq-d5N" secondAttribute="top" multiplier="1.25" id="2r8-Jq-Y42"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="81H-82-4cX"/>
-                <constraint firstAttribute="trailing" secondItem="5A1-Nn-yyC" secondAttribute="trailing" constant="30" id="CyO-j0-g8k"/>
+                <constraint firstAttribute="trailing" secondItem="5A1-Nn-yyC" secondAttribute="trailing" id="CyO-j0-g8k"/>
                 <constraint firstItem="nUO-Ht-yKw" firstAttribute="top" secondItem="rEB-xU-CKF" secondAttribute="bottom" multiplier="1.1" id="FZ2-nw-tw7"/>
                 <constraint firstItem="nUO-Ht-yKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="1:20" id="Mbh-98-c50"/>
                 <constraint firstItem="5A1-Nn-yyC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="2:3" id="PW8-5l-EpI"/>
-                <constraint firstItem="5A1-Nn-yyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="WhP-Vr-3e4"/>
+                <constraint firstItem="5A1-Nn-yyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WhP-Vr-3e4"/>
                 <constraint firstItem="lfr-Oq-d5N" firstAttribute="top" secondItem="Tic-sc-646" secondAttribute="top" multiplier="1.75" id="Yo6-xf-OyO"/>
                 <constraint firstItem="lfr-Oq-d5N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="aG0-qI-Jqc"/>
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="e74-wb-5cx"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="1:8" id="fg4-ym-td7"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="1:20" id="jDk-Tf-av0"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="1:8" id="oBg-jY-CbP"/>
-                <constraint firstAttribute="bottom" secondItem="5A1-Nn-yyC" secondAttribute="bottom" constant="30" id="sHK-dd-Vcr"/>
+                <constraint firstAttribute="bottom" secondItem="5A1-Nn-yyC" secondAttribute="bottom" constant="50" id="sHK-dd-Vcr"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="tUf-hm-g05"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="zcu-dI-FQt"/>
             </constraints>

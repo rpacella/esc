@@ -17,10 +17,15 @@ class EventViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let itineraryImage = UIImage(named: "backItinerary")
+        let button = UIBarButtonItem(image: itineraryImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.goBack))
+        self.navigationItem.leftBarButtonItem = button
         
-        
-        let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: nil)
-//        navigationItem.setLeftBarButtonItem  = backbutton
+    }
+    
+    func goBack()
+    {
+        self.navigationController?.popViewControllerAnimated(true)
     }
     
 

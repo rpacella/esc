@@ -16,8 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ME-73-Ag2">
-                    <rect key="frame" x="246" y="88" width="108" height="33"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ME-73-Ag2">
+                    <rect key="frame" x="256" y="85" width="88" height="26"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="88" id="9FO-rd-q8l"/>
                     </constraints>
@@ -27,8 +27,8 @@
                         <action selector="regenerateItinerary:" destination="-1" eventType="touchUpInside" id="B8E-xf-Lgh"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-Da-mPa">
-                    <rect key="frame" x="211" y="567" width="179" height="33"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-Da-mPa">
+                    <rect key="frame" x="237" y="524" width="127" height="26"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="127" id="cBT-CR-b4E"/>
                     </constraints>
@@ -38,12 +38,12 @@
                         <action selector="saveItinerary:" destination="-1" eventType="touchUpInside" id="guU-t8-N0r"/>
                     </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0HM-ya-vPH">
-                    <rect key="frame" x="0.0" y="121" width="600" height="446"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0HM-ya-vPH">
+                    <rect key="frame" x="0.0" y="111" width="600" height="413"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Regenerate for new activities." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-8k-Jkl">
-                    <rect key="frame" x="175" y="70" width="246" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regenerate for new activities." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-8k-Jkl">
+                    <rect key="frame" x="175" y="70" width="250" height="15"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="250" id="ZxZ-7K-Zo5"/>
                     </constraints>
@@ -61,8 +61,8 @@
                 <constraint firstItem="0HM-ya-vPH" firstAttribute="top" secondItem="7ME-73-Ag2" secondAttribute="bottom" id="MCz-W3-7uM"/>
                 <constraint firstItem="7ME-73-Ag2" firstAttribute="top" secondItem="hVt-8k-Jkl" secondAttribute="bottom" id="Qxl-I4-vu6"/>
                 <constraint firstItem="0HM-ya-vPH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WIO-2w-CaR"/>
-                <constraint firstAttribute="bottom" secondItem="IIu-Da-mPa" secondAttribute="bottom" id="cE5-od-hUC"/>
                 <constraint firstAttribute="trailing" secondItem="0HM-ya-vPH" secondAttribute="trailing" id="mRH-66-FuM"/>
+                <constraint firstAttribute="bottom" secondItem="IIu-Da-mPa" secondAttribute="bottom" constant="50" id="olg-MR-uwt"/>
                 <constraint firstItem="IIu-Da-mPa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sJp-0B-BMy"/>
             </constraints>
         </view>

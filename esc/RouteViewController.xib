@@ -3,14 +3,12 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RouteViewController" customModule="esc" customModuleProvider="target">
             <connections>
-                <outlet property="mapView" destination="lEH-mg-6Id" id="1Pb-EW-Yza"/>
-                <outlet property="tableView" destination="AbK-9J-fqJ" id="52F-V0-ZnX"/>
+                <outlet property="mapView" destination="drC-62-2xu" id="ccR-2F-7sH"/>
+                <outlet property="tableView" destination="0Cx-Wb-CQv" id="oO0-AC-n7H"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,31 +17,29 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n2z-lL-RMU">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                    <subviews>
-                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lEH-mg-6Id">
-                            <rect key="frame" x="0.0" y="48" width="600" height="352"/>
-                        </mapView>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AbK-9J-fqJ">
-                            <rect key="frame" x="0.0" y="400" width="600" height="200"/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </tableView>
-                    </subviews>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n2z-lL-RMU">
+                    <rect key="frame" x="-59" y="78" width="69" height="87"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstItem="AbK-9J-fqJ" firstAttribute="bottom" secondItem="n2z-lL-RMU" secondAttribute="bottomMargin" id="1CK-mm-HNs"/>
-                        <constraint firstItem="AbK-9J-fqJ" firstAttribute="top" secondItem="lEH-mg-6Id" secondAttribute="bottom" id="5Tv-Vt-jgp"/>
-                        <constraint firstAttribute="trailingMargin" secondItem="AbK-9J-fqJ" secondAttribute="trailing" id="7hf-dK-DVO"/>
-                        <constraint firstAttribute="bottom" secondItem="lEH-mg-6Id" secondAttribute="bottom" multiplier="1.5" id="FvR-SZ-T8t"/>
-                        <constraint firstItem="lEH-mg-6Id" firstAttribute="leading" secondItem="n2z-lL-RMU" secondAttribute="leadingMargin" id="SKF-SU-fcE"/>
-                        <constraint firstAttribute="trailingMargin" secondItem="lEH-mg-6Id" secondAttribute="trailing" id="fRp-1N-6GS"/>
-                        <constraint firstItem="lEH-mg-6Id" firstAttribute="top" secondItem="n2z-lL-RMU" secondAttribute="topMargin" constant="40" id="lV6-kw-8hK"/>
-                        <constraint firstItem="AbK-9J-fqJ" firstAttribute="leading" secondItem="n2z-lL-RMU" secondAttribute="leadingMargin" id="qMR-oV-id0"/>
-                    </constraints>
                 </view>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="drC-62-2xu">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="350"/>
+                </mapView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Cx-Wb-CQv">
+                    <rect key="frame" x="0.0" y="350" width="600" height="250"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0Cx-Wb-CQv" secondAttribute="bottom" id="5uh-fL-tPG"/>
+                <constraint firstAttribute="bottom" secondItem="drC-62-2xu" secondAttribute="bottom" constant="250" id="CKR-lE-Lls"/>
+                <constraint firstItem="drC-62-2xu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="E4Y-H5-T12"/>
+                <constraint firstItem="0Cx-Wb-CQv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IQR-hp-k4G"/>
+                <constraint firstItem="0Cx-Wb-CQv" firstAttribute="top" secondItem="drC-62-2xu" secondAttribute="bottom" id="TXc-9p-Hk7"/>
+                <constraint firstItem="drC-62-2xu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="arZ-5G-LWT"/>
+                <constraint firstAttribute="trailing" secondItem="drC-62-2xu" secondAttribute="trailing" id="ft4-d8-XaU"/>
+                <constraint firstAttribute="trailing" secondItem="0Cx-Wb-CQv" secondAttribute="trailing" id="zBk-qp-se3"/>
+            </constraints>
         </view>
     </objects>
 </document>

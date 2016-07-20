@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class CategoriesViewController: UIViewController, WebService, CLLocationManagerDelegate {
+class CategoriesViewController: UIViewController, CLLocationManagerDelegate { //, WebService {
     
     // need background image?
 
@@ -85,41 +85,41 @@ class CategoriesViewController: UIViewController, WebService, CLLocationManagerD
         let lat = ["lat":self.latitude]
         
         // make post request with these fields and the location
-        let request = createMutableAnonRequest(NSURL(string: "http://ec2-52-33-4-120.us-west-2.compute.amazonaws.com:8000/hello"), method: "POST", parameters: subtypes, long, lat)
-        
-        executeRequest(request, requestCompletionFunction: {(responseCode, json) in
-            
-            if (responseCode/100 == 2)   {
-                
-                print(json)
-                
-                /*var eventList = [Event]()
-                
-                for event in json.arrayValue {
-                    
-                    let newEvent = Event()
-                    //newEvent.image
-                    //newEvent.title
-                    //newEvent.location
-                    //newEvent.description
-                    //newEvent.tags
-                    //newEvent.starttime
-                    //newEvent.endtime
-                    
-                    eventList.append(newEvent)
-                    
-                }
-                
-                onCompletion(list,nil)*/
-            }
-            /*else {
-                //the web service to create a user failed. Lets extract the error message to be displayed
-                let errorMessage = json["errors"]["full_messages"][0].stringValue
-                print(errorMessage)
-                //execute the closure in the ViewController
-                onCompletion(nil,errorMessage)
-            }*/
-        })
+//        let request = createMutableAnonRequest(NSURL(string: "http://ec2-52-33-4-120.us-west-2.compute.amazonaws.com:8000/hello"), method: "POST", parameters: subtypes, long, lat)
+//        
+//        executeRequest(request, requestCompletionFunction: {(responseCode, json) in
+//            
+//            if (responseCode/100 == 2)   {
+//                
+//                print(json)
+//                
+//                /*var eventList = [Event]()
+//                
+//                for event in json.arrayValue {
+//                    
+//                    let newEvent = Event()
+//                    //newEvent.image
+//                    //newEvent.title
+//                    //newEvent.location
+//                    //newEvent.description
+//                    //newEvent.tags
+//                    //newEvent.starttime
+//                    //newEvent.endtime
+//                    
+//                    eventList.append(newEvent)
+//                    
+//                }
+//                
+//                onCompletion(list,nil)*/
+//            }
+//            /*else {
+//                //the web service to create a user failed. Lets extract the error message to be displayed
+//                let errorMessage = json["errors"]["full_messages"][0].stringValue
+//                print(errorMessage)
+//                //execute the closure in the ViewController
+//                onCompletion(nil,errorMessage)
+//            }*/
+//        })
         
         let itineraryViewController = ItineraryViewController(nibName: "ItineraryViewController", bundle: nil)
         

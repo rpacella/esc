@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        navigationController?.navigationBarHidden = true
+//        navigationController?.navigationBarHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,8 +39,8 @@ class LoginViewController: UIViewController {
 //        let planDay = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
 //        let tab = UITabBarController()
 //        tab.viewControllers = [userTripsViewController, planDay]
-        let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
-        self.presentViewController(userTripsViewController, animated: true, completion: nil)
+//        let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
+        self.presentViewController(tabBarController!, animated: true, completion: nil)
     }
  
     @IBAction func registerButtonPressed(sender: AnyObject) {

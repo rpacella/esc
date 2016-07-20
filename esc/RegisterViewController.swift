@@ -41,8 +41,7 @@ class RegisterViewController: UIViewController {
 //        tab.viewControllers = [userTripsViewController, planDay]
 
         
-        self.presentViewController(userTripsViewController, animated: true, completion: nil)
-//        navigationController?.pushViewController(tab, animated: true)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     @IBAction func signInButtonPressed(sender: AnyObject) {

@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-let backImage = UIImage(named: "backArrow")
+let backImage = UIImage(named: "backCapeTown")
 
 class TripListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -40,16 +40,15 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
             NSFontAttributeName: UIFont(name: "Hiragino Sans W6", size: 22.0)!,
             NSForegroundColorAttributeName: UIColor.blackColor()],
                                            forState: UIControlState.Normal)
-        
         let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
-        let cityName = "Cape Town, South Africa"
-        let backText = UIBarButtonItem(title: cityName, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
-        backText.tintColor = UIColor.blackColor()
-        backText.setTitleTextAttributes([
-            NSFontAttributeName: UIFont(name: "Hiragino Sans W3", size: 13.0)!,
-            NSForegroundColorAttributeName: UIColor.blackColor()], forState: UIControlState.Normal)
-        
-        navigationItem.setLeftBarButtonItems([backbutton, backText], animated: false)
+//        let cityName = "Cape Town, South Africa"
+//        let backText = UIBarButtonItem(title: cityName, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
+//        backText.tintColor = UIColor.blackColor()
+//        backText.setTitleTextAttributes([
+//            NSFontAttributeName: UIFont(name: "Hiragino Sans W3", size: 15.0)!,
+//            NSForegroundColorAttributeName: UIColor.blackColor()], forState: UIControlState.Normal)
+//        
+        navigationItem.leftBarButtonItem = backbutton
         navigationItem.setRightBarButtonItems([routeButton, listLabel], animated: true)
         
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
@@ -60,10 +59,9 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     func backAction() {
+        
         let cityView = CityTripViewController(nibName: "CityTripView", bundle: nil)
-        self.navigationController?.popViewControllerAnimated(true)
-        //pushViewController(cityView, animated: true)
-//        cityView.navigationItem.hidesBackButton = true
+        self.navigationController?.pushViewController(cityView, animated: true)
     }
     
     func routeAction() {

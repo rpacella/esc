@@ -24,28 +24,15 @@ class UserTripsViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.dataSource = self
         navigationController?.navigationBarHidden = true
 //        
-//        let registerViewController = RegisterViewController(nibName: "RegisterView", bundle: nil)
+        let registerViewController = RegisterViewController(nibName: "RegisterView", bundle: nil)
 ////  if not logged in:
-//        self.presentViewController(registerViewController, animated: false, completion: nil)
-//        let application = UIApplication.sharedApplication()
+        self.presentViewController(registerViewController, animated: false, completion: nil)
+        let application = UIApplication.sharedApplication()
 //        let window = application.keyWindow
 //        window?.rootViewController = registerViewController
 
-        let backImage = UIImage(named: "backArrow")
-        let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: nil)
-//        navigationItem.leftBarButtonItem = backbutton
-//        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
-//        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
-        
         tabBarItem.title = "Trips"
         
-//        let tabBarController = UITabBarController()
-//        let addTrip = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
-//        let profile = UserTripsViewController(nibName: "TripListView", bundle: nil)
-//        tabBarController.viewControllers = [addTrip, profile]
-//        let application = UIApplication.sharedApplication()
-//        let window = application.keyWindow
-//        window?.rootViewController = tabBarController
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -59,14 +46,6 @@ class UserTripsViewController: UIViewController, UITableViewDelegate, UITableVie
         let cityTripViewController = CityTripViewController(nibName: "CityTripView", bundle: nil)
         self.navigationController?.pushViewController(cityTripViewController, animated: true)
     }
-//    func backButtonClicked() {
-//        
-//        let userProf = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
-//        
-//        navigationController?.pushViewController(userProf, animated: true)
-//        
-//    }
-
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5

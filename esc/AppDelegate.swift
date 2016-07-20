@@ -17,18 +17,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let tabBar = UITabBarController()
+        let tabBarController = UITabBarController()
         
         let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
-        let planDayViewController = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
+        let searchViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)
 
         let userNavCon = UINavigationController(rootViewController: userTripsViewController)
-        let newTripNavCon = UINavigationController(rootViewController: planDayViewController)
+        let newTripNavCon = UINavigationController(rootViewController: searchViewController)
+        let searchPage = LoginViewController(nibName: "LoginView", bundle: nil)
         
         
-        tabBar.viewControllers = [userNavCon, newTripNavCon]
+        let newEntry = UIImage(named: "newentry")
+        let icon1 = UITabBarItem(title: "", image: newEntry, tag: 1)
+        newTripNavCon.tabBarItem = icon1
+        
+        let userpic = UIImage(named: "tab2")
+        let icon2 = UITabBarItem(title: "", image: userpic, tag: 2)
+        userNavCon.tabBarItem = icon2
+        
+        let searchpic = UIImage(named: "searchpic")
+        let icon3 = UITabBarItem(title: "", image: searchpic, tag: 3)
+        searchPage.tabBarItem = icon3
+        
+        tabBarController.tabBar.tintColor = UIColor.redColor()
+        
+        tabBarController.viewControllers = [searchPage, newTripNavCon, userNavCon]
+        tabBarController.selectedIndex = 2
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = tabBar
+        self.window?.rootViewController = tabBarController
         self.window?.makeKeyAndVisible()
         
         return true

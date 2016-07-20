@@ -19,8 +19,10 @@ class PlanDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBarItem.title = "New Trip"
-        navigationController?.navigationBarHidden = true
+        navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+
         configureButton(AllDayPlan)
         configureButton(MorningPlan)
         configureButton(AfternoonPlan)
