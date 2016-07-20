@@ -35,13 +35,21 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonPressed(sender: AnyObject) {
-         let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
-        navigationController?.pushViewController(userTripsViewController, animated: true)
+        let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
+//        let planDay = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
+//        let tab = UITabBarController()
+//        tab.viewControllers = [userTripsViewController, planDay]
+
+        
+        self.presentViewController(userTripsViewController, animated: true, completion: nil)
+//        navigationController?.pushViewController(tab, animated: true)
     }
     
     @IBAction func signInButtonPressed(sender: AnyObject) {
          let loginViewController = LoginViewController(nibName: "LoginView", bundle: nil)
-        navigationController?.pushViewController(loginViewController, animated: true)
+        
+        self.presentViewController(loginViewController, animated: true, completion: nil)
+//        navigationController?.pushViewController(loginViewController, animated: true)
     }
    
     

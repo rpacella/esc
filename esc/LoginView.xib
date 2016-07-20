@@ -30,7 +30,7 @@
                     </constraints>
                     <state key="normal" title="Register."/>
                     <connections>
-                        <action selector="registerButtonPressed:" destination="-1" eventType="touchUpInside" id="p5f-qQ-VzR"/>
+                        <action selector="registerButtonPressed:" destination="-1" eventType="touchUpInside" id="Map-ey-yUr"/>
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E5w-Am-4b8" userLabel="logoImage">
@@ -64,7 +64,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="Sign in."/>
                     <connections>
-                        <action selector="signInButtonPressed:" destination="-1" eventType="touchUpInside" id="vFe-78-Rkr"/>
+                        <action selector="signInButtonPressed:" destination="-1" eventType="touchUpInside" id="AeY-Jj-Iaz"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to make an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsa-0g-SBQ">

@@ -21,26 +21,18 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         tableView.registerNib(UINib(nibName: "DayV1Cell", bundle: nil), forCellReuseIdentifier: "day1cell")
         
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add , target: self, action: #selector(addButtonClicked))
-        self.navigationItem.rightBarButtonItem = addButton
         let backImage = UIImage(named: "backArrow")
-
+        let backButton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(backButtonClicked))
+        self.navigationItem.leftBarButtonItem = backButton
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.blackColor()
+        
+        let cityName = "Cape Town, South Africa" // get name from data array
+        self.navigationItem.title = cityName
 }
     
-    func addButtonClicked() {
-        
-        let planDayViewController = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
-        
-        navigationController?.pushViewController(planDayViewController, animated: true)
-        
-    }
-    
     func backButtonClicked() {
-        
-        let userProf = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
-        
-        navigationController?.pushViewController(userProf, animated: true)
-        
+        navigationController?.popViewControllerAnimated(true)
+        navigationController?.navigationBarHidden = true
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -65,7 +57,7 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         return cell!
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         //calulation to see how many days there are in NSCoding file
@@ -73,14 +65,14 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
          return CityTripDaysArray.count
          */
         
-        return 2
+        return 1
     }
     
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         //push to itenerary for day
         //decode itenerary for day
         let tripListViewController = TripListViewController(nibName: "TripListViewController", bundle: nil)
-        navigationController?.pushViewController(tripListViewController, animated: true)
+self.navigationController?.pushViewController(tripListViewController, animated: true)
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
