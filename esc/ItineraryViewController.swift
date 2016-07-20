@@ -96,13 +96,26 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     @IBAction func saveItinerary(sender: UIButton) {
-        // save trip with NSCoding
+        
         // go to TripViewListController
         print("saved trip to database")
+        
+        // encode the trip
+        // let newTrip = Trip(eventList: eventList)
+        
+        // TripController.sharedInstance.currentTrips.append(newTrip)
+        // let manager = NSFileManager.defaultManager()
+        // let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+        // let fileURL = documents.URLByAppendingPathComponent(newTrip.ID.UUIDString)
+        
+        // NSKeyedArchiver.archiveRootObject(newTrip, toFile: fileURL.path!)
         
         let tripListViewController = TripListViewController(nibName: "TripListViewController", bundle: nil)
         
         navigationController?.pushViewController(tripListViewController, animated: true)
+        
+       
+        
     }
 
 }

@@ -10,8 +10,6 @@ import UIKit
 
 class CityTripViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    // need add button to present PlanDayViewController
-
     @IBOutlet weak var tableView: UITableView!
     
     
@@ -67,8 +65,36 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         return cell!
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        
+        //TripController.sharedInstance.currentTrips.count
+        
+        return 3
+        
     }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            
+            let removed = TripController.sharedInstance.currentTrips.removeAtIndex(indexPath.row)
+            
+            tableView.reloadData()
+            
+            let manager = NSFileManager.defaultManager()
+            let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+            let fileURL = documents.URLByAppendingPathComponent(removed.ID.UUIDString)
+            
+            do {
+                try NSFileManager.defaultManager().removeItemAtPath(fileURL.path!)
+            } catch {
+                print("cannot remove file")
+            }
+            
+        }
+        
+    }
+    
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         //calulation to see how many days there are in NSCoding file
         /*
@@ -81,6 +107,10 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         //push to itenerary for day
         //decode itenerary for day
+        let selectedTrip = TripController.sharedInstance.currentTrips[indexPath.row]
+        
+        // you can use selectedTrip to populate the table view of tripListViewController
+        
         let tripListViewController = TripListViewController(nibName: "TripListViewController", bundle: nil)
 self.navigationController?.pushViewController(tripListViewController, animated: true)
     }

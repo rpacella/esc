@@ -9,9 +9,8 @@
 import UIKit
 import MapKit
 
-class Trip: NSObject {
-    static var sharedInstance = Trip.self
-    
+class Trip: NSObject,  NSCoding {
+   static var sharedInstance = Trip.self 
     var eventList: [Event]
 //    var ID: NSUUID
     

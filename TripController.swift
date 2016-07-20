@@ -6,30 +6,30 @@
 //  Copyright © 2016 Escape. All rights reserved.
 //
 //
-//import UIKit
-//
-//class TripController {
 //    
-//    static var sharedInstance = TripEntryController()
-//    var currentTrips = [Trip]()
-//    
-//    private init(){
-//        
-//        let manager = NSFileManager.defaultManager()
-//        let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
-//        
-//        do {
-//            let availableTrips = try manager.contentsOfDirectoryAtURL(documents, includingPropertiesForKeys: nil, options: [])
-//            for aTrip in availableTrips {
-//                if let trip = NSKeyedUnarchiver.unarchiveObjectWithFile(file.path!) as? Trip {
-//                    currentTrips.append(trip)
-//                }
-//            }
-//            
-//        }
-//        catch {
-//            // do nothing
-//        }
-//    }
-//    
-//}
+import UIKit    
+class TripController {
+    
+    static var sharedInstance = TripController()
+    var currentTrips = [Trip]()
+    
+    private init(){
+        
+        let manager = NSFileManager.defaultManager()
+        let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+        
+        do {
+            let availableTrips = try manager.contentsOfDirectoryAtURL(documents, includingPropertiesForKeys: nil, options: [])
+            for aTrip in availableTrips {
+                if let trip = NSKeyedUnarchiver.unarchiveObjectWithFile(aTrip.path!) as? Trip {
+                    currentTrips.append(trip)
+                }
+            }
+            
+        }
+        catch {
+            // do nothing
+        }
+    }
+    
+}

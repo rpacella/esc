@@ -15,8 +15,8 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
 
     // might want to change this representation
     var timeSpan: Int?
-    var latitude: Double?
-    var longitude: Double?
+    var latitude: String?
+    var longitude: String?
     
     var locationManager = CLLocationManager()
     
@@ -63,17 +63,17 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
                     
                     switch item.tag {
                     case 0:
-                        categoriesArray += ["entertainment"]
+                        categoriesArray += ["entertain"]
                     case 1:
-                        categoriesArray += ["museum"]
+                        categoriesArray += ["museums"]
                     case 2:
-                        categoriesArray += ["outdoors"]
+                        categoriesArray += ["outdoor"]
                     case 3:
                         categoriesArray += ["nightlife"]
                     case 4:
                         categoriesArray += ["shopping"]
-                    case 5:
-                        categoriesArray += ["dining"]
+                   // case 5:
+                        //categoriesArray += ["dining"]
                     default:
                         break
                     }
@@ -121,6 +121,9 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
 //                onCompletion(nil,errorMessage)
 //            }*/
 //        })
+        // other options: sightsee, relax, tour
+        
+        let eventList = GenerateItineraryController.sharedInstance.generateItinerary(categoriesArray, long: self.longitude!, lat: self.latitude!)
         
         let itineraryViewController = ItineraryViewController(nibName: "ItineraryViewController", bundle: nil)
         
@@ -159,8 +162,8 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
         
         let location = locations.last
         
-        self.latitude = Double((location?.coordinate.latitude)!)
-        self.longitude = Double((location?.coordinate.longitude)!)
+        self.latitude = String((location?.coordinate.latitude))
+        self.longitude = String((location?.coordinate.longitude))
         
     }
     
