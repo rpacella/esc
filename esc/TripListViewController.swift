@@ -60,9 +60,10 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     func backAction() {
-        let cityView = CityTripViewController (nibName: "CityTripView", bundle: nil)
-        self.navigationController?.pushViewController(cityView, animated: true)
-        cityView.navigationItem.hidesBackButton = true
+        let cityView = CityTripViewController(nibName: "CityTripView", bundle: nil)
+        self.navigationController?.popViewControllerAnimated(true)
+        //pushViewController(cityView, animated: true)
+//        cityView.navigationItem.hidesBackButton = true
     }
     
     func routeAction() {

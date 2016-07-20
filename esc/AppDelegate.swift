@@ -17,10 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let registerViewController = RegisterViewController (nibName: "RegisterView", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: registerViewController)
+        let tabBar = UITabBarController()
+        
+        let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
+        let planDayViewController = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
+
+        let userNavCon = UINavigationController(rootViewController: userTripsViewController)
+        let newTripNavCon = UINavigationController(rootViewController: planDayViewController)
+        
+        
+        tabBar.viewControllers = [userNavCon, newTripNavCon]
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = navigationController
+        self.window?.rootViewController = tabBar
         self.window?.makeKeyAndVisible()
         
         return true

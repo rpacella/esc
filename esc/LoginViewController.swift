@@ -35,12 +35,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signInButtonPressed(sender: AnyObject) {
+//        let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
+//        let planDay = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
+//        let tab = UITabBarController()
+//        tab.viewControllers = [userTripsViewController, planDay]
         let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
-        navigationController?.pushViewController(userTripsViewController, animated: true)
+        self.presentViewController(userTripsViewController, animated: true, completion: nil)
     }
  
     @IBAction func registerButtonPressed(sender: AnyObject) {
-        navigationController?.popViewControllerAnimated(true)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 }
