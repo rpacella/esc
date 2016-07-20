@@ -30,6 +30,7 @@
 		4E914A671D3FA5AF0042CD42 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A661D3FA5AF0042CD42 /* Event.swift */; };
 		4E914A691D3FAA2B0042CD42 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A681D3FAA2B0042CD42 /* Trip.swift */; };
 		4E914A6B1D3FAC1F0042CD42 /* TripController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A6A1D3FAC1F0042CD42 /* TripController.swift */; };
+		4E914A901D3FC8F10042CD42 /* GenerateItineraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E914A8F1D3FC8F10042CD42 /* GenerateItineraryController.swift */; };
 		BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */; };
 		BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7001D3D063B00A24F10 /* Assets.xcassets */; };
 		BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */; };
@@ -70,6 +71,7 @@
 		4E914A661D3FA5AF0042CD42 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		4E914A681D3FAA2B0042CD42 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		4E914A6A1D3FAC1F0042CD42 /* TripController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripController.swift; sourceTree = "<group>"; };
+		4E914A8F1D3FC8F10042CD42 /* GenerateItineraryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateItineraryController.swift; sourceTree = "<group>"; };
 		84C9FBE407E9E39BFE3EA3DD /* Pods-esc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-esc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-esc/Pods-esc.debug.xcconfig"; sourceTree = "<group>"; };
 		A1FAF02657BC0A4236C09BFA /* Pods_esc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_esc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE4A6F61D3D063B00A24F10 /* esc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				4E914A661D3FA5AF0042CD42 /* Event.swift */,
-				4E914A621D3FA3720042CD42 /* WebService.swift */,
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
@@ -162,7 +163,9 @@
 				36A08B0F1D3F910300E39127 /* SearchViewController.swift */,
 				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
 				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
+				4E914A621D3FA3720042CD42 /* WebService.swift */,
 				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
+				4E914A8F1D3FC8F10042CD42 /* GenerateItineraryController.swift */,
 				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
 				4E914A681D3FAA2B0042CD42 /* Trip.swift */,
 				4E914A6A1D3FAC1F0042CD42 /* TripController.swift */,
@@ -355,6 +358,7 @@
 				4E914A671D3FA5AF0042CD42 /* Event.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
 				36A08B111D3F910300E39127 /* SearchViewController.swift in Sources */,
+				4E914A901D3FC8F10042CD42 /* GenerateItineraryController.swift in Sources */,
 				36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */,
 				BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */,
 				BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */,

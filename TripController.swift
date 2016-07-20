@@ -10,7 +10,7 @@ import UIKit
 
 class TripController {
     
-    static var sharedInstance = TripEntryController()
+    static var sharedInstance = TripController()
     var currentTrips = [Trip]()
     
     private init(){
@@ -21,7 +21,7 @@ class TripController {
         do {
             let availableTrips = try manager.contentsOfDirectoryAtURL(documents, includingPropertiesForKeys: nil, options: [])
             for aTrip in availableTrips {
-                if let trip = NSKeyedUnarchiver.unarchiveObjectWithFile(file.path!) as? Trip {
+                if let trip = NSKeyedUnarchiver.unarchiveObjectWithFile(aTrip.path!) as? Trip {
                     currentTrips.append(trip)
                 }
             }

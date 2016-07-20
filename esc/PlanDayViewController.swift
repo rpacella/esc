@@ -20,7 +20,7 @@ class PlanDayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBarItem.title = "New Trip"
-        navigationController?.navigationBarHidden = true
+        navigationController?.navigationBarHidden = false
         configureButton(AllDayPlan)
         configureButton(MorningPlan)
         configureButton(AfternoonPlan)

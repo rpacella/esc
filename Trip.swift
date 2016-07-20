@@ -8,31 +8,27 @@
 
 import UIKit
 
-class Trip: NSCoding {
+class Trip: NSObject,  NSCoding {
     
     var eventList: [Event]
     var ID: NSUUID
     
     init(eventList: [Event]) {
         
-        self.evenList = eventList
+        self.eventList = eventList
         self.ID = NSUUID()
         
     }
     
     required init?(coder: NSCoder) {
-        
-        eventList = (coder.decodeObjectForKey("eventList") as? Event) ?? Event()
-        
+        eventList = (coder.decodeObjectForKey("eventList") as? [Event]) ?? [Event]()
         ID = (coder.decodeObjectForKey("ID") as? NSUUID) ?? NSUUID()
-        
     }
     
-    func encodeWithCoder(aCoder: NSCoder) {
+    func encodeWithCoder(coder: NSCoder) {
         
-        aCoder.encodeObject(evenList, forKey: "eventList")
-        
-        aCoder.encodeObject(ID, forKey: "ID")
+        coder.encodeObject(eventList, forKey: "eventList")
+        coder.encodeObject(ID, forKey: "ID")
         
     }
 
