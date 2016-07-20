@@ -19,17 +19,17 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" alpha="0.80000000000000004" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mtfuji" translatesAutoresizingMaskIntoConstraints="NO" id="sKs-Nq-LS6">
-                    <rect key="frame" x="16" y="16" width="568" height="568"/>
+                <imageView userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mtfuji" translatesAutoresizingMaskIntoConstraints="NO" id="sKs-Nq-LS6">
+                    <rect key="frame" x="8" y="8" width="584" height="584"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What would you like to do?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se6-EE-Fmo">
-                    <rect key="frame" x="198" y="110" width="205" height="21"/>
+                    <rect key="frame" x="173" y="81" width="256" height="19"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
-                    <color key="textColor" red="0.99278479809999998" green="0.9959403872" blue="0.99582940340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdj-jv-PwT" userLabel="E">
@@ -98,40 +98,40 @@
                         <action selector="tick:" destination="-1" eventType="touchUpInside" id="hHI-ul-be0"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Entertainment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmi-zI-2a3">
-                    <rect key="frame" x="250" y="170" width="108" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entertainment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmi-zI-2a3">
+                    <rect key="frame" x="250" y="172" width="120" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                    <color key="textColor" red="0.99278479809999998" green="0.9959403872" blue="0.99582940340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Museum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11y-p1-LHU">
-                    <rect key="frame" x="250" y="200" width="66" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Museum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11y-p1-LHU">
+                    <rect key="frame" x="250" y="202" width="73" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                    <color key="textColor" red="0.99278479809999998" green="0.9959403872" blue="0.99582940340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Outdoors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHf-MW-Jcb">
-                    <rect key="frame" x="250" y="230" width="72" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outdoors" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHf-MW-Jcb">
+                    <rect key="frame" x="250" y="232" width="80" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                    <color key="textColor" red="0.99278479809999998" green="0.9959403872" blue="0.99582940340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nightlife" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-yF-tJp">
-                    <rect key="frame" x="250" y="260" width="64" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nightlife" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-yF-tJp">
+                    <rect key="frame" x="250" y="262" width="71" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                    <color key="textColor" red="0.99278479809999998" green="0.9959403872" blue="0.99582940340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shopping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Een-bB-T6o">
-                    <rect key="frame" x="250" y="290" width="74" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Een-bB-T6o">
+                    <rect key="frame" x="250" y="292" width="80" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                    <color key="textColor" red="0.99278479809999998" green="0.9959403872" blue="0.99582940340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocO-Bn-uvu">
-                    <rect key="frame" x="250" y="320" width="49" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dining" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocO-Bn-uvu">
+                    <rect key="frame" x="250" y="322" width="53" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                    <color key="textColor" red="0.99278479809999998" green="0.9959403872" blue="0.99582940340000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -140,28 +140,28 @@
                 <constraint firstItem="cmi-zI-2a3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.6" id="1G8-a4-L5v"/>
                 <constraint firstItem="EMi-Jq-uQD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5CJ-TZ-dEE"/>
                 <constraint firstItem="11y-p1-LHU" firstAttribute="leading" secondItem="HZl-3r-hgp" secondAttribute="trailing" constant="30" id="B7M-nv-Hlh"/>
-                <constraint firstAttribute="bottomMargin" secondItem="sKs-Nq-LS6" secondAttribute="bottom" constant="8" id="Bzi-t8-9MC"/>
-                <constraint firstItem="Se6-EE-Fmo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.4" id="COp-F8-Vsl"/>
+                <constraint firstItem="Se6-EE-Fmo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.3" id="COp-F8-Vsl"/>
                 <constraint firstItem="rdj-jv-PwT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.7" id="Gk3-we-tRp"/>
                 <constraint firstItem="M1a-R6-S5W" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.7" id="Gxc-dh-Y6A"/>
                 <constraint firstItem="xqr-Mr-b80" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.9" id="IXV-I4-1kU"/>
                 <constraint firstItem="Een-bB-T6o" firstAttribute="leading" secondItem="M1a-R6-S5W" secondAttribute="trailing" constant="30" id="J1d-7Q-gqc"/>
                 <constraint firstItem="cmi-zI-2a3" firstAttribute="leading" secondItem="rdj-jv-PwT" secondAttribute="trailing" constant="30" id="J6Y-F0-63S"/>
+                <constraint firstAttribute="bottomMargin" secondItem="sKs-Nq-LS6" secondAttribute="bottom" id="MIf-eb-jb0"/>
                 <constraint firstItem="aHf-MW-Jcb" firstAttribute="leading" secondItem="xqr-Mr-b80" secondAttribute="trailing" constant="30" id="N0H-br-Ppk"/>
                 <constraint firstItem="Xr4-C8-MM5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.7" id="NkB-bs-T9k"/>
                 <constraint firstItem="11y-p1-LHU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.7" id="NpQ-rz-zdS"/>
                 <constraint firstItem="Xr4-C8-MM5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.7" id="RL2-lN-2MA"/>
-                <constraint firstItem="sKs-Nq-LS6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="8" id="So1-AG-DxS"/>
                 <constraint firstItem="rdj-jv-PwT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.6" id="Ubf-on-G97"/>
                 <constraint firstItem="aHf-MW-Jcb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="Udb-UX-sTx"/>
                 <constraint firstItem="HZl-3r-hgp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.7" id="VZb-GC-QSk"/>
+                <constraint firstAttribute="trailingMargin" secondItem="sKs-Nq-LS6" secondAttribute="trailing" id="ZPn-D5-TKz"/>
+                <constraint firstItem="sKs-Nq-LS6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="cOK-Nu-RNG"/>
                 <constraint firstItem="ocO-Bn-uvu" firstAttribute="leading" secondItem="M1a-R6-S5W" secondAttribute="trailing" constant="30" id="ciB-xG-btn"/>
-                <constraint firstAttribute="trailingMargin" secondItem="sKs-Nq-LS6" secondAttribute="trailing" constant="8" id="dKL-5F-6FN"/>
                 <constraint firstItem="Cc4-yF-tJp" firstAttribute="leading" secondItem="EMi-Jq-uQD" secondAttribute="trailing" constant="30" id="dN6-ft-GRl"/>
+                <constraint firstItem="sKs-Nq-LS6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="dZV-Ab-mrC"/>
                 <constraint firstItem="EMi-Jq-uQD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.7" id="kMJ-Gc-CCB"/>
                 <constraint firstItem="ocO-Bn-uvu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.1" id="npQ-Bf-lse"/>
                 <constraint firstItem="xqr-Mr-b80" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" multiplier="0.7" id="oxV-QD-JPe"/>
-                <constraint firstItem="sKs-Nq-LS6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="8" id="pWs-cB-8RP"/>
                 <constraint firstItem="HZl-3r-hgp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="plv-C5-HFE"/>
                 <constraint firstItem="Cc4-yF-tJp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.9" id="tv7-x7-x8i"/>
                 <constraint firstItem="M1a-R6-S5W" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.1" id="uaI-FO-8Cb"/>
@@ -171,6 +171,6 @@
         </view>
     </objects>
     <resources>
-        <image name="mtfuji" width="820" height="525"/>
+        <image name="mtfuji" width="476" height="525"/>
     </resources>
 </document>
