@@ -22,16 +22,24 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.registerNib(UINib(nibName: "DayV1Cell", bundle: nil), forCellReuseIdentifier: "day1cell")
         
         let addButton = UIBarButtonItem(barButtonSystemItem: .Add , target: self, action: #selector(addButtonClicked))
-        
         self.navigationItem.rightBarButtonItem = addButton
+        let backImage = UIImage(named: "backArrow")
 
-    }
+}
     
     func addButtonClicked() {
         
         let planDayViewController = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
         
         navigationController?.pushViewController(planDayViewController, animated: true)
+        
+    }
+    
+    func backButtonClicked() {
+        
+        let userProf = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
+        
+        navigationController?.pushViewController(userProf, animated: true)
         
     }
     

@@ -42,10 +42,19 @@ class UserTripsViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+       
         let cityTripViewController = CityTripViewController(nibName: "CityTripView", bundle: nil)
         navigationController!.pushViewController(cityTripViewController, animated: true)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    func backButtonClicked() {
+        
+        let userProf = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
+        
+        navigationController?.pushViewController(userProf, animated: true)
+        
+    }
+
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3

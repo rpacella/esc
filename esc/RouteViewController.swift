@@ -35,9 +35,15 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
                                            forState: UIControlState.Normal)
         
         let backbutton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
+        let cityName = "Cape Town, South Africa"
+        let backText = UIBarButtonItem(title: cityName, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(self.backAction))
+        backText.tintColor = UIColor.blackColor()
+        backText.setTitleTextAttributes([
+            NSFontAttributeName: UIFont(name: "Hiragino Sans W3", size: 17.0)!,
+            NSForegroundColorAttributeName: UIColor.blackColor()], forState: UIControlState.Normal)
         
+        navigationItem.setLeftBarButtonItems([backbutton, backText], animated: false)
         
-        navigationItem.leftBarButtonItem = backbutton
         navigationItem.setRightBarButtonItems([routeLabel, listButton], animated: true)
         
         tableView.delegate = self
