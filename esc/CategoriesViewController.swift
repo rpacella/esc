@@ -59,6 +59,7 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
         for view in self.view.subviews{
             if let item = view as? UIButton {
                 if item.currentImage == UIImage(named:"checked.png") {
+                    
                     switch item.tag {
                     case 0:
                         categoriesArray += ["Entertainment"]
@@ -78,6 +79,8 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
         }
+        
+        
         
         for element in categoriesArray {
             print(element)
@@ -100,7 +103,7 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
     
     func configureButton(button: UIButton) {
         button.setImage(UIImage(named:"unchecked.png"), forState: .Normal)
-        button.tintColor = UIColor.blackColor()
+        button.tintColor = UIColor.whiteColor()
 
     }
     
@@ -113,7 +116,7 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate {
             sender.setImage(UIImage(named:"unchecked.png"), forState: .Normal)
         }
     
-        sender.tintColor = UIColor.blackColor()
+        sender.tintColor = UIColor.whiteColor()
     
     }
     

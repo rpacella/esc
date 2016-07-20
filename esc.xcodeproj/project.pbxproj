@@ -23,6 +23,8 @@
 		36A08B0C1D3ECC6500E39127 /* TripListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */; };
 		36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AFD1D3ECC6500E39127 /* EventViewController.swift */; };
 		36A08B0E1D3ECC6500E39127 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AFE1D3ECC6500E39127 /* EventViewController.xib */; };
+		36A08B111D3F910300E39127 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08B0F1D3F910300E39127 /* SearchViewController.swift */; };
+		36A08B121D3F910300E39127 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08B101D3F910300E39127 /* SearchViewController.xib */; };
 		BFE4A6FA1D3D063B00A24F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */; };
 		BFE4A7011D3D063B00A24F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7001D3D063B00A24F10 /* Assets.xcassets */; };
 		BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */; };
@@ -56,6 +58,8 @@
 		36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TripListViewController.xib; path = esc/TripListViewController.xib; sourceTree = "<group>"; };
 		36A08AFD1D3ECC6500E39127 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventViewController.swift; path = esc/EventViewController.swift; sourceTree = "<group>"; };
 		36A08AFE1D3ECC6500E39127 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventViewController.xib; path = esc/EventViewController.xib; sourceTree = "<group>"; };
+		36A08B0F1D3F910300E39127 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = esc/SearchViewController.swift; sourceTree = "<group>"; };
+		36A08B101D3F910300E39127 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchViewController.xib; path = esc/SearchViewController.xib; sourceTree = "<group>"; };
 		BFE4A6F61D3D063B00A24F10 /* esc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = esc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFE4A6F91D3D063B00A24F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFE4A7001D3D063B00A24F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,16 +121,17 @@
 		BFE4A75D1D3D71B200A24F10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
-				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
-				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
-				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
-				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
-				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
-				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
+				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */,
+				36A08B0F1D3F910300E39127 /* SearchViewController.swift */,
+				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
+				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
+				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
+				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
+				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
+				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -138,10 +143,11 @@
 				BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */,
 				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
 				BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */,
-				36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */,
+				36A08B101D3F910300E39127 /* SearchViewController.xib */,
 				36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */,
 				36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */,
 				36A08AF41D3ECC6500E39127 /* ItineraryViewController.xib */,
+				36A08AFC1D3ECC6500E39127 /* TripListViewController.xib */,
 				36A08AFA1D3ECC6500E39127 /* RouteViewController.xib */,
 				36A08AFE1D3ECC6500E39127 /* EventViewController.xib */,
 			);
@@ -155,8 +161,8 @@
 				BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */,
 				BFE4A7C31D3EDE5C00A24F10 /* DayV2Cell.swift */,
 				BFE4A7C41D3EDE5C00A24F10 /* DayV2Cell.xib */,
-				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
 				36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */,
+				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
 				36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */,
 				36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */,
 			);
@@ -236,6 +242,7 @@
 				BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */,
 				BFE4A75C1D3D71A400A24F10 /* CityTripView.xib in Resources */,
 				36A08B0A1D3ECC6500E39127 /* RouteViewController.xib in Resources */,
+				36A08B121D3F910300E39127 /* SearchViewController.xib in Resources */,
 				36A08B081D3ECC6500E39127 /* RouteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +264,7 @@
 				36A08B051D3ECC6500E39127 /* PlanDayViewController.swift in Sources */,
 				36A08B0B1D3ECC6500E39127 /* TripListViewController.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
+				36A08B111D3F910300E39127 /* SearchViewController.swift in Sources */,
 				36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */,
 				BFE4A70D1D3D076F00A24F10 /* LoginViewController.swift in Sources */,
 				BFE4A75B1D3D71A400A24F10 /* CityTripViewController.swift in Sources */,

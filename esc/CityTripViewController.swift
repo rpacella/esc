@@ -29,9 +29,8 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     
     func addButtonClicked() {
         
-        let planDayViewController = PlanDayViewController(nibName: "PlanDayViewController", bundle: nil)
-        
-        navigationController?.pushViewController(planDayViewController, animated: true)
+        let searchViewController = SearchViewController (nibName: "SearchViewController", bundle: nil)
+        navigationController?.pushViewController(searchViewController, animated: true)
         
     }
     
