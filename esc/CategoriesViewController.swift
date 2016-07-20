@@ -9,14 +9,14 @@
 import UIKit
 import CoreLocation
 
-class CategoriesViewController: UIViewController, CLLocationManagerDelegate { //, WebService {
+class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationManagerDelegate {
     
     // need background image?
 
     // might want to change this representation
     var timeSpan: Int?
-    var latitude: Double?
-    var longitude: Double?
+    var latitude: String?
+    var longitude: String?
     
     var locationManager = CLLocationManager()
     
@@ -35,6 +35,7 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate { //
         let doneButton = UIBarButtonItem(barButtonSystemItem: .Done , target: self, action: #selector(doneButtonClicked))
         
         self.navigationItem.rightBarButtonItem = doneButton
+        
         
         configureButton(entertainmentButton)
         configureButton(museumButton)
@@ -62,17 +63,17 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate { //
                     
                     switch item.tag {
                     case 0:
-                        categoriesArray += ["entertainment"]
+                        categoriesArray += ["entertain"]
                     case 1:
-                        categoriesArray += ["museum"]
+                        categoriesArray += ["museums"]
                     case 2:
-                        categoriesArray += ["outdoors"]
+                        categoriesArray += ["outdoor"]
                     case 3:
                         categoriesArray += ["nightlife"]
                     case 4:
                         categoriesArray += ["shopping"]
-                    case 5:
-                        categoriesArray += ["dining"]
+                   // case 5:
+                        //categoriesArray += ["dining"]
                     default:
                         break
                     }
@@ -84,7 +85,7 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate { //
         let long = ["long":self.longitude]
         let lat = ["lat":self.latitude]
         
-        // make post request with these fields and the location
+//        // make post request with these fields and the location
 //        let request = createMutableAnonRequest(NSURL(string: "http://ec2-52-33-4-120.us-west-2.compute.amazonaws.com:8000/hello"), method: "POST", parameters: subtypes, long, lat)
 //        
 //        executeRequest(request, requestCompletionFunction: {(responseCode, json) in
@@ -120,6 +121,9 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate { //
 //                onCompletion(nil,errorMessage)
 //            }*/
 //        })
+        // other options: sightsee, relax, tour
+        
+        let eventList = GenerateItineraryController.sharedInstance.generateItinerary(categoriesArray, long: self.longitude!, lat: self.latitude!)
         
         let itineraryViewController = ItineraryViewController(nibName: "ItineraryViewController", bundle: nil)
         
@@ -158,8 +162,8 @@ class CategoriesViewController: UIViewController, CLLocationManagerDelegate { //
         
         let location = locations.last
         
-        self.latitude = Double((location?.coordinate.latitude)!)
-        self.longitude = Double((location?.coordinate.longitude)!)
+        self.latitude = String((location?.coordinate.latitude))
+        self.longitude = String((location?.coordinate.longitude))
         
     }
     
