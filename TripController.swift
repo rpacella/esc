@@ -71,15 +71,15 @@ class TripController {
         
         generatedTrip.eventList.append(events1)
         
-        let events2 = Event(title: "Bo-Kaap", eventDescription: "Sightseeing the beautiful buildings of Cape Town", tag: "Sightsee", startTime: "11:30", endTime: "14:00", coordinate: CLLocationCoordinate2D(latitude: -33.002, longitude: 18.203))
+        let events2 = Event(title: "Bo-Kaap", eventDescription: "Colorful buildings of Cape Town", tag: "Sightsee", startTime: "11:30", endTime: "14:00", coordinate: CLLocationCoordinate2D(latitude: -33.002, longitude: 18.203))
         
         generatedTrip.eventList.append(events2)
         
-        let events3 = Event(title: "Dogs Bullocks", eventDescription: "Burger", tag: "Dining", startTime: "14:00", endTime: "15:30", coordinate: CLLocationCoordinate2D(latitude: -33.004, longitude: 18.204))
+        let events3 = Event(title: "Dogs Bullocks", eventDescription: "Grab a burger", tag: "Dining", startTime: "14:00", endTime: "15:30", coordinate: CLLocationCoordinate2D(latitude: -33.004, longitude: 18.204))
 
         generatedTrip.eventList.append(events3)
         
-        let events4 = Event(title: "Ocean Basket", eventDescription: "Shopping at the V&A waterfront area is incredible", tag: "Shopping", startTime: "15:30", endTime: "19:00", coordinate: CLLocationCoordinate2D(latitude: -33.0014, longitude: 18.2045))
+        let events4 = Event(title: "Ocean Basket", eventDescription: "Shopp at the V&A waterfront", tag: "Shopping", startTime: "15:30", endTime: "19:00", coordinate: CLLocationCoordinate2D(latitude: -33.0014, longitude: 18.2045))
 
         generatedTrip.eventList.append(events4)
         

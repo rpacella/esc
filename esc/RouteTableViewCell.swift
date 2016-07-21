@@ -14,6 +14,7 @@ class RouteTableViewCell: UITableViewCell {
     
     @IBOutlet weak var tagField: UILabel!
     
+    @IBOutlet weak var imageField: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

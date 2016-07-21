@@ -18,6 +18,8 @@ class ItineraryTableViewCell: UITableViewCell {
     
     @IBOutlet weak var descriptionField: UILabel!
     
+    @IBOutlet weak var imageField: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

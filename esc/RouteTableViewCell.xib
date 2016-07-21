@@ -54,6 +54,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="image" destination="Ucb-Ay-0Sz" id="Ugq-vm-Xbl"/>
+                <outlet property="imageField" destination="ai7-bS-hua" id="Qf5-WN-xgI"/>
                 <outlet property="tagField" destination="b9b-Kk-sVA" id="5rA-tE-Xul"/>
                 <outlet property="titleField" destination="Ucb-Ay-0Sz" id="LpZ-ke-laV"/>
             </connections>
