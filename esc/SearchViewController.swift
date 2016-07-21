@@ -10,11 +10,15 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var button4: UIImageView!
+    @IBOutlet weak var button3: UIImageView!
+    @IBOutlet weak var button2: UIImageView!
     @IBOutlet weak var loadingPic: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = true
-        loadingPic.tintColor = UIColor.blueColor()
+        loadingPic.tintColor = UIColor.grayColor()
+        //UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
         // Do any additional setup after loading the view.
     }
 
