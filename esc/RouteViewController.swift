@@ -135,8 +135,7 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Trip.sharedInstance.dummyarray.count
-        
+        return 4
         //return Trip.sharedInstance.eventList.count
     }
     
