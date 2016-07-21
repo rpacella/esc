@@ -63,4 +63,31 @@ class TripController {
         
     }
     
+    func returnTripTwo() -> Trip {
+        
+        let generatedTrip = Trip()
+        
+        let events1 = Event(title: "Bacon on Bree", eventDescription: "Cafe", tag: "Dining", startTime: "10:00", endTime: "11:00", coordinate: CLLocationCoordinate2D(latitude: -33.001, longitude: 18.202))
+        
+        generatedTrip.eventList.append(events1)
+        
+        let events2 = Event(title: "Bo-Kaap", eventDescription: "Colorful buildings of Cape Town", tag: "Sightsee", startTime: "11:30", endTime: "14:00", coordinate: CLLocationCoordinate2D(latitude: -33.002, longitude: 18.203))
+        
+        generatedTrip.eventList.append(events2)
+        
+        let events3 = Event(title: "Dogs Bullocks", eventDescription: "Grab a burger", tag: "Dining", startTime: "14:00", endTime: "15:30", coordinate: CLLocationCoordinate2D(latitude: -33.004, longitude: 18.204))
+
+        generatedTrip.eventList.append(events3)
+        
+        let events4 = Event(title: "Ocean Basket", eventDescription: "Shopp at the V&A waterfront", tag: "Shopping", startTime: "15:30", endTime: "19:00", coordinate: CLLocationCoordinate2D(latitude: -33.0014, longitude: 18.2045))
+
+        generatedTrip.eventList.append(events4)
+        
+        let events5 = Event(title: "Fork", eventDescription: "Tapas", tag: "Dining", startTime: "18:00", endTime: "21:00", coordinate: CLLocationCoordinate2D(latitude: -33.0025, longitude: 18.2016))
+
+        generatedTrip.eventList.append(events5)
+
+        return generatedTrip
+    }
+    
 }

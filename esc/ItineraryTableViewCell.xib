@@ -55,7 +55,7 @@
             <connections>
                 <outlet property="arrowImages" destination="PHO-ty-TI7" id="Z1k-pO-DuB"/>
                 <outlet property="descriptionField" destination="lxD-Uk-OY5" id="xKC-gm-ydX"/>
-                <outlet property="imageView" destination="n1q-e3-9KP" id="AMk-IA-LiW"/>
+                <outlet property="imageField" destination="n1q-e3-9KP" id="ieN-nw-u3u"/>
                 <outlet property="titleField" destination="WCt-hL-Q2n" id="5Z2-TA-tCQ"/>
             </connections>
             <point key="canvasLocation" x="509" y="369"/>

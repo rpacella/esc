@@ -12,13 +12,14 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
+    var trip = TripController.sharedInstance.returnTrip()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.delegate = self
         tableView.dataSource = self
         
-        // use Michelle's table view cell, get reuseID
         tableView.registerNib(UINib(nibName: "ItineraryTableViewCell", bundle: nil), forCellReuseIdentifier: "cellidentifier")
         
     }
@@ -31,7 +32,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return TripController.sharedInstance.returnTrip().eventList.count
+        return trip.eventList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -40,9 +41,24 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier", forIndexPath: indexPath) as! ItineraryTableViewCell
         
         // fill in relevant fields of itinerary table view cell
-        cell.titleField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].title
+        cell.titleField.text = trip.eventList[indexPath.row].title
 
-        cell.descriptionField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].tag
+        cell.descriptionField.text = trip.eventList[indexPath.row].startTime + " - " + trip.eventList[indexPath.row].endTime
+        
+        switch trip.eventList[indexPath.row].tag {
+            case "Dining": cell.imageField.image = UIImage(named:"Eat.png")
+            case "Entertainment": cell.imageField.image = UIImage(named:"Entertain.png")
+            case "Museum": cell.imageField.image = UIImage(named:"Museum.png")
+            case "Nightlife": cell.imageField.image = UIImage(named:"Nightlife.png")
+            case "Outdoors": cell.imageField.image = UIImage(named: "Outdoor.png")
+            case "Relax": cell.imageField.image = UIImage(named:"Relax.png")
+            case "Shopping": cell.imageField.image = UIImage(named:"Shopping.png")
+            case "Sightsee": cell.imageField.image = UIImage(named:"Sightsee.png")
+            case "Tour": cell.imageField.image = UIImage(named:"Tour.png")
+        default:
+            break
+            
+        }
         
         return cell
         
@@ -65,10 +81,10 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let eventViewController = EventViewController(nibName: "EventViewController", bundle: nil)
         
-        eventViewController.titleField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].title
-        eventViewController.startEndTime.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].startTime + " - " + TripController.sharedInstance.returnTrip().eventList[indexPath.row].endTime
-         eventViewController.descriptionField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].description
-         eventViewController.tagField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].tag
+        eventViewController.titleField.text = trip.eventList[indexPath.row].title
+        eventViewController.startEndTime.text = trip.eventList[indexPath.row].startTime + " - " + trip.eventList[indexPath.row].endTime
+         eventViewController.descriptionField.text = trip.eventList[indexPath.row].description
+         eventViewController.tagField.text = trip.eventList[indexPath.row].tag
             
         navigationController?.pushViewController(eventViewController, animated: true)
         
@@ -79,7 +95,13 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func regenerateItinerary(sender: UIButton) {
-        //TODO - get another trip, can make returnTrip2 function in TripController
+        
+        let newTrip = TripController.sharedInstance.returnTripTwo()
+        
+        trip = newTrip
+        
+        tableView.reloadData()
+        
         // make another pull request for data, reload tableview data
         print("requested new itinerary")
     }
@@ -87,10 +109,8 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func saveItinerary(sender: UIButton) {
         
-        
         // encode the trip
-        let newTrip = TripController.sharedInstance.returnTrip()
-        
+        let newTrip = trip
         TripController.sharedInstance.currentTrips.append(newTrip)
         
         let manager = NSFileManager.defaultManager()

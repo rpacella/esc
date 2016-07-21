@@ -18,6 +18,8 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
 
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var tableView: UITableView!
+    
+    var trip: Trip?
 
     let locationManager = CLLocationManager()
     var locations:[CLLocationCoordinate2D]?
@@ -136,16 +138,31 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return TripController.sharedInstance.returnTrip().eventList.count
+        return trip!.eventList.count
         
         }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier2") as! RouteTableViewCell
         
-        cell.titleField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].title
+        cell.titleField.text = trip!.eventList[indexPath.row].title
         
-        cell.tagField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].tag
+        cell.tagField.text = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
+        
+        switch trip!.eventList[indexPath.row].tag {
+        case "Dining": cell.imageField.image = UIImage(named:"Eat.png")
+        case "Entertainment": cell.imageField.image = UIImage(named:"Entertain.png")
+        case "Museum": cell.imageField.image = UIImage(named:"Museum.png")
+        case "Nightlife": cell.imageField.image = UIImage(named:"Nightlife.png")
+        case "Outdoors": cell.imageField.image = UIImage(named: "Outdoor.png")
+        case "Relax": cell.imageField.image = UIImage(named:"Relax.png")
+        case "Shopping": cell.imageField.image = UIImage(named:"Shopping.png")
+        case "Sightsee": cell.imageField.image = UIImage(named:"Sightsee.png")
+        case "Tour": cell.imageField.image = UIImage(named:"Tour.png")
+        default:
+            break
+            
+        }
         
         return cell
     }
@@ -153,10 +170,10 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewcontroller = EventViewController (nibName: "EventViewController", bundle: nil)
         
-        viewcontroller.titleField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].title
-        viewcontroller.startEndTime.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].startTime + " - " + TripController.sharedInstance.returnTrip().eventList[indexPath.row].endTime
-        viewcontroller.descriptionField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].description
-        viewcontroller.tagField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].tag
+        viewcontroller.titleField.text = trip!.eventList[indexPath.row].title
+        viewcontroller.startEndTime.text = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
+        viewcontroller.descriptionField.text = trip!.eventList[indexPath.row].description
+        viewcontroller.tagField.text = trip!.eventList[indexPath.row].tag
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.navigationController?.pushViewController(viewcontroller, animated: true)

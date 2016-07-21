@@ -71,6 +71,7 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
         let viewcontroller = RouteViewController (nibName: "RouteViewController", bundle: nil)
         
         viewcontroller.locations = returnLocations()
+        viewcontroller.trip = trip
         
         self.navigationController?.pushViewController(viewcontroller, animated: true)
     }
@@ -108,8 +109,22 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
         
         cell.titleField.text = trip!.eventList[indexPath.row].title
         
-        cell.descriptionField.text = trip!.eventList[indexPath.row].tag
+        cell.descriptionField.text = trip!.eventList[indexPath.row].startTime + " - " +  trip!.eventList[indexPath.row].endTime
         
+        switch trip!.eventList[indexPath.row].tag {
+        case "Dining": cell.imageField.image = UIImage(named:"Eat.png")
+        case "Entertainment": cell.imageField.image = UIImage(named:"Entertain.png")
+        case "Museum": cell.imageField.image = UIImage(named:"Museum.png")
+        case "Nightlife": cell.imageField.image = UIImage(named:"Nightlife.png")
+        case "Outdoors": cell.imageField.image = UIImage(named: "Outdoor.png")
+        case "Relax": cell.imageField.image = UIImage(named:"Relax.png")
+        case "Shopping": cell.imageField.image = UIImage(named:"Shopping.png")
+        case "Sightsee": cell.imageField.image = UIImage(named:"Sightsee.png")
+        case "Tour": cell.imageField.image = UIImage(named:"Tour.png")
+        default:
+            break
+            
+        }
         
         return cell
     }

@@ -42,9 +42,15 @@
                     <constraint firstItem="ai7-bS-hua" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XBh-Jw-yMR"/>
                     <constraint firstItem="b9b-Kk-sVA" firstAttribute="top" secondItem="Ucb-Ay-0Sz" secondAttribute="bottom" constant="20" id="ayv-ww-E82"/>
                     <constraint firstItem="ai7-bS-hua" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cmc-ko-9mz"/>
+                    <constraint firstItem="Ucb-Ay-0Sz" firstAttribute="leading" secondItem="ai7-bS-hua" secondAttribute="trailing" constant="31" id="enr-jd-cnR"/>
                     <constraint firstItem="Ucb-Ay-0Sz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="mhn-DZ-2X7"/>
                     <constraint firstItem="Ucb-Ay-0Sz" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rxI-Tz-HkV"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="rxI-Tz-HkV"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="tagField" destination="b9b-Kk-sVA" id="5rA-tE-Xul"/>
