@@ -71,6 +71,7 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
         let viewcontroller = RouteViewController (nibName: "RouteViewController", bundle: nil)
         
         viewcontroller.locations = returnLocations()
+        viewcontroller.trip = trip
         
         self.navigationController?.pushViewController(viewcontroller, animated: true)
     }

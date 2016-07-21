@@ -63,7 +63,7 @@ class TripController {
         
     }
     
-    func generateTrip() -> Trip {
+    func returnTripTwo() -> Trip {
         
         let generatedTrip = Trip()
         
@@ -86,8 +86,6 @@ class TripController {
         let events5 = Event(title: "Fork", eventDescription: "Tapas", tag: "Dining", startTime: "18:00", endTime: "21:00", coordinate: CLLocationCoordinate2D(latitude: -33.0025, longitude: 18.2016))
 
         generatedTrip.eventList.append(events5)
-        
-        let events6 = Event(title: "Tjing-Tjing", eventDescription: "Chill vibe at a bar right next to Long Street", tag: "Nightlife", startTime: "21:00", endTime: "23:30", coordinate: CLLocationCoordinate2D(latitude: -33.003, longitude: 18.203))
 
         return generatedTrip
     }
