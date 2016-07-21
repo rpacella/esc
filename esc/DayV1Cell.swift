@@ -17,8 +17,8 @@ class DayV1Cell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let random = Int(arc4random_uniform(10))
-        cellImageView.image = UIImage(named: randomImagesArray[random])
+//        let random = Int(arc4random_uniform(10))
+//        cellImageView.image = UIImage(named: randomImagesArray[random])
     
     }
 

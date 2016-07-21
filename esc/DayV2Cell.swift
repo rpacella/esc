@@ -16,8 +16,9 @@ class DayV2Cell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        let random = Int(arc4random_uniform(10))
-        cellImageView.image = UIImage(named: randomImagesArray[random])    }
+//        let random = Int(arc4random_uniform(10))
+//        cellImageView.image = UIImage(named: randomImagesArray[random])
+    }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

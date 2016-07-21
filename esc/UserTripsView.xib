@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userBackground" translatesAutoresizingMaskIntoConstraints="NO" id="sLe-Uc-D3V">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userBackground" translatesAutoresizingMaskIntoConstraints="NO" id="sLe-Uc-D3V">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qai-P5-AiV">
@@ -41,34 +41,44 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AQU-vv-bCb">
-                    <rect key="frame" x="117" y="360" width="365" height="291"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQU-vv-bCb">
+                    <rect key="frame" x="132.5" y="310" width="335" height="266"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="london" translatesAutoresizingMaskIntoConstraints="NO" id="b2A-PK-U0q" userLabel="image1">
-                            <rect key="frame" x="0.0" y="0.0" width="170" height="125"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paris" translatesAutoresizingMaskIntoConstraints="NO" id="b2A-PK-U0q" userLabel="image1">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="125"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="170" id="QEV-F5-kp2"/>
+                                <constraint firstAttribute="width" constant="160" id="QEV-F5-kp2"/>
                                 <constraint firstAttribute="height" constant="125" id="ojN-9i-gJ2"/>
                             </constraints>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shanghai" translatesAutoresizingMaskIntoConstraints="NO" id="6qp-hk-iEk" userLabel="image2">
-                            <rect key="frame" x="185" y="0.0" width="170" height="125"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xk-by-Z4E">
+                            <rect key="frame" x="12" y="96" width="100" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Aa7-ce-uPd"/>
+                                <constraint firstAttribute="height" constant="21" id="j1q-fU-Nir"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shanghai-1" translatesAutoresizingMaskIntoConstraints="NO" id="6qp-hk-iEk" userLabel="image2">
+                            <rect key="frame" x="175" y="0.0" width="160" height="125"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="125" id="5Fy-kj-4Np"/>
-                                <constraint firstAttribute="width" constant="170" id="SEO-VZ-IGd"/>
+                                <constraint firstAttribute="width" constant="160" id="SEO-VZ-IGd"/>
                             </constraints>
                         </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greece2" translatesAutoresizingMaskIntoConstraints="NO" id="OmV-h6-LrS" userLabel="image3">
-                            <rect key="frame" x="185" y="141" width="170" height="125"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venice" translatesAutoresizingMaskIntoConstraints="NO" id="OmV-h6-LrS" userLabel="image3">
+                            <rect key="frame" x="175" y="141" width="160" height="125"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="125" id="lcW-9M-Qqo" userLabel="height = 125"/>
-                                <constraint firstAttribute="width" constant="170" id="ueO-LY-zmk" userLabel="width = 150"/>
+                                <constraint firstAttribute="width" constant="160" id="ueO-LY-zmk" userLabel="width = 150"/>
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifW-l7-KOA">
-                            <rect key="frame" x="0.0" y="141" width="170" height="125"/>
+                            <rect key="frame" x="0.0" y="141" width="160" height="125"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="170" id="gRd-7v-Iy3"/>
+                                <constraint firstAttribute="width" constant="160" id="gRd-7v-Iy3"/>
                                 <constraint firstAttribute="height" constant="125" id="zYs-G7-UuJ"/>
                             </constraints>
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -77,19 +87,57 @@
                                 <action selector="capeTownButtonPressed:" destination="-1" eventType="touchUpInside" id="dKG-vW-2rm"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shanghai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-m3-wiA">
+                            <rect key="frame" x="187" y="87" width="124" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="124" id="SNv-SH-j2U"/>
+                                <constraint firstAttribute="height" constant="30" id="zyy-Rn-Vm3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgt-5s-Nao">
+                            <rect key="frame" x="187" y="237" width="100" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="MYR-K4-S50"/>
+                                <constraint firstAttribute="height" constant="21" id="ZC4-fu-iud"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cape Town" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-gn-Tbp">
+                            <rect key="frame" x="12" y="237" width="145" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="8JM-4p-JpP"/>
+                                <constraint firstAttribute="width" constant="145" id="zTL-ux-7rF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="OmV-h6-LrS" secondAttribute="bottom" id="0LD-ki-s8N"/>
+                        <constraint firstItem="SOy-gn-Tbp" firstAttribute="leading" secondItem="AQU-vv-bCb" secondAttribute="leading" constant="12" id="4BP-vN-Af6"/>
+                        <constraint firstItem="OmV-h6-LrS" firstAttribute="top" secondItem="WzP-m3-wiA" secondAttribute="bottom" constant="24" id="5Pf-ay-dT0"/>
                         <constraint firstItem="OmV-h6-LrS" firstAttribute="top" secondItem="6qp-hk-iEk" secondAttribute="bottom" constant="16" id="7vQ-Cw-Meu"/>
                         <constraint firstAttribute="trailing" secondItem="OmV-h6-LrS" secondAttribute="trailing" id="8rQ-Bq-Gt6"/>
                         <constraint firstItem="b2A-PK-U0q" firstAttribute="leading" secondItem="AQU-vv-bCb" secondAttribute="leading" id="AMf-Ul-FFp"/>
+                        <constraint firstItem="ifW-l7-KOA" firstAttribute="top" secondItem="8xk-by-Z4E" secondAttribute="bottom" constant="24" id="ASr-m0-pLR"/>
                         <constraint firstItem="ifW-l7-KOA" firstAttribute="leading" secondItem="AQU-vv-bCb" secondAttribute="leading" id="HXj-DE-BYq"/>
+                        <constraint firstAttribute="bottom" secondItem="SOy-gn-Tbp" secondAttribute="bottom" constant="8" id="Jbs-Gv-uX7"/>
                         <constraint firstItem="6qp-hk-iEk" firstAttribute="top" secondItem="AQU-vv-bCb" secondAttribute="top" id="VqG-nf-07e"/>
+                        <constraint firstAttribute="bottom" secondItem="qgt-5s-Nao" secondAttribute="bottom" constant="8" id="WRp-eX-Pti"/>
                         <constraint firstItem="b2A-PK-U0q" firstAttribute="top" secondItem="AQU-vv-bCb" secondAttribute="top" id="WbI-kg-UUu"/>
+                        <constraint firstItem="qgt-5s-Nao" firstAttribute="leading" secondItem="ifW-l7-KOA" secondAttribute="trailing" constant="27" id="X4B-ZO-A5v"/>
                         <constraint firstAttribute="trailing" secondItem="6qp-hk-iEk" secondAttribute="trailing" id="Y7e-LT-mfB"/>
                         <constraint firstAttribute="bottom" secondItem="ifW-l7-KOA" secondAttribute="bottom" id="bLb-QH-F2R"/>
                         <constraint firstItem="6qp-hk-iEk" firstAttribute="leading" secondItem="b2A-PK-U0q" secondAttribute="trailing" constant="15" id="dYL-hI-w1d"/>
+                        <constraint firstItem="8xk-by-Z4E" firstAttribute="leading" secondItem="AQU-vv-bCb" secondAttribute="leading" constant="12" id="fao-ma-Cqh"/>
+                        <constraint firstItem="WzP-m3-wiA" firstAttribute="leading" secondItem="b2A-PK-U0q" secondAttribute="trailing" constant="27" id="lDP-pL-0Xg"/>
                         <constraint firstItem="ifW-l7-KOA" firstAttribute="top" secondItem="b2A-PK-U0q" secondAttribute="bottom" constant="16" id="t6n-JA-ekS"/>
                     </constraints>
                 </view>
@@ -111,9 +159,9 @@
         </view>
     </objects>
     <resources>
-        <image name="greece2" width="1600" height="1000"/>
-        <image name="london" width="1920" height="1080"/>
-        <image name="shanghai" width="1600" height="1000"/>
-        <image name="userBackground" width="1920" height="1200"/>
+        <image name="paris" width="640" height="350"/>
+        <image name="shanghai-1" width="620" height="414"/>
+        <image name="userBackground" width="1000" height="625"/>
+        <image name="venice" width="1152" height="864"/>
     </resources>
 </document>
