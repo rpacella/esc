@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let userNavCon = UINavigationController(rootViewController: userTripsViewController)
         let newTripNavCon = UINavigationController(rootViewController: searchViewController)
-        let searchPage = LoginViewController(nibName: "LoginView", bundle: nil)
+        let searchPage = MagGlassViewController(nibName: "MagGlassViewController", bundle: nil)
         
         
         let newEntry = UIImage(named: "newentry")
