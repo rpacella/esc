@@ -27,6 +27,11 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
     @IBOutlet weak var shoppingButton: UIButton!
     @IBOutlet weak var diningButton: UIButton!
     
+    @IBOutlet weak var button1: UIImageView!
+    @IBOutlet weak var button2: UIImageView!
+    @IBOutlet weak var button3: UIImageView!
+    @IBOutlet weak var button4: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,6 +45,10 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         self.navigationItem.rightBarButtonItem = doneButton
         
+        button1.tintColor = UIColor.whiteColor()
+        button2.tintColor = UIColor.whiteColor()
+        button3.tintColor = UIColor.darkGrayColor()
+        button4.tintColor = UIColor.whiteColor()
         
         configureButton(entertainmentButton)
         configureButton(museumButton)

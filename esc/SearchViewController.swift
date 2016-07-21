@@ -17,7 +17,10 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = true
-        loadingPic.tintColor = UIColor.grayColor()
+        loadingPic.tintColor = UIColor.darkGrayColor()
+        button2.tintColor = UIColor.whiteColor()
+        button3.tintColor = UIColor.whiteColor()
+        button4.tintColor = UIColor.whiteColor()
         //UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
         // Do any additional setup after loading the view.
     }

@@ -17,8 +17,10 @@ class PlanDayViewController: UIViewController {
     @IBOutlet weak var AfternoonPlan: UIButton!
     @IBOutlet weak var EveningPlan: UIButton!
     
-
-    
+    @IBOutlet weak var button1: UIImageView!
+    @IBOutlet weak var button2: UIImageView!
+    @IBOutlet weak var button3: UIImageView!
+    @IBOutlet weak var button4: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,10 @@ class PlanDayViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
 
-        //tabBarItem.title = "New Trip"
+        button1.tintColor = UIColor.whiteColor()
+        button2.tintColor = UIColor.darkGrayColor()
+        button3.tintColor = UIColor.whiteColor()
+        button4.tintColor = UIColor.whiteColor()
         configureButton(AllDayPlan)
         configureButton(MorningPlan)
         configureButton(AfternoonPlan)
