@@ -16,30 +16,32 @@
                 <rect key="frame" x="0.0" y="0.0" width="345" height="95.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-Ay-0Sz">
-                        <rect key="frame" x="147" y="15" width="53" height="25"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucb-Ay-0Sz">
+                        <rect key="frame" x="130.5" y="15" width="42" height="20"/>
                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="20"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9b-Kk-sVA">
-                        <rect key="frame" x="147" y="57" width="97" height="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9b-Kk-sVA">
+                        <rect key="frame" x="130.5" y="55" width="79.5" height="14"/>
                         <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-bS-hua">
-                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ai7-bS-hua">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="95.5"/>
                         <color key="backgroundColor" red="0.92170751094818115" green="0.60379058122634888" blue="0.91284793615341187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="AHw-4v-z6V"/>
                             <constraint firstAttribute="width" constant="100" id="wgE-lr-569"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ai7-bS-hua" secondAttribute="bottom" id="1hO-la-swv"/>
                     <constraint firstItem="b9b-Kk-sVA" firstAttribute="leading" secondItem="Ucb-Ay-0Sz" secondAttribute="leading" id="TsZ-9V-1SM"/>
+                    <constraint firstItem="ai7-bS-hua" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XBh-Jw-yMR"/>
                     <constraint firstItem="b9b-Kk-sVA" firstAttribute="top" secondItem="Ucb-Ay-0Sz" secondAttribute="bottom" constant="20" id="ayv-ww-E82"/>
+                    <constraint firstItem="ai7-bS-hua" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cmc-ko-9mz"/>
                     <constraint firstItem="Ucb-Ay-0Sz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="mhn-DZ-2X7"/>
                     <constraint firstItem="Ucb-Ay-0Sz" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rxI-Tz-HkV"/>
                 </constraints>

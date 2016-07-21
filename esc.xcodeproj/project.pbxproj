@@ -49,6 +49,10 @@
 		BFE4A7671D3E56E900A24F10 /* DayV1Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */; };
 		BFE4A7C51D3EDE5C00A24F10 /* DayV2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7C31D3EDE5C00A24F10 /* DayV2Cell.swift */; };
 		BFE4A7C61D3EDE5C00A24F10 /* DayV2Cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7C41D3EDE5C00A24F10 /* DayV2Cell.xib */; };
+		BFE4A7EB1D403B4E00A24F10 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7EA1D403B4E00A24F10 /* User.swift */; };
+		BFE4A7ED1D403F8800A24F10 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7EC1D403F8800A24F10 /* UserController.swift */; };
+		BFE4A7F01D4049D500A24F10 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE4A7EE1D4049D500A24F10 /* CollectionViewCell.swift */; };
+		BFE4A7F11D4049D500A24F10 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFE4A7EF1D4049D500A24F10 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +102,10 @@
 		BFE4A7651D3E56E900A24F10 /* DayV1Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayV1Cell.xib; sourceTree = "<group>"; };
 		BFE4A7C31D3EDE5C00A24F10 /* DayV2Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayV2Cell.swift; sourceTree = "<group>"; };
 		BFE4A7C41D3EDE5C00A24F10 /* DayV2Cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DayV2Cell.xib; sourceTree = "<group>"; };
+		BFE4A7EA1D403B4E00A24F10 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = esc/User.swift; sourceTree = "<group>"; };
+		BFE4A7EC1D403F8800A24F10 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = esc/UserController.swift; sourceTree = "<group>"; };
+		BFE4A7EE1D4049D500A24F10 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../CollectionViewCell.swift; sourceTree = "<group>"; };
+		BFE4A7EF1D4049D500A24F10 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = ../CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 			children = (
 				4E914A681D3FAA2B0042CD42 /* Trip.swift */,
 				4E914A661D3FA5AF0042CD42 /* Event.swift */,
+				BFE4A7EA1D403B4E00A24F10 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,6 +188,7 @@
 			children = (
 				BFE4A70B1D3D076F00A24F10 /* LoginViewController.swift */,
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
+				BFE4A7EC1D403F8800A24F10 /* UserController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				36658BAF1D40D6070084DD6F /* MagGlassViewController.swift */,
 				BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */,
@@ -226,6 +236,8 @@
 				36A08AF21D3ECC6500E39127 /* ItineraryTableViewCell.xib */,
 				36A08AF71D3ECC6500E39127 /* RouteTableViewCell.swift */,
 				36A08AF81D3ECC6500E39127 /* RouteTableViewCell.xib */,
+				BFE4A7EE1D4049D500A24F10 /* CollectionViewCell.swift */,
+				BFE4A7EF1D4049D500A24F10 /* CollectionViewCell.xib */,
 			);
 			name = Cells;
 			path = esc;
@@ -306,6 +318,7 @@
 				BFE4A7631D3D95B600A24F10 /* UserTripsView.xib in Resources */,
 				BFE4A75C1D3D71A400A24F10 /* CityTripView.xib in Resources */,
 				36A08B0A1D3ECC6500E39127 /* RouteViewController.xib in Resources */,
+				BFE4A7F11D4049D500A24F10 /* CollectionViewCell.xib in Resources */,
 				36A08B121D3F910300E39127 /* SearchViewController.xib in Resources */,
 				36658BB21D40D6070084DD6F /* MagGlassViewController.xib in Resources */,
 				36A08B081D3ECC6500E39127 /* RouteTableViewCell.xib in Resources */,
@@ -369,14 +382,17 @@
 			files = (
 				36A08B071D3ECC6500E39127 /* RouteTableViewCell.swift in Sources */,
 				36A08B031D3ECC6500E39127 /* ItineraryViewController.swift in Sources */,
+				BFE4A7F01D4049D500A24F10 /* CollectionViewCell.swift in Sources */,
 				36A08B091D3ECC6500E39127 /* RouteViewController.swift in Sources */,
 				BFE4A7C51D3EDE5C00A24F10 /* DayV2Cell.swift in Sources */,
+				BFE4A7ED1D403F8800A24F10 /* UserController.swift in Sources */,
 				4E914A631D3FA3720042CD42 /* WebService.swift in Sources */,
 				BFE4A7621D3D95B600A24F10 /* UserTripsViewController.swift in Sources */,
 				36A08B011D3ECC6500E39127 /* ItineraryTableViewCell.swift in Sources */,
 				BFE4A7661D3E56E900A24F10 /* DayV1Cell.swift in Sources */,
 				36A08B051D3ECC6500E39127 /* PlanDayViewController.swift in Sources */,
 				36A08B0B1D3ECC6500E39127 /* TripListViewController.swift in Sources */,
+				BFE4A7EB1D403B4E00A24F10 /* User.swift in Sources */,
 				4E914A691D3FAA2B0042CD42 /* Trip.swift in Sources */,
 				4E914A671D3FA5AF0042CD42 /* Event.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,

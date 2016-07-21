@@ -9,27 +9,27 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="day2cell" rowHeight="75" id="30b-pM-KlS" customClass="DayV1Cell" customModule="esc" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="day2cell" rowHeight="75" id="30b-pM-KlS" customClass="DayV2Cell" customModule="esc" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="30b-pM-KlS" id="DCr-25-pfN">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TIv-vg-OA3" userLabel="randomImage">
-                        <rect key="frame" x="90" y="0.0" width="230" height="75"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TIv-vg-OA3" userLabel="randomImage">
+                        <rect key="frame" x="91" y="0.0" width="229" height="75"/>
                     </imageView>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G6k-sx-QKq">
-                        <rect key="frame" x="0.0" y="0.0" width="90" height="76"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6k-sx-QKq">
+                        <rect key="frame" x="0.0" y="0.0" width="91" height="76"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjQ-RP-QLP" userLabel="DayNumber">
-                                <rect key="frame" x="41" y="39" width="8" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjQ-RP-QLP" userLabel="DayNumber">
+                                <rect key="frame" x="41.5" y="39" width="8" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKs-ZR-GrG" userLabel="DayLabel">
-                                <rect key="frame" x="31" y="14" width="42" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKs-ZR-GrG" userLabel="DayLabel">
+                                <rect key="frame" x="29.5" y="18" width="32.5" height="17"/>
                                 <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -56,8 +56,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="cellImageView" destination="TIv-vg-OA3" id="4tg-rg-hiU"/>
-                <outlet property="dayNumberLabel" destination="VjQ-RP-QLP" id="YRz-hw-2Cz"/>
+                <outlet property="cellImageView" destination="TIv-vg-OA3" id="b85-JL-OhR"/>
+                <outlet property="dayNumberLabel" destination="VjQ-RP-QLP" id="9Tg-B0-yRs"/>
             </connections>
             <point key="canvasLocation" x="239" y="240.5"/>
         </tableViewCell>
