@@ -10,6 +10,11 @@ import UIKit
 
 class RouteTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleField: UILabel!
+    
+    @IBOutlet weak var tagField: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

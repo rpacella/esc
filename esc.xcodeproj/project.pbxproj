@@ -10,6 +10,8 @@
 		0893CD89E67774F57C916CD5 /* Pods_esc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1FAF02657BC0A4236C09BFA /* Pods_esc.framework */; };
 		36658B721D4008350084DD6F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36658B711D4008350084DD6F /* MapKit.framework */; };
 		36658B741D4008C00084DD6F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36658B731D4008C00084DD6F /* CoreLocation.framework */; };
+		36658BB11D40D6070084DD6F /* MagGlassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36658BAF1D40D6070084DD6F /* MagGlassViewController.swift */; };
+		36658BB21D40D6070084DD6F /* MagGlassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36658BB01D40D6070084DD6F /* MagGlassViewController.xib */; };
 		36A08AFF1D3ECC6500E39127 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */; };
 		36A08B001D3ECC6500E39127 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */; };
 		36A08B011D3ECC6500E39127 /* ItineraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */; };
@@ -56,6 +58,8 @@
 /* Begin PBXFileReference section */
 		36658B711D4008350084DD6F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		36658B731D4008C00084DD6F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		36658BAF1D40D6070084DD6F /* MagGlassViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagGlassViewController.swift; sourceTree = "<group>"; };
+		36658BB01D40D6070084DD6F /* MagGlassViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MagGlassViewController.xib; sourceTree = "<group>"; };
 		36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoriesViewController.swift; path = esc/CategoriesViewController.swift; sourceTree = "<group>"; };
 		36A08AF01D3ECC6500E39127 /* CategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoriesViewController.xib; path = esc/CategoriesViewController.xib; sourceTree = "<group>"; };
 		36A08AF11D3ECC6500E39127 /* ItineraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItineraryTableViewCell.swift; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
 				BFE4A7EC1D403F8800A24F10 /* UserController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
+				36658BAF1D40D6070084DD6F /* MagGlassViewController.swift */,
 				BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */,
 				4E914A8F1D3FC8F10042CD42 /* GenerateItineraryController.swift */,
 				36A08B0F1D3F910300E39127 /* SearchViewController.swift */,
@@ -207,6 +212,7 @@
 				BFE4A7101D3D08A900A24F10 /* LoginView.xib */,
 				BFE4A70C1D3D076F00A24F10 /* RegisterView.xib */,
 				BFE4A7611D3D95B600A24F10 /* UserTripsView.xib */,
+				36658BB01D40D6070084DD6F /* MagGlassViewController.xib */,
 				BFE4A75A1D3D71A400A24F10 /* CityTripView.xib */,
 				36A08B101D3F910300E39127 /* SearchViewController.xib */,
 				36A08AF61D3ECC6500E39127 /* PlanDayViewController.xib */,
@@ -314,6 +320,7 @@
 				36A08B0A1D3ECC6500E39127 /* RouteViewController.xib in Resources */,
 				BFE4A7F11D4049D500A24F10 /* CollectionViewCell.xib in Resources */,
 				36A08B121D3F910300E39127 /* SearchViewController.xib in Resources */,
+				36658BB21D40D6070084DD6F /* MagGlassViewController.xib in Resources */,
 				36A08B081D3ECC6500E39127 /* RouteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +396,7 @@
 				4E914A691D3FAA2B0042CD42 /* Trip.swift in Sources */,
 				4E914A671D3FA5AF0042CD42 /* Event.swift in Sources */,
 				BFE4A7111D3D08A900A24F10 /* RegisterViewController.swift in Sources */,
+				36658BB11D40D6070084DD6F /* MagGlassViewController.swift in Sources */,
 				36A08B111D3F910300E39127 /* SearchViewController.swift in Sources */,
 				4E914A901D3FC8F10042CD42 /* GenerateItineraryController.swift in Sources */,
 				36A08B0D1D3ECC6500E39127 /* EventViewController.swift in Sources */,

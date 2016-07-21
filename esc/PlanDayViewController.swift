@@ -17,6 +17,11 @@ class PlanDayViewController: UIViewController {
     @IBOutlet weak var AfternoonPlan: UIButton!
     @IBOutlet weak var EveningPlan: UIButton!
     
+//    @IBAction func animatedAllDay(sender: UIButton) {
+//        
+//    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBarHidden = false
