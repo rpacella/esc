@@ -23,8 +23,8 @@
                 <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="psquarebigben" translatesAutoresizingMaskIntoConstraints="NO" id="TTc-iZ-9UA">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What part of your day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-qE-bXr">
-                    <rect key="frame" x="0.0" y="125" width="600" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What part of your day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-qE-bXr">
+                    <rect key="frame" x="0.0" y="125.5" width="600" height="19"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -70,8 +70,8 @@
                         <action selector="presentCategoryPage:" destination="-1" eventType="touchUpInside" id="HB5-HZ-5LM"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="needs to be planned?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcZ-by-YXs">
-                    <rect key="frame" x="193" y="158" width="215" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="needs to be planned?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcZ-by-YXs">
+                    <rect key="frame" x="198.5" y="157.5" width="204" height="19"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -109,6 +109,6 @@
         </view>
     </objects>
     <resources>
-        <image name="psquarebigben" width="1024" height="1024"/>
+        <image name="psquarebigben" width="982" height="982"/>
     </resources>
 </document>

@@ -10,10 +10,14 @@ import UIKit
 
 class DayV2Cell: UITableViewCell {
 
+    var randomImagesArray : [String] = ["penguin", "beach", "wheel", "mountain", "lionshead"]
+    @IBOutlet weak var cellImageView: UIImageView!
+    @IBOutlet weak var dayNumberLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
+        let random = Int(arc4random_uniform(5))
+        cellImageView.image = UIImage(named: randomImagesArray[random])    }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

@@ -33,7 +33,9 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
         locationManager.delegate = self
 
         let doneButton = UIBarButtonItem(barButtonSystemItem: .Done , target: self, action: #selector(doneButtonClicked))
-        
+        self.navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
         self.navigationItem.rightBarButtonItem = doneButton
         
         

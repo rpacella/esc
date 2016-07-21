@@ -18,6 +18,8 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         tableView.registerNib(UINib(nibName: "DayV1Cell", bundle: nil), forCellReuseIdentifier: "day1cell")
+        tableView.registerNib(UINib(nibName: "DayV2Cell", bundle: nil), forCellReuseIdentifier: "day2cell")
+
         
         let backImage = UIImage(named: "backArrow")
         let backButton = UIBarButtonItem(image: backImage, style: UIBarButtonItemStyle.Plain, target: self, action: #selector(backButtonClicked))
@@ -48,28 +50,26 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        /*
-         if section % 2 == 0 {
-         cell?.imageView = dataArray.image
-         return DayV1Cell
-         }
-         if section % 2 != 0 {
-         cell?.imagView = dataArrat.image
-         return DayV2Cell
-         }
-         
-         */
         
-       let cell = tableView.dequeueReusableCellWithIdentifier("day1cell")
+        if indexPath.row % 2 == 0 {
+//            let cell = tableView.dequeueReusableCellWithIdentifier("day1cell")
+        let cell : DayV1Cell = tableView.dequeueReusableCellWithIdentifier("day1cell") as! DayV1Cell
+            let cellNum = String(indexPath.row + 1)
+            cell.dayNumberLabel.text = cellNum
+            return cell
+        }
+        else {
+            let cell : DayV2Cell = tableView.dequeueReusableCellWithIdentifier("day2cell") as! DayV2Cell
+            let cellNum = String(indexPath.row + 1)
+            cell.dayNumberLabel.text = cellNum
+            return cell
+        }
         
-        return cell!
     }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //TripController.sharedInstance.currentTrips.count
-        
         return 3
-        
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -82,16 +82,15 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
             
             let manager = NSFileManager.defaultManager()
             let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
-            let fileURL = documents.URLByAppendingPathComponent(removed.ID.UUIDString)
+//            let fileURL = documents.URLByAppendingPathComponent(removed.ID.UUIDString)
             
             do {
-                try NSFileManager.defaultManager().removeItemAtPath(fileURL.path!)
+//                try NSFileManager.defaultManager().removeItemAtPath(fileURL.path!)
             } catch {
                 print("cannot remove file")
             }
             
         }
-        
     }
     
     
@@ -104,15 +103,15 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         return 1
     }
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //push to itenerary for day
         //decode itenerary for day
-        let selectedTrip = TripController.sharedInstance.currentTrips[indexPath.row]
+//        let selectedTrip = TripController.sharedInstance.currentTrips[indexPath.row]
         
         // you can use selectedTrip to populate the table view of tripListViewController
         
         let tripListViewController = TripListViewController(nibName: "TripListViewController", bundle: nil)
-self.navigationController?.pushViewController(tripListViewController, animated: true)
+        self.navigationController?.pushViewController(tripListViewController, animated: true)
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

@@ -10,7 +10,6 @@ import UIKit
 
 class DayV1Cell: UITableViewCell {
 
-//    @IBOutlet weak var imageView: UIImageView!
     var randomImagesArray : [String] = ["penguin", "beach", "wheel", "mountain", "lionshead"]
     @IBOutlet weak var dayNumberLabel: UILabel!
     
