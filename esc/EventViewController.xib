@@ -8,6 +8,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController" customModule="esc" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionField" destination="nUO-Ht-yKw" id="uk1-IL-0gO"/>
+                <outlet property="startEndTime" destination="vb8-Ki-ByC" id="10J-Ls-CpO"/>
+                <outlet property="tagField" destination="mqY-Up-qkP" id="R6P-x1-RqZ"/>
+                <outlet property="titleField" destination="Tic-sc-646" id="AZW-j3-Ja1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,12 +30,6 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfr-Oq-d5N">
-                    <rect key="frame" x="360" y="131" width="71" height="17"/>
-                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-Ht-yKw">
                     <rect key="frame" x="30" y="280" width="97" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
@@ -39,7 +37,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start - End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb8-Ki-ByC">
-                    <rect key="frame" x="360" y="164" width="92" height="17"/>
+                    <rect key="frame" x="360" y="131" width="92" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -47,22 +45,26 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-Nn-yyC">
                     <rect key="frame" x="0.0" y="400" width="600" height="150"/>
                 </mapView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqY-Up-qkP">
+                    <rect key="frame" x="360" y="187" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="vb8-Ki-ByC" firstAttribute="top" secondItem="lfr-Oq-d5N" secondAttribute="top" multiplier="1.25" id="2r8-Jq-Y42"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="81H-82-4cX"/>
                 <constraint firstAttribute="trailing" secondItem="5A1-Nn-yyC" secondAttribute="trailing" id="CyO-j0-g8k"/>
                 <constraint firstItem="nUO-Ht-yKw" firstAttribute="top" secondItem="rEB-xU-CKF" secondAttribute="bottom" multiplier="1.1" id="FZ2-nw-tw7"/>
                 <constraint firstItem="nUO-Ht-yKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="1:20" id="Mbh-98-c50"/>
                 <constraint firstItem="5A1-Nn-yyC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="2:3" id="PW8-5l-EpI"/>
                 <constraint firstItem="5A1-Nn-yyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WhP-Vr-3e4"/>
-                <constraint firstItem="lfr-Oq-d5N" firstAttribute="top" secondItem="Tic-sc-646" secondAttribute="top" multiplier="1.75" id="Yo6-xf-OyO"/>
-                <constraint firstItem="lfr-Oq-d5N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="aG0-qI-Jqc"/>
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="e74-wb-5cx"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="1:8" id="fg4-ym-td7"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="1:20" id="jDk-Tf-av0"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="1:8" id="oBg-jY-CbP"/>
+                <constraint firstItem="vb8-Ki-ByC" firstAttribute="top" secondItem="Tic-sc-646" secondAttribute="top" multiplier="1.75" id="pPG-po-aad"/>
                 <constraint firstAttribute="bottom" secondItem="5A1-Nn-yyC" secondAttribute="bottom" constant="50" id="sHK-dd-Vcr"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="tUf-hm-g05"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="zcu-dI-FQt"/>

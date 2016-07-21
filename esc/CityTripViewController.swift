@@ -52,18 +52,23 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if indexPath.row % 2 == 0 {
-//            let cell = tableView.dequeueReusableCellWithIdentifier("day1cell")
         let cell : DayV1Cell = tableView.dequeueReusableCellWithIdentifier("day1cell") as! DayV1Cell
+            if indexPath.row == 0 {
+             cell.cellImageView?.image = UIImage(named: "cable")
+            }
+            if indexPath.row == 2 {
+                cell.cellImageView?.image = UIImage(named: "penguin")
+            }
             let cellNum = String(indexPath.row + 1)
             cell.dayNumberLabel.text = cellNum
-            var randomImagesArray : [String] = ["penguin", "beach", "wheel", "mountain", "lionshead", "capetownDayPlanned", "fuji", "greece2", "sunset", "userBackground"]
-            let random = Int(arc4random_uniform(10))
-//            cell.imageView = UIImage(named: randomImagesArray[random])
             return cell
         }
         else {
             let cell : DayV2Cell = tableView.dequeueReusableCellWithIdentifier("day2cell") as! DayV2Cell
             let cellNum = String(indexPath.row + 1)
+            if indexPath.row == 1 {
+                cell.cellImageView?.image = UIImage(named: "wheel")
+            }
             cell.dayNumberLabel.text = cellNum
             return cell
         }

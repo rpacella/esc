@@ -10,12 +10,6 @@ import UIKit
 
 class ItineraryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    // dummy data
-    var array = ["V&A Waterfront", "Cape Town Comedy Club", "Two Oceans Aquarium", "Robben Island"]
-    
-    // real data
-    // var eventList = [Event]()
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -37,8 +31,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        // need to change
-        return array.count
+        return TripController.sharedInstance.returnTrip().eventList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -46,11 +39,10 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         // need reuseID
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier", forIndexPath: indexPath) as! ItineraryTableViewCell
         
-        let title = array[indexPath.row]
-        
         // fill in relevant fields of itinerary table view cell
-        cell.titleField.text = title
-        cell.descriptionField.text = "Entertainment"
+        cell.titleField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].title
+
+        cell.descriptionField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].tag
         
         return cell
         
@@ -71,17 +63,14 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        // need to change
-        let chosenEvent = array[indexPath.row]
-        
-        print(chosenEvent)
-        
         let eventViewController = EventViewController(nibName: "EventViewController", bundle: nil)
         
+        eventViewController.titleField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].title
+        eventViewController.startEndTime.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].startTime + " - " + TripController.sharedInstance.returnTrip().eventList[indexPath.row].endTime
+         eventViewController.descriptionField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].description
+         eventViewController.tagField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].tag
+            
         navigationController?.pushViewController(eventViewController, animated: true)
-        
-        // bring to relevant description page, filling in apropriate values
-        
         
     }
     
@@ -90,6 +79,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     @IBAction func regenerateItinerary(sender: UIButton) {
+        //TODO - get another trip, can make returnTrip2 function in TripController
         // make another pull request for data, reload tableview data
         print("requested new itinerary")
     }
@@ -97,24 +87,18 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func saveItinerary(sender: UIButton) {
         
-        // go to TripViewListController
-        print("saved trip to database")
-        
         // encode the trip
-        // let newTrip = Trip(eventList: eventList)
+        let newTrip = Trip()
         
-        // TripController.sharedInstance.currentTrips.append(newTrip)
-        // let manager = NSFileManager.defaultManager()
-        // let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
-        // let fileURL = documents.URLByAppendingPathComponent(newTrip.ID.UUIDString)
+        TripController.sharedInstance.currentTrips.append(newTrip)
+        let manager = NSFileManager.defaultManager()
+        let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+        let fileURL = documents.URLByAppendingPathComponent(newTrip.ID.UUIDString)
         
-        // NSKeyedArchiver.archiveRootObject(newTrip, toFile: fileURL.path!)
+        NSKeyedArchiver.archiveRootObject(newTrip, toFile: fileURL.path!)
         
         let tripListViewController = TripListViewController(nibName: "TripListViewController", bundle: nil)
-        
         navigationController?.pushViewController(tripListViewController, animated: true)
-        
-       
         
     }
 
