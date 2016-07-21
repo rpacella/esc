@@ -22,23 +22,27 @@
                         <constraint firstAttribute="width" constant="88" id="9FO-rd-q8l"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
-                    <state key="normal" title="Regenerate"/>
+                    <state key="normal" title="Regenerate">
+                        <color key="titleColor" red="0.058440975844860077" green="0.031592853367328644" blue="0.0097972117364406586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
                     <connections>
                         <action selector="regenerateItinerary:" destination="-1" eventType="touchUpInside" id="B8E-xf-Lgh"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-Da-mPa">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-Da-mPa">
                     <rect key="frame" x="237" y="524" width="127" height="26"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="127" id="cBT-CR-b4E"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
-                    <state key="normal" title="Save to My Trips"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                    <state key="normal" title="Save to My Trips">
+                        <color key="titleColor" red="0.058440975844860077" green="0.031592853367328644" blue="0.0097972117364406586" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
                     <connections>
                         <action selector="saveItinerary:" destination="-1" eventType="touchUpInside" id="guU-t8-N0r"/>
                     </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0HM-ya-vPH">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0HM-ya-vPH">
                     <rect key="frame" x="0.0" y="111" width="600" height="413"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
@@ -48,7 +52,7 @@
                         <constraint firstAttribute="width" constant="250" id="ZxZ-7K-Zo5"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>

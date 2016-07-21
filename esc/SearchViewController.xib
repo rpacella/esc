@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="esc" customModuleProvider="target">
@@ -16,11 +17,11 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greece" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-pV-yRo">
-                    <rect key="frame" x="8" y="8" width="584" height="584"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greece3" translatesAutoresizingMaskIntoConstraints="NO" id="V9N-Bj-jD0">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you going?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofA-H9-h3s">
-                    <rect key="frame" x="160" y="108" width="280" height="35"/>
+                    <rect key="frame" x="160" y="83" width="280" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="NDb-px-76o"/>
                         <constraint firstAttribute="width" constant="280" id="zWt-v9-fET"/>
@@ -29,21 +30,21 @@
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Nmb-wB-GCQ">
-                    <rect key="frame" x="48" y="238" width="504" height="44"/>
-                    <textInputTraits key="textInputTraits"/>
-                </searchBar>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Current Location:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oJ-Y3-Odf">
-                    <rect key="frame" x="48" y="208" width="135" height="15"/>
+                    <rect key="frame" x="48" y="175" width="135" height="15"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfi-bg-j1y">
-                    <rect key="frame" x="186" y="202" width="88" height="26"/>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Nmb-wB-GCQ">
+                    <rect key="frame" x="48" y="200" width="504" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wfi-bg-j1y">
+                    <rect key="frame" x="184" y="170" width="88" height="26"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="14"/>
                     <state key="normal" title=" Cape Town">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                     <connections>
                         <action selector="currentLocationButton:" destination="-1" eventType="touchUpInside" id="LPa-Kz-BkW"/>
@@ -53,22 +54,23 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Nmb-wB-GCQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="40" id="0Q5-i7-Va6"/>
-                <constraint firstItem="xrr-pV-yRo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="55m-t0-M2i"/>
-                <constraint firstItem="Nmb-wB-GCQ" firstAttribute="top" secondItem="6oJ-Y3-Odf" secondAttribute="bottom" constant="15" id="6qM-jz-aff"/>
-                <constraint firstItem="xrr-pV-yRo" firstAttribute="top" secondItem="Nmb-wB-GCQ" secondAttribute="top" constant="-230" id="9AD-ba-kju"/>
                 <constraint firstItem="6oJ-Y3-Odf" firstAttribute="leading" secondItem="Nmb-wB-GCQ" secondAttribute="leading" id="9Yv-yL-gAF"/>
-                <constraint firstItem="ofA-H9-h3s" firstAttribute="centerX" secondItem="xrr-pV-yRo" secondAttribute="centerX" id="C82-Tx-IFv"/>
+                <constraint firstItem="ofA-H9-h3s" firstAttribute="centerX" secondItem="V9N-Bj-jD0" secondAttribute="centerX" id="AKk-Z5-03R"/>
+                <constraint firstItem="Nmb-wB-GCQ" firstAttribute="top" secondItem="6oJ-Y3-Odf" secondAttribute="bottom" constant="10" id="Cvr-P2-pjP"/>
                 <constraint firstAttribute="trailingMargin" secondItem="Nmb-wB-GCQ" secondAttribute="trailing" constant="40" id="FSp-qZ-n2H"/>
-                <constraint firstItem="ofA-H9-h3s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="100" id="Gce-cg-6Ez"/>
-                <constraint firstItem="xrr-pV-yRo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="TNG-co-yD6"/>
-                <constraint firstAttribute="bottomMargin" secondItem="xrr-pV-yRo" secondAttribute="bottom" id="WJg-tZ-5bQ"/>
-                <constraint firstItem="Nmb-wB-GCQ" firstAttribute="top" secondItem="Wfi-bg-j1y" secondAttribute="bottom" constant="10" id="ZDX-AT-riZ"/>
-                <constraint firstAttribute="trailingMargin" secondItem="xrr-pV-yRo" secondAttribute="trailing" id="cos-BY-Bad"/>
+                <constraint firstItem="ofA-H9-h3s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="75" id="Gce-cg-6Ez"/>
+                <constraint firstItem="Nmb-wB-GCQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="1:3" id="GoK-DD-sh0"/>
+                <constraint firstItem="Nmb-wB-GCQ" firstAttribute="top" secondItem="Wfi-bg-j1y" secondAttribute="bottom" constant="4" id="Ivh-xu-24t"/>
+                <constraint firstAttribute="trailing" secondItem="V9N-Bj-jD0" secondAttribute="trailing" id="M25-u9-9wc"/>
+                <constraint firstItem="V9N-Bj-jD0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Wmd-Wb-EDH"/>
                 <constraint firstItem="Wfi-bg-j1y" firstAttribute="leading" secondItem="6oJ-Y3-Odf" secondAttribute="trailing" constant="3" id="jED-JQ-yKW"/>
+                <constraint firstAttribute="bottom" secondItem="V9N-Bj-jD0" secondAttribute="bottom" id="nag-FU-ZrU"/>
+                <constraint firstItem="V9N-Bj-jD0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oFH-EA-QHb"/>
+                <constraint firstItem="Nmb-wB-GCQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yVi-KV-A9w"/>
             </constraints>
         </view>
     </objects>
     <resources>
-        <image name="greece" width="806" height="1195"/>
+        <image name="greece3" width="437" height="522"/>
     </resources>
 </document>
