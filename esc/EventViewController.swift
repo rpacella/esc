@@ -10,7 +10,19 @@ import UIKit
 import MapKit
 
 class EventViewController: UIViewController {
-
+    
+    // switch start - end and tag order on view, also add constraints for tag
+    
+    @IBOutlet weak var titleField: UILabel!
+    
+    @IBOutlet weak var startEndTime: UILabel!
+    
+    @IBOutlet weak var descriptionField: UILabel!
+    
+    @IBOutlet weak var tagField: UILabel!
+    
+    var location: CLLocationCoordinate2D?
+    
     @IBOutlet weak var navBar: UINavigationBar!
     
     override func viewDidLoad() {
