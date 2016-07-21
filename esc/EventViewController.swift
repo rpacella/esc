@@ -21,7 +21,7 @@ class EventViewController: UIViewController {
     
     @IBOutlet weak var tagField: UILabel!
     
-    var location: CLLocationCoordinate2D?
+    //var location: CLLocationCoordinate2D?
     
     @IBOutlet weak var navBar: UINavigationBar!
     
@@ -47,14 +47,6 @@ class EventViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+ 
 
 }

@@ -20,11 +20,10 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     @IBOutlet weak var tableView: UITableView!
 
     let locationManager = CLLocationManager()
-    
+    var locations:[CLLocationCoordinate2D]?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        Trip.sharedInstance.getEvents()
         
         tableView.registerNib(UINib(nibName: "RouteTableViewCell", bundle: nil), forCellReuseIdentifier: "cellidentifier2")
         
@@ -137,25 +136,28 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Trip.sharedInstance.dummyarray.count
+        return TripController.sharedInstance.returnTrip().eventList.count
         
-        //return Trip.sharedInstance.eventList.count
-    }
+        }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier2") as! RouteTableViewCell
         
-        let title = Trip.sharedInstance.dummyarray[indexPath.row]
+        cell.titleField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].title
         
-        // fill in relevant fields of itinerary table view cell
-        cell.titleField.text = title
-        cell.tagField.text = "Entertainment"
+        cell.tagField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].tag
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewcontroller = EventViewController (nibName: "EventViewController", bundle: nil)
+        
+        viewcontroller.titleField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].title
+        viewcontroller.startEndTime.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].startTime + " - " + TripController.sharedInstance.returnTrip().eventList[indexPath.row].endTime
+        viewcontroller.descriptionField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].description
+        viewcontroller.tagField.text = TripController.sharedInstance.returnTrip().eventList[indexPath.row].tag
+        
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.navigationController?.pushViewController(viewcontroller, animated: true)
     }
@@ -164,15 +166,6 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         return 100.0
     }
     
-    
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

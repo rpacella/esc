@@ -12,7 +12,7 @@ import CoreLocation
 
 class Event: NSObject, NSCoding, MKAnnotation {
     
-    var title: String?
+    var title: String? = ""
     var eventDescription: String
     var tag: String
     var startTime: String

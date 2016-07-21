@@ -12,7 +12,6 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
 
     @IBOutlet weak var tableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -32,7 +31,6 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         
 }
 
-    
     func addButtonClicked() {
         
         let searchViewController = SearchViewController (nibName: "SearchViewController", bundle: nil)
@@ -77,7 +75,7 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return TripController.sharedInstance.currentTrips.count
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -90,10 +88,10 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
             
             let manager = NSFileManager.defaultManager()
             let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
-//            let fileURL = documents.URLByAppendingPathComponent(removed.ID.UUIDString)
+            let fileURL = documents.URLByAppendingPathComponent(removed.ID.UUIDString)
             
             do {
-//                try NSFileManager.defaultManager().removeItemAtPath(fileURL.path!)
+                try NSFileManager.defaultManager().removeItemAtPath(fileURL.path!)
             } catch {
                 print("cannot remove file")
             }
@@ -103,22 +101,21 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        //calulation to see how many days there are in NSCoding file
-        /*
-         return CityTripDaysArray.count
-         */
         
         return 1
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        //push to itenerary for day
+        
         //decode itenerary for day
-//        let selectedTrip = TripController.sharedInstance.currentTrips[indexPath.row]
+        let selectedTrip = TripController.sharedInstance.currentTrips[indexPath.row]
         
         // you can use selectedTrip to populate the table view of tripListViewController
         
         let tripListViewController = TripListViewController(nibName: "TripListViewController", bundle: nil)
+        
+        tripListViewController.trip = selectedTrip
+        
         self.navigationController?.pushViewController(tripListViewController, animated: true)
     }
     

@@ -280,11 +280,60 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GV4-Uo-17Q">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="ZoP-ut-qAD">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                            <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="WMD-yI-JeY"/>
+                                <constraint firstAttribute="height" constant="16" id="tZq-eV-Mtk"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="TQo-5Z-KNC">
+                            <rect key="frame" x="51" y="2" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="ExJ-qI-R7I"/>
+                                <constraint firstAttribute="height" constant="16" id="hjd-CY-3yW"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="gnW-DM-x8g">
+                            <rect key="frame" x="77" y="2" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="Tma-dy-kjH"/>
+                                <constraint firstAttribute="height" constant="16" id="q9a-KM-JCW"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="quw-cd-cqV">
+                            <rect key="frame" x="25" y="2" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="3db-6B-MJZ"/>
+                                <constraint firstAttribute="width" constant="16" id="PQD-kj-9QC"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="93" id="5G2-6F-aAj"/>
+                        <constraint firstItem="ZoP-ut-qAD" firstAttribute="leading" secondItem="GV4-Uo-17Q" secondAttribute="leading" id="AK1-Pm-dhf"/>
+                        <constraint firstItem="TQo-5Z-KNC" firstAttribute="top" secondItem="GV4-Uo-17Q" secondAttribute="top" constant="2" id="Av7-fq-OWl"/>
+                        <constraint firstItem="TQo-5Z-KNC" firstAttribute="leading" secondItem="quw-cd-cqV" secondAttribute="trailing" constant="10" id="HyD-Qd-qO7"/>
+                        <constraint firstItem="quw-cd-cqV" firstAttribute="leading" secondItem="ZoP-ut-qAD" secondAttribute="trailing" constant="9" id="KIA-o5-qvB"/>
+                        <constraint firstItem="gnW-DM-x8g" firstAttribute="top" secondItem="GV4-Uo-17Q" secondAttribute="top" constant="2" id="Oq0-v8-sUD"/>
+                        <constraint firstItem="gnW-DM-x8g" firstAttribute="leading" secondItem="TQo-5Z-KNC" secondAttribute="trailing" constant="10" id="dTr-cv-Jfi"/>
+                        <constraint firstAttribute="bottom" secondItem="quw-cd-cqV" secondAttribute="bottom" id="sCx-Wy-Sdu"/>
+                        <constraint firstItem="ZoP-ut-qAD" firstAttribute="top" secondItem="GV4-Uo-17Q" secondAttribute="top" id="tsu-X0-nB1"/>
+                        <constraint firstAttribute="bottom" secondItem="TQo-5Z-KNC" secondAttribute="bottom" id="tw8-mS-tTj"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="GV4-Uo-17Q" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Db-2Z-hUr"/>
                 <constraint firstItem="Se6-EE-Fmo" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.3" id="COp-F8-Vsl"/>
                 <constraint firstAttribute="bottomMargin" secondItem="sKs-Nq-LS6" secondAttribute="bottom" id="MIf-eb-jb0"/>
+                <constraint firstAttribute="bottom" secondItem="GV4-Uo-17Q" secondAttribute="bottom" constant="70" id="RKb-Dc-ITG"/>
                 <constraint firstItem="4OA-SV-FxR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Yol-dr-3wC"/>
                 <constraint firstAttribute="trailingMargin" secondItem="sKs-Nq-LS6" secondAttribute="trailing" id="ZPn-D5-TKz"/>
                 <constraint firstItem="sKs-Nq-LS6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="cOK-Nu-RNG"/>
@@ -305,6 +354,7 @@
         <image name="Shopping" width="95" height="96"/>
         <image name="Sightsee" width="95" height="96"/>
         <image name="Tour" width="95" height="95"/>
+        <image name="circle" width="298" height="294"/>
         <image name="fuji" width="2048" height="2048"/>
     </resources>
 </document>

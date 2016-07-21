@@ -13,6 +13,8 @@ let backImage = UIImage(named: "backCapeTown")
 
 class TripListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var trip: Trip?
+    
     let locationManager = CLLocationManager()
 
     @IBOutlet weak var tableView: UITableView!
@@ -65,7 +67,11 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func routeAction() {
+        
         let viewcontroller = RouteViewController (nibName: "RouteViewController", bundle: nil)
+        
+        viewcontroller.locations = returnLocations()
+        
         self.navigationController?.pushViewController(viewcontroller, animated: true)
     }
 
@@ -74,24 +80,48 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    func returnLocations() -> [CLLocationCoordinate2D] {
+        
+        var locations = [CLLocationCoordinate2D]()
+        
+        for item in (self.trip?.eventList)! {
+            let event = item as? Event
+            locations.append(event!.coordinate)
+        }
+        
+        return locations
+        
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 5
+       return trip!.eventList.count
+    
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier") as! ItineraryTableViewCell
+        
+        cell.titleField.text = trip!.eventList[indexPath.row].title
+        
+        cell.descriptionField.text = trip!.eventList[indexPath.row].tag
+        
         
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewcontroller = EventViewController (nibName: "EventViewController", bundle: nil)
+        
+        viewcontroller.titleField.text = trip!.eventList[indexPath.row].title
+        viewcontroller.startEndTime.text = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
+        viewcontroller.descriptionField.text = trip!.eventList[indexPath.row].description
+        viewcontroller.tagField.text = trip!.eventList[indexPath.row].tag
+        
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.navigationController?.pushViewController(viewcontroller, animated: true)//presentViewController(viewcontroller, animated: true, completion: nil)
     }
@@ -99,16 +129,5 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 150.0
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
