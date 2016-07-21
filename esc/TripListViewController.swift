@@ -16,8 +16,6 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     var trip: Trip?
     
     let locationManager = CLLocationManager()
-    
-    var dummyarray = ["V&A Waterfront", "Cape Town Comedy Club", "Two Oceans Aquarium", "Robben Island"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -69,13 +67,30 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func routeAction() {
+        
         let viewcontroller = RouteViewController (nibName: "RouteViewController", bundle: nil)
+        
+        viewcontroller.locations = returnLocations()
+        
         self.navigationController?.pushViewController(viewcontroller, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func returnLocations() -> [CLLocationCoordinate2D] {
+        
+        var locations = [CLLocationCoordinate2D]()
+        
+        for item in (self.trip?.eventList)! {
+            let event = item as? Event
+            locations.append(event!.coordinate)
+        }
+        
+        return locations
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

@@ -20,7 +20,8 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     @IBOutlet weak var tableView: UITableView!
 
     let locationManager = CLLocationManager()
-    
+    var locations:[CLLocationCoordinate2D]?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
