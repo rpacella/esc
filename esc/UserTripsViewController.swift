@@ -34,10 +34,11 @@ class UserTripsViewController: UIViewController /*, UICollectionViewDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        city1Image.image = UIImage(named: "penguin")
-        city2Image.image = UIImage(named: "penguin")
-        city3Image.image = UIImage(named: "penguin")
-        city4View.setImage(UIImage(named: "penguin"), forState: .Normal)
+        city4View.setImage(UIImage(named: "lionshead"), forState: .Normal)
+//        city1Image.image = UIImage(named: "penguin")
+//        city2Image.image = UIImage(named: "penguin")
+//        city3Image.image = UIImage(named: "penguin")
+//        city4View.setImage(UIImage(named: "penguin"), forState: .Normal)
     
         
 //        screenSize = UIScreen.mainScreen().bounds

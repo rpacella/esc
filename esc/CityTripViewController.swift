@@ -56,6 +56,9 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         let cell : DayV1Cell = tableView.dequeueReusableCellWithIdentifier("day1cell") as! DayV1Cell
             let cellNum = String(indexPath.row + 1)
             cell.dayNumberLabel.text = cellNum
+            var randomImagesArray : [String] = ["penguin", "beach", "wheel", "mountain", "lionshead", "capetownDayPlanned", "fuji", "greece2", "sunset", "userBackground"]
+            let random = Int(arc4random_uniform(10))
+//            cell.imageView = UIImage(named: randomImagesArray[random])
             return cell
         }
         else {

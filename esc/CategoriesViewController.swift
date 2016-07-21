@@ -31,6 +31,8 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
         super.viewDidLoad()
         
         locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
 
         let doneButton = UIBarButtonItem(barButtonSystemItem: .Done , target: self, action: #selector(doneButtonClicked))
         self.navigationController?.navigationBarHidden = false
@@ -49,11 +51,6 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
     }
     
     func doneButtonClicked() {
-        
-        // ask for current location
-        locationManager.requestWhenInUseAuthorization()
-        
-        locationManager.startUpdatingLocation()
         
         // determine what fields have been selected
         
