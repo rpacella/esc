@@ -37,7 +37,6 @@
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="animatedAllDay:" destination="-1" eventType="touchUpInside" id="No2-Sb-HVE"/>
                         <action selector="presentCategoryPage:" destination="-1" eventType="touchUpInside" id="L30-PD-fSW"/>
                     </connections>
                 </button>
