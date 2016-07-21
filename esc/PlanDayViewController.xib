@@ -20,17 +20,17 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="psquarebigben" translatesAutoresizingMaskIntoConstraints="NO" id="TTc-iZ-9UA">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunset" translatesAutoresizingMaskIntoConstraints="NO" id="TTc-iZ-9UA">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="What part of your day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-qE-bXr">
-                    <rect key="frame" x="0.0" y="125" width="600" height="20"/>
+                    <rect key="frame" x="8" y="80" width="600" height="20"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.091160483658313751" green="0.20029747486114502" blue="0.61087065935134888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kN-MN-Eli">
-                    <rect key="frame" x="100" y="227" width="400" height="26"/>
+                    <rect key="frame" x="100" y="257" width="400" height="26"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                     <size key="titleShadowOffset" width="2" height="2"/>
                     <state key="normal" title="All Day">
@@ -41,7 +41,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqK-0P-3gM">
-                    <rect key="frame" x="100" y="287" width="400" height="26"/>
+                    <rect key="frame" x="100" y="317" width="400" height="26"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                     <state key="normal" title="Morning">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,7 +51,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-Ov-Acx">
-                    <rect key="frame" x="100" y="407" width="400" height="26"/>
+                    <rect key="frame" x="100" y="437" width="400" height="26"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                     <state key="normal" title="Evening">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,7 +61,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v25-Bv-WUq">
-                    <rect key="frame" x="100" y="347" width="400" height="26"/>
+                    <rect key="frame" x="100" y="377" width="400" height="26"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                     <state key="normal" title="Afternoon">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,9 +71,9 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="needs to be planned?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcZ-by-YXs">
-                    <rect key="frame" x="193" y="158" width="215" height="20"/>
+                    <rect key="frame" x="201" y="111" width="215" height="20"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="19"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" red="0.091160483658313751" green="0.20029747486114502" blue="0.61087065935134888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -81,20 +81,20 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="YF9-qE-bXr" secondAttribute="trailing" id="8SX-PB-knZ"/>
                 <constraint firstItem="TTc-iZ-9UA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Zp-Uk-q9c"/>
-                <constraint firstItem="v25-Bv-WUq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.2" id="AG9-le-GYH"/>
+                <constraint firstItem="v25-Bv-WUq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.3" id="AG9-le-GYH"/>
                 <constraint firstAttribute="trailing" secondItem="v25-Bv-WUq" secondAttribute="trailing" constant="100" id="Gzm-vY-FCD"/>
                 <constraint firstItem="TTc-iZ-9UA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="H0T-si-FfA"/>
                 <constraint firstAttribute="trailing" secondItem="bFo-Ov-Acx" secondAttribute="trailing" constant="100" id="HEY-Iq-Rm4"/>
                 <constraint firstItem="bFo-Ov-Acx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ITZ-Ms-Ypr"/>
                 <constraint firstItem="v25-Bv-WUq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LV6-pK-jB3"/>
-                <constraint firstItem="0kN-MN-Eli" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.8" id="Nfw-JT-RQd"/>
-                <constraint firstItem="bFo-Ov-Acx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.4" id="Rww-1o-oYY"/>
+                <constraint firstItem="0kN-MN-Eli" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.9" id="Nfw-JT-RQd"/>
+                <constraint firstItem="bFo-Ov-Acx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.5" id="Rww-1o-oYY"/>
                 <constraint firstItem="0kN-MN-Eli" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W2I-w6-3d5"/>
                 <constraint firstItem="jqK-0P-3gM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wku-3e-YHX"/>
                 <constraint firstAttribute="trailing" secondItem="TTc-iZ-9UA" secondAttribute="trailing" id="ZGS-vw-RoH"/>
                 <constraint firstAttribute="trailing" secondItem="0kN-MN-Eli" secondAttribute="trailing" constant="100" id="agB-jq-oI9"/>
-                <constraint firstItem="YF9-qE-bXr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.45" id="dS7-Pt-AhA"/>
-                <constraint firstItem="jqK-0P-3gM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="e0A-AV-UG3"/>
+                <constraint firstItem="YF9-qE-bXr" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="0.3" id="dS7-Pt-AhA"/>
+                <constraint firstItem="jqK-0P-3gM" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" multiplier="1.1" id="e0A-AV-UG3"/>
                 <constraint firstAttribute="trailing" secondItem="jqK-0P-3gM" secondAttribute="trailing" constant="100" id="eMB-wp-hCy"/>
                 <constraint firstAttribute="bottom" secondItem="TTc-iZ-9UA" secondAttribute="bottom" id="fn2-GK-t7p"/>
                 <constraint firstItem="v25-Bv-WUq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="iAd-RA-97E"/>
@@ -109,6 +109,6 @@
         </view>
     </objects>
     <resources>
-        <image name="psquarebigben" width="1024" height="1024"/>
+        <image name="sunset" width="1440" height="900"/>
     </resources>
 </document>
