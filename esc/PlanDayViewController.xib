@@ -110,6 +110,6 @@
         </view>
     </objects>
     <resources>
-        <image name="sunset" width="1440" height="900"/>
+        <image name="sunset" width="511" height="841"/>
     </resources>
 </document>

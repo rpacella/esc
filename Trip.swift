@@ -12,6 +12,9 @@ import MapKit
 class Trip: NSObject {
    static var sharedInstance = Trip()
     
+    //Dummy array
+    var dummyarray = ["V&A Waterfront", "Cape Town Comedy Club", "Two Oceans Aquarium", "Robben Island"]
+    
     var eventList:[Event] = []
     
 //    var ID: NSUUID

@@ -137,14 +137,19 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 5
+        return Trip.sharedInstance.dummyarray.count
+        
+        //return Trip.sharedInstance.eventList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier2") as! RouteTableViewCell
-        cell.textLabel?.text = String(Trip.sharedInstance.eventList[indexPath.row].title!)
-
+        
+        let title = Trip.sharedInstance.dummyarray[indexPath.row]
+        
+        // fill in relevant fields of itinerary table view cell
+        cell.titleField.text = title
+        cell.tagField.text = "Entertainment"
         
         return cell
     }
