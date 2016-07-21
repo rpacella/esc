@@ -30,6 +30,12 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
         
         
 }
+    
+    override func viewWillDisappear(animated: Bool) {
+        
+        tableView.reloadData()
+        
+    }
 
     func addButtonClicked() {
         

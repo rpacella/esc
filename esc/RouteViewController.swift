@@ -124,6 +124,9 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     func listAction() {
         let viewcontroller = TripListViewController (nibName: "TripListViewController", bundle: nil)
+        
+        viewcontroller.trip = self.trip
+        
         self.navigationController?.pushViewController(viewcontroller, animated: true)
         }
 
@@ -163,6 +166,8 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             break
             
         }
+        
+        cell.imageField.tintColor = UIColor.blackColor()
         
         return cell
     }
