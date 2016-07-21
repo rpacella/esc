@@ -16,6 +16,8 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     var trip: Trip?
     
     let locationManager = CLLocationManager()
+    
+    var dummyarray = ["V&A Waterfront", "Cape Town Comedy Club", "Two Oceans Aquarium", "Robben Island"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -92,6 +94,7 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.titleField.text = trip!.eventList[indexPath.row].title
         
         cell.descriptionField.text = trip!.eventList[indexPath.row].tag
+        
         
         return cell
     }
