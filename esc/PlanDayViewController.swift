@@ -19,9 +19,9 @@ class PlanDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBarHidden = true
-       // self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
-       // self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
+        navigationController?.navigationBarHidden = false
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
 
         //tabBarItem.title = "New Trip"
         configureButton(AllDayPlan)
