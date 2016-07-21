@@ -9,16 +9,18 @@
 import UIKit
 import MapKit
 
-class Trip: NSObject,  NSCoding {
-   static var sharedInstance = Trip.self 
-    var eventList: [Event]
+class Trip: NSObject {
+   static var sharedInstance = Trip()
+    
+    var eventList:[Event] = []
+    
 //    var ID: NSUUID
     
-    init(eventList: [Event]) {
-        
-        self.eventList = eventList
+//    init(eventList: [Event]) {
+//        
+//        self.eventList = eventList
 //        self.ID = NSUUID()
-    }
+    
     
     func returnURL() -> NSURL {
         let manager = NSFileManager.defaultManager()

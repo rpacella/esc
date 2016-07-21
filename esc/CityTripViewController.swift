@@ -82,10 +82,10 @@ class CityTripViewController: UIViewController, UITableViewDelegate, UITableView
             
             let manager = NSFileManager.defaultManager()
             let documents = manager.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
-            let fileURL = documents.URLByAppendingPathComponent(removed.ID.UUIDString)
+//            let fileURL = documents.URLByAppendingPathComponent(removed.ID.UUIDString)
             
             do {
-                try NSFileManager.defaultManager().removeItemAtPath(fileURL.path!)
+//                try NSFileManager.defaultManager().removeItemAtPath(fileURL.path!)
             } catch {
                 print("cannot remove file")
             }

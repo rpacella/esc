@@ -24,6 +24,8 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Trip.sharedInstance.getEvents()
+        
         tableView.registerNib(UINib(nibName: "RouteTableViewCell", bundle: nil), forCellReuseIdentifier: "cellidentifier2")
         
         let routeLabel = UIBarButtonItem(title: "| Route", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
@@ -141,13 +143,17 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier2") as! RouteTableViewCell
+        cell.textLabel?.text = String(Trip.sharedInstance.eventList[indexPath.row].title!)
+
+        
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewcontroller = EventViewController (nibName: "EventViewController", bundle: nil)
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.navigationController?.pushViewController(viewcontroller, animated: true)    }
+        self.navigationController?.pushViewController(viewcontroller, animated: true)
+    }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 100.0

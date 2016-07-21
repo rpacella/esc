@@ -20,7 +20,7 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
     
     var locationManager = CLLocationManager()
     
-    @IBOutlet weak var entertainmentButton: UIButton!
+    @IBOutlet weak var entertainmentButton: UIButton!    
     @IBOutlet weak var museumButton: UIButton!
     @IBOutlet weak var outdoorsButton: UIButton!
     @IBOutlet weak var nightlifeButton: UIButton!
@@ -141,7 +141,7 @@ class CategoriesViewController: UIViewController, /*WebService,*/ CLLocationMana
     
     func configureButton(button: UIButton) {
         button.setImage(UIImage(named:"unchecked.png"), forState: .Normal)
-        button.tintColor = UIColor.whiteColor()
+        button.tintColor = UIColor.clearColor()
 
     }
     

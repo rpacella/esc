@@ -177,16 +177,16 @@
 				BFE4A70F1D3D08A900A24F10 /* RegisterViewController.swift */,
 				BFE4A7601D3D95B600A24F10 /* UserTripsViewController.swift */,
 				BFE4A7591D3D71A400A24F10 /* CityTripViewController.swift */,
+				4E914A8F1D3FC8F10042CD42 /* GenerateItineraryController.swift */,
 				36A08B0F1D3F910300E39127 /* SearchViewController.swift */,
 				36A08AFD1D3ECC6500E39127 /* EventViewController.swift */,
 				36A08AF51D3ECC6500E39127 /* PlanDayViewController.swift */,
 				4E914A621D3FA3720042CD42 /* WebService.swift */,
 				36A08AEF1D3ECC6500E39127 /* CategoriesViewController.swift */,
-				4E914A8F1D3FC8F10042CD42 /* GenerateItineraryController.swift */,
 				36A08AF31D3ECC6500E39127 /* ItineraryViewController.swift */,
-				4E914A6A1D3FAC1F0042CD42 /* TripController.swift */,
 				36A08AFB1D3ECC6500E39127 /* TripListViewController.swift */,
 				36A08AF91D3ECC6500E39127 /* RouteViewController.swift */,
+				4E914A6A1D3FAC1F0042CD42 /* TripController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
