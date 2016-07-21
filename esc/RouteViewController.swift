@@ -24,8 +24,6 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Trip.sharedInstance.getEvents()
-        
         tableView.registerNib(UINib(nibName: "RouteTableViewCell", bundle: nil), forCellReuseIdentifier: "cellidentifier2")
         
         let routeLabel = UIBarButtonItem(title: "| Route", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
@@ -144,9 +142,7 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier2") as! RouteTableViewCell
-        
-        let title = Trip.sharedInstance.dummyarray[indexPath.row]
-        
+            
         // fill in relevant fields of itinerary table view cell
         cell.titleField.text = title
         cell.tagField.text = "Entertainment"

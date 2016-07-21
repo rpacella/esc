@@ -14,6 +14,8 @@ let backImage = UIImage(named: "backCapeTown")
 class TripListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let locationManager = CLLocationManager()
+    
+    var dummyarray = ["V&A Waterfront", "Cape Town Comedy Club", "Two Oceans Aquarium", "Robben Island"]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -87,6 +89,12 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cellidentifier") as! ItineraryTableViewCell
         
+        let titles = dummyarray[indexPath.row]
+        
+        // fill in relevant fields of itinerary table view cell
+        cell.titleField.text = titles
+        cell.descriptionField.text = "Entertainment"
+
         return cell
     }
     
