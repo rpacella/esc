@@ -63,4 +63,33 @@ class TripController {
         
     }
     
+    func generateTrip() -> Trip {
+        
+        let generatedTrip = Trip()
+        
+        let events1 = Event(title: "Bacon on Bree", eventDescription: "Cafe", tag: "Dining", startTime: "10:00", endTime: "11:00", coordinate: CLLocationCoordinate2D(latitude: -33.001, longitude: 18.202))
+        
+        generatedTrip.eventList.append(events1)
+        
+        let events2 = Event(title: "Bo-Kaap", eventDescription: "Sightseeing the beautiful buildings of Cape Town", tag: "Sightsee", startTime: "11:30", endTime: "14:00", coordinate: CLLocationCoordinate2D(latitude: -33.002, longitude: 18.203))
+        
+        generatedTrip.eventList.append(events2)
+        
+        let events3 = Event(title: "Dogs Bullocks", eventDescription: "Burger", tag: "Dining", startTime: "14:00", endTime: "15:30", coordinate: CLLocationCoordinate2D(latitude: -33.004, longitude: 18.204))
+
+        generatedTrip.eventList.append(events3)
+        
+        let events4 = Event(title: "Ocean Basket", eventDescription: "Shopping at the V&A waterfront area is incredible", tag: "Shopping", startTime: "15:30", endTime: "19:00", coordinate: CLLocationCoordinate2D(latitude: -33.0014, longitude: 18.2045))
+
+        generatedTrip.eventList.append(events4)
+        
+        let events5 = Event(title: "Fork", eventDescription: "Tapas", tag: "Dining", startTime: "18:00", endTime: "21:00", coordinate: CLLocationCoordinate2D(latitude: -33.0025, longitude: 18.2016))
+
+        generatedTrip.eventList.append(events5)
+        
+        let events6 = Event(title: "Tjing-Tjing", eventDescription: "Chill vibe at a bar right next to Long Street", tag: "Nightlife", startTime: "21:00", endTime: "23:30", coordinate: CLLocationCoordinate2D(latitude: -33.003, longitude: 18.203))
+
+        return generatedTrip
+    }
+    
 }
