@@ -16,8 +16,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greece" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-pV-yRo">
-                    <rect key="frame" x="8" y="8" width="584" height="584"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greece" translatesAutoresizingMaskIntoConstraints="NO" id="xrr-pV-yRo">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where are you going?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofA-H9-h3s">
                     <rect key="frame" x="160" y="108" width="280" height="35"/>
@@ -53,17 +53,17 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Nmb-wB-GCQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="40" id="0Q5-i7-Va6"/>
-                <constraint firstItem="xrr-pV-yRo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="55m-t0-M2i"/>
+                <constraint firstItem="xrr-pV-yRo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="-8" id="55m-t0-M2i"/>
                 <constraint firstItem="Nmb-wB-GCQ" firstAttribute="top" secondItem="6oJ-Y3-Odf" secondAttribute="bottom" constant="15" id="6qM-jz-aff"/>
-                <constraint firstItem="xrr-pV-yRo" firstAttribute="top" secondItem="Nmb-wB-GCQ" secondAttribute="top" constant="-230" id="9AD-ba-kju"/>
+                <constraint firstItem="xrr-pV-yRo" firstAttribute="top" secondItem="Nmb-wB-GCQ" secondAttribute="top" constant="-238" id="9AD-ba-kju"/>
                 <constraint firstItem="6oJ-Y3-Odf" firstAttribute="leading" secondItem="Nmb-wB-GCQ" secondAttribute="leading" id="9Yv-yL-gAF"/>
                 <constraint firstItem="ofA-H9-h3s" firstAttribute="centerX" secondItem="xrr-pV-yRo" secondAttribute="centerX" id="C82-Tx-IFv"/>
                 <constraint firstAttribute="trailingMargin" secondItem="Nmb-wB-GCQ" secondAttribute="trailing" constant="40" id="FSp-qZ-n2H"/>
                 <constraint firstItem="ofA-H9-h3s" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="100" id="Gce-cg-6Ez"/>
-                <constraint firstItem="xrr-pV-yRo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="TNG-co-yD6"/>
-                <constraint firstAttribute="bottomMargin" secondItem="xrr-pV-yRo" secondAttribute="bottom" id="WJg-tZ-5bQ"/>
+                <constraint firstItem="xrr-pV-yRo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="-8" id="TNG-co-yD6"/>
+                <constraint firstAttribute="bottomMargin" secondItem="xrr-pV-yRo" secondAttribute="bottom" constant="-8" id="WJg-tZ-5bQ"/>
                 <constraint firstItem="Nmb-wB-GCQ" firstAttribute="top" secondItem="Wfi-bg-j1y" secondAttribute="bottom" constant="10" id="ZDX-AT-riZ"/>
-                <constraint firstAttribute="trailingMargin" secondItem="xrr-pV-yRo" secondAttribute="trailing" id="cos-BY-Bad"/>
+                <constraint firstAttribute="trailingMargin" secondItem="xrr-pV-yRo" secondAttribute="trailing" constant="-8" id="cos-BY-Bad"/>
                 <constraint firstItem="Wfi-bg-j1y" firstAttribute="leading" secondItem="6oJ-Y3-Odf" secondAttribute="trailing" constant="3" id="jED-JQ-yKW"/>
             </constraints>
         </view>
