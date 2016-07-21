@@ -60,6 +60,8 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
             
         }
         
+        cell.imageField.tintColor = UIColor.blackColor()
+        
         return cell
         
     }

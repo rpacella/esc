@@ -126,6 +126,8 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
             
         }
         
+        cell.imageField.tintColor = UIColor.blackColor()
+        
         return cell
     }
     
