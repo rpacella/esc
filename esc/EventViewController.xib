@@ -10,7 +10,6 @@
             <connections>
                 <outlet property="descriptionField" destination="nUO-Ht-yKw" id="uk1-IL-0gO"/>
                 <outlet property="startEndTime" destination="vb8-Ki-ByC" id="10J-Ls-CpO"/>
-                <outlet property="tagField" destination="mqY-Up-qkP" id="R6P-x1-RqZ"/>
                 <outlet property="titleField" destination="Tic-sc-646" id="AZW-j3-Ja1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -45,12 +44,6 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-Nn-yyC">
                     <rect key="frame" x="0.0" y="400" width="600" height="150"/>
                 </mapView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tag" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqY-Up-qkP">
-                    <rect key="frame" x="360" y="187" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
