@@ -8,9 +8,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItineraryViewController" customModule="esc" customModuleProvider="target">
             <connections>
                 <outlet property="button1" destination="utv-9b-TAV" id="Zko-rp-n0v"/>
-                <outlet property="button2" destination="IrJ-Jm-FlW" id="sue-gU-mJc"/>
-                <outlet property="button3" destination="haQ-vV-z4v" id="iMT-FN-gqv"/>
-                <outlet property="button4" destination="YwQ-1c-CYp" id="wed-cs-NNh"/>
+                <outlet property="button2" destination="YwQ-1c-CYp" id="Ypl-2P-jpa"/>
+                <outlet property="button3" destination="IrJ-Jm-FlW" id="C6H-Zp-dmu"/>
+                <outlet property="button4" destination="haQ-vV-z4v" id="zLs-9e-KHi"/>
                 <outlet property="tableView" destination="0HM-ya-vPH" id="Ov4-8d-OaT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

@@ -23,16 +23,6 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZSH-hu-W3l" userLabel="backgroundImage">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-lR-zQg">
-                    <rect key="frame" x="440" y="560" width="60" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="60" id="RgG-qY-HO7"/>
-                    </constraints>
-                    <state key="normal" title="Register."/>
-                    <connections>
-                        <action selector="registerButtonPressed:" destination="-1" eventType="touchUpInside" id="Map-ey-yUr"/>
-                    </connections>
-                </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E5w-Am-4b8" userLabel="logoImage">
                     <rect key="frame" x="250" y="130" width="100" height="100"/>
                     <constraints>
@@ -46,7 +36,7 @@
                         <constraint firstAttribute="width" constant="146" id="HR1-ic-VwG"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-IB-4uu">
                     <rect key="frame" x="227" y="480" width="146" height="30"/>
@@ -54,46 +44,75 @@
                         <constraint firstAttribute="width" constant="146" id="sPi-cd-1Nv"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTd-m4-4YB">
-                    <rect key="frame" x="278" y="519" width="45" height="28"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pEl-r1-5Lp">
+                    <rect key="frame" x="173.5" y="552" width="243" height="18"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to make an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsa-0g-SBQ">
+                            <rect key="frame" x="0.0" y="0.0" width="183" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="183" id="7lA-uR-gtU"/>
+                                <constraint firstAttribute="height" constant="18" id="hGf-T7-ibW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                            <color key="textColor" red="0.96146485920000002" green="1" blue="0.98403446969999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8G9-lR-zQg">
+                            <rect key="frame" x="177" y="-6" width="60" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="NS2-Wg-CCz"/>
+                                <constraint firstAttribute="width" constant="60" id="RgG-qY-HO7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="13"/>
+                            <state key="normal" title="Register.">
+                                <color key="titleColor" red="0.53081393580000003" green="0.72747017270000003" blue="0.87063536949999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="registerButtonPressed:" destination="-1" eventType="touchUpInside" id="Map-ey-yUr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="45" id="4Vn-3b-UTk"/>
+                        <constraint firstAttribute="width" constant="237" id="DQF-qh-zUW"/>
+                        <constraint firstItem="8G9-lR-zQg" firstAttribute="top" secondItem="pEl-r1-5Lp" secondAttribute="top" constant="-6" id="djF-Dj-cV1"/>
+                        <constraint firstItem="lsa-0g-SBQ" firstAttribute="leading" secondItem="pEl-r1-5Lp" secondAttribute="leading" id="hHC-hi-0LV"/>
+                        <constraint firstItem="lsa-0g-SBQ" firstAttribute="top" secondItem="pEl-r1-5Lp" secondAttribute="top" id="qqX-Sl-rYT"/>
+                        <constraint firstAttribute="height" constant="18" id="xae-dC-JDo"/>
+                        <constraint firstAttribute="trailing" secondItem="8G9-lR-zQg" secondAttribute="trailing" id="zCy-bG-HMV"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                    <state key="normal" title="Sign in."/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTd-m4-4YB">
+                    <rect key="frame" x="268" y="518" width="65" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="4Vn-3b-UTk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
+                    <state key="normal" title="Sign in.">
+                        <color key="titleColor" red="0.53081393578689517" green="0.7274701726673124" blue="0.87063536953242826" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="signInButtonPressed:" destination="-1" eventType="touchUpInside" id="AeY-Jj-Iaz"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need to make an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsa-0g-SBQ">
-                    <rect key="frame" x="28" y="572" width="183" height="18"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="183" id="7lA-uR-gtU"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <color key="textColor" red="0.96146485920000002" green="1" blue="0.98403446969999997" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ZSH-hu-W3l" secondAttribute="trailing" id="0rN-as-0sj"/>
                 <constraint firstAttribute="bottom" secondItem="ZSH-hu-W3l" secondAttribute="bottom" id="3t9-47-4BF"/>
-                <constraint firstItem="lsa-0g-SBQ" firstAttribute="leading" secondItem="bkt-rL-0Ni" secondAttribute="leading" constant="28" id="7ev-dB-iK2"/>
-                <constraint firstAttribute="bottom" secondItem="lsa-0g-SBQ" secondAttribute="bottom" constant="10" id="BZn-Om-8W5"/>
                 <constraint firstItem="YTd-m4-4YB" firstAttribute="centerX" secondItem="bkt-rL-0Ni" secondAttribute="centerX" id="Fpe-aI-IeX"/>
+                <constraint firstAttribute="bottom" secondItem="pEl-r1-5Lp" secondAttribute="bottom" constant="30" id="G9b-dG-oVM"/>
                 <constraint firstItem="NqC-IB-4uu" firstAttribute="top" secondItem="WDR-X4-UKo" secondAttribute="bottom" constant="15" id="J1F-ic-yCD"/>
                 <constraint firstItem="WDR-X4-UKo" firstAttribute="centerX" secondItem="bkt-rL-0Ni" secondAttribute="centerX" id="PMP-jT-6Un"/>
                 <constraint firstItem="E5w-Am-4b8" firstAttribute="centerX" secondItem="bkt-rL-0Ni" secondAttribute="centerX" id="WFG-57-zBm"/>
-                <constraint firstAttribute="trailing" secondItem="8G9-lR-zQg" secondAttribute="trailing" constant="100" id="WXS-3D-an4"/>
-                <constraint firstAttribute="bottom" secondItem="8G9-lR-zQg" secondAttribute="bottom" constant="10" id="ZyY-Cg-ZfR"/>
                 <constraint firstItem="NqC-IB-4uu" firstAttribute="centerX" secondItem="bkt-rL-0Ni" secondAttribute="centerX" id="cig-aP-s0n"/>
-                <constraint firstItem="YTd-m4-4YB" firstAttribute="top" secondItem="NqC-IB-4uu" secondAttribute="bottom" constant="9" id="dtu-Y9-oi0"/>
+                <constraint firstItem="YTd-m4-4YB" firstAttribute="top" secondItem="NqC-IB-4uu" secondAttribute="bottom" constant="8" id="dtu-Y9-oi0"/>
                 <constraint firstItem="ZSH-hu-W3l" firstAttribute="top" secondItem="bkt-rL-0Ni" secondAttribute="top" id="hpS-tK-J2b"/>
                 <constraint firstItem="WDR-X4-UKo" firstAttribute="centerY" secondItem="bkt-rL-0Ni" secondAttribute="centerY" multiplier="1.5" id="kCk-yZ-QuG"/>
                 <constraint firstItem="ZSH-hu-W3l" firstAttribute="leading" secondItem="bkt-rL-0Ni" secondAttribute="leading" id="oQg-Oc-41f"/>
+                <constraint firstItem="pEl-r1-5Lp" firstAttribute="centerX" secondItem="bkt-rL-0Ni" secondAttribute="centerX" id="pjU-M6-uyJ"/>
                 <constraint firstItem="E5w-Am-4b8" firstAttribute="centerY" secondItem="bkt-rL-0Ni" secondAttribute="centerY" multiplier="0.6" id="xoC-23-MOJ"/>
             </constraints>
             <point key="canvasLocation" x="230" y="168"/>
