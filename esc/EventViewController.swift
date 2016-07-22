@@ -15,8 +15,6 @@ class EventViewController: UIViewController {
     
     @IBOutlet weak var startEndTime: UILabel!
     
-    @IBOutlet weak var descriptionField: UILabel!
-    
     @IBOutlet weak var imageField: UIImageView!
     
     @IBOutlet weak var navBar: UINavigationBar!
@@ -35,7 +33,6 @@ class EventViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = button
         titleField.text = eventTitle
         startEndTime.text = eventTime
-        descriptionField.text = desc
         imageField.image = imageTag
         
     }

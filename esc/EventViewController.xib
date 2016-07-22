@@ -8,7 +8,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController" customModule="esc" customModuleProvider="target">
             <connections>
-                <outlet property="descriptionField" destination="nUO-Ht-yKw" id="uk1-IL-0gO"/>
                 <outlet property="imageField" destination="rEB-xU-CKF" id="gMI-Yx-SY6"/>
                 <outlet property="startEndTime" destination="vb8-Ki-ByC" id="10J-Ls-CpO"/>
                 <outlet property="titleField" destination="Tic-sc-646" id="AZW-j3-Ja1"/>
@@ -30,12 +29,6 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-Ht-yKw">
-                    <rect key="frame" x="30" y="280" width="97" height="17"/>
-                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start - End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb8-Ki-ByC">
                     <rect key="frame" x="360" y="131" width="92" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
@@ -50,8 +43,6 @@
             <constraints>
                 <constraint firstItem="Tic-sc-646" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="81H-82-4cX"/>
                 <constraint firstAttribute="trailing" secondItem="5A1-Nn-yyC" secondAttribute="trailing" id="CyO-j0-g8k"/>
-                <constraint firstItem="nUO-Ht-yKw" firstAttribute="top" secondItem="rEB-xU-CKF" secondAttribute="bottom" multiplier="1.1" id="FZ2-nw-tw7"/>
-                <constraint firstItem="nUO-Ht-yKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="1:20" id="Mbh-98-c50"/>
                 <constraint firstItem="5A1-Nn-yyC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="2:3" id="PW8-5l-EpI"/>
                 <constraint firstItem="5A1-Nn-yyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WhP-Vr-3e4"/>
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="e74-wb-5cx"/>
