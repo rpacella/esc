@@ -13,6 +13,8 @@ let backImage = UIImage(named: "backCapeTown")
 
 class TripListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     var trip: Trip?
     
     let locationManager = CLLocationManager()
@@ -21,6 +23,8 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.tableView.backgroundView = backgroundImage
         
         navigationController?.navigationBarHidden = false
         locationManager.requestWhenInUseAuthorization()
@@ -132,13 +136,18 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
         return cell
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.alpha = 0.6
+    }
+    
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         let eventViewController = EventViewController(nibName: "EventViewController", bundle: nil)
         
         eventViewController.eventTitle = trip!.eventList[indexPath.row].title!
         eventViewController.eventTime = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
-        eventViewController.desc = trip!.eventList[indexPath.row].description
+        eventViewController.desc = trip!.eventList[indexPath.row].eventDescription
+        eventViewController.location = trip!.eventList[indexPath.row].coordinate
         
         switch trip!.eventList[indexPath.row].tag {
         case "Dining": eventViewController.imageTag = UIImage(named:"Eat.png")!

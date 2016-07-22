@@ -121,7 +121,8 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         
         eventViewController.eventTitle = trip.eventList[indexPath.row].title!
         eventViewController.eventTime = trip.eventList[indexPath.row].startTime + " - " + trip.eventList[indexPath.row].endTime
-        eventViewController.desc = trip.eventList[indexPath.row].description
+        eventViewController.desc = trip.eventList[indexPath.row].eventDescription
+        eventViewController.location = trip.eventList[indexPath.row].coordinate
         
         switch trip.eventList[indexPath.row].tag {
         case "Dining": eventViewController.imageTag = UIImage(named:"Eat.png")!

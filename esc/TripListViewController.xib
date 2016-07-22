@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripListViewController" customModule="esc" customModuleProvider="target">
             <connections>
+                <outlet property="backgroundImage" destination="aEY-Mn-8Lq" id="qy3-yP-eUo"/>
                 <outlet property="tableView" destination="fra-kJ-JWW" id="frW-Qz-zmi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -16,6 +17,9 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mtfuji" translatesAutoresizingMaskIntoConstraints="NO" id="aEY-Mn-8Lq">
+                    <rect key="frame" x="0.0" y="50" width="600" height="550"/>
+                </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fra-kJ-JWW">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -23,11 +27,18 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="aEY-Mn-8Lq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="2K8-gn-ViX"/>
                 <constraint firstAttribute="bottom" secondItem="fra-kJ-JWW" secondAttribute="bottom" id="6lh-9J-yv6"/>
                 <constraint firstItem="fra-kJ-JWW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Cqt-1c-CaE"/>
                 <constraint firstItem="fra-kJ-JWW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hqn-Ze-ScV"/>
                 <constraint firstAttribute="trailing" secondItem="fra-kJ-JWW" secondAttribute="trailing" id="Xfi-Ht-KcQ"/>
+                <constraint firstItem="aEY-Mn-8Lq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h5m-85-lIu"/>
+                <constraint firstAttribute="bottom" secondItem="aEY-Mn-8Lq" secondAttribute="bottom" id="hHo-Ic-bqK"/>
+                <constraint firstAttribute="trailing" secondItem="aEY-Mn-8Lq" secondAttribute="trailing" id="wha-cb-rzv"/>
             </constraints>
         </view>
     </objects>
+    <resources>
+        <image name="mtfuji" width="340" height="520"/>
+    </resources>
 </document>

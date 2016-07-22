@@ -33,7 +33,7 @@ class EventViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     var trip: Trip?
     
     let locationManager = CLLocationManager()
-    var locations:[CLLocationCoordinate2D]?
+    var location:CLLocationCoordinate2D?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,13 +47,14 @@ class EventViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         imageField.tintColor = UIColor.blackColor()
         descriptionField.text = desc
         
+        
         navigationController?.navigationBarHidden = false
         
         let location = CLLocationCoordinate2D(latitude: -34, longitude: 18.5)
         let span = MKCoordinateSpanMake(0.35, 0.35)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
-//        mapView.addAnnotations(self.setSpots())
+        mapView.addAnnotations(self.setSpots())
         
         mapView.delegate = self
 
@@ -74,6 +75,47 @@ class EventViewController: UIViewController, MKMapViewDelegate, CLLocationManage
 //        eventImage.tintColor = UIColor.blackColor()
 //
     }
+    
+    let image = UIImage(named: "newPin")
+    
+    //Customize pin
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        let identifier = "myPins"
+        var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) // as? MKPinAnnotationView
+        
+        
+        if (annotationView == nil){
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            
+            // MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            // annotationView?.pinTintColor = UIColor.blackColor()
+            
+            annotationView!.image = UIImage(named: "newPin")
+            var frame = annotationView!.frame
+            frame.size.height = 44
+            frame.size.width = 25
+            annotationView!.frame = frame
+        }
+        
+        annotationView!.annotation = annotation
+        return annotationView
+    }
+
+    
+    class Spot: NSObject, MKAnnotation {
+        var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
+    }
+    
+    func setSpots() -> [Spot] {
+        
+        let spot = Spot()
+        spot.coordinate = self.location!
+        
+        print(spot.coordinate)
+        
+        return [spot]
+    }
+
     
     func goBack()
     {

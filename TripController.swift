@@ -67,7 +67,7 @@ class TripController {
         
         let generatedTrip = Trip()
         
-        let events1 = Event(title: "Bacon on Bree", eventDescription: "Cafe", tag: "Dining", startTime: "10:00", endTime: "11:00", coordinate: CLLocationCoordinate2D(latitude: -33.92558, longitude: 18.41358))
+        let events1 = Event(title: "Bacon on Bree", eventDescription: "If it's bacon you want then it's bacon you'll get.", tag: "Dining", startTime: "10:00", endTime: "11:00", coordinate: CLLocationCoordinate2D(latitude: -33.92558, longitude: 18.41358))
         
         generatedTrip.eventList.append(events1)
         
