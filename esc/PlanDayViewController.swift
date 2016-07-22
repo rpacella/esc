@@ -45,10 +45,10 @@ class PlanDayViewController: UIViewController {
     }
     
     func configureButton(button: UIButton) {
-        button.backgroundColor = UIColor.whiteColor()
+        button.backgroundColor = UIColor.clearColor()
         button.layer.cornerRadius = 5
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.blackColor().CGColor
+        button.layer.borderWidth = 3
+        button.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
     @IBAction func presentCategoryPage(sender: UIButton) {
