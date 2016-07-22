@@ -40,7 +40,21 @@ class LoginViewController: UIViewController {
 //        let tab = UITabBarController()
 //        tab.viewControllers = [userTripsViewController, planDay]
 //        let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
-        self.presentViewController(tabBarController!, animated: true, completion: nil)
+        
+        if emailTextField.text == "" || passwordTextField.text == "" {
+            let failAlert = UIAlertController(title: "Unable to login", message: "Please fill in all fields", preferredStyle:UIAlertControllerStyle.Alert)
+        
+            let alertAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        
+            failAlert.addAction(alertAction)
+        
+            self.presentViewController(failAlert, animated: true, completion: nil)
+            
+            return
+        }
+        
+            self.presentViewController(tabBarController!, animated: true, completion: nil)
+      
     }
  
     @IBAction func registerButtonPressed(sender: AnyObject) {

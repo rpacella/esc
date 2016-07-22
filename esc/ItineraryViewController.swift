@@ -83,6 +83,10 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let eventViewController = EventViewController(nibName: "EventViewController", bundle: nil)
         
+        print(trip.ID)
+        print(trip.eventList.count)
+        print(trip.eventList[indexPath.row].title)
+        
         eventViewController.titleField.text = trip.eventList[indexPath.row].title
         eventViewController.startEndTime.text = trip.eventList[indexPath.row].startTime + " - " + trip.eventList[indexPath.row].endTime
          eventViewController.descriptionField.text = trip.eventList[indexPath.row].description

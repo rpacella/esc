@@ -11,7 +11,7 @@
                 <outlet property="descriptionField" destination="nUO-Ht-yKw" id="uk1-IL-0gO"/>
                 <outlet property="startEndTime" destination="vb8-Ki-ByC" id="10J-Ls-CpO"/>
                 <outlet property="tagField" destination="mqY-Up-qkP" id="R6P-x1-RqZ"/>
-                <outlet property="titleField" destination="Tic-sc-646" id="AZW-j3-Ja1"/>
+                <outlet property="titleField" destination="Tic-sc-646" id="uTP-Ll-ZPn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
