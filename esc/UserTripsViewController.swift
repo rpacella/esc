@@ -35,7 +35,7 @@ class UserTripsViewController: UIViewController /*, UICollectionViewDelegate, UI
     override func viewDidLoad() {
         super.viewDidLoad()
         city4View.setBackgroundImage(UIImage(named: "capetown"), forState: .Normal)
-        
+        navigationController?.navigationBarHidden = true
 //        city4View.setImage(UIImage("lionshead", forState: .Normal)
 //        city1Image.image = UIImage(named: "penguin")
 //        city2Image.image = UIImage(named: "penguin")
