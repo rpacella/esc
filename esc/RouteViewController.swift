@@ -175,10 +175,10 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let viewcontroller = EventViewController (nibName: "EventViewController", bundle: nil)
         
-        viewcontroller.titleField.text = trip!.eventList[indexPath.row].title
-        viewcontroller.startEndTime.text = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
-        viewcontroller.descriptionField.text = trip!.eventList[indexPath.row].description
-        viewcontroller.tagField.text = trip!.eventList[indexPath.row].tag
+        viewcontroller.eventTitle = trip!.eventList[indexPath.row].title!
+        viewcontroller.eventTime = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
+        viewcontroller.desc = trip!.eventList[indexPath.row].description
+        
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.navigationController?.pushViewController(viewcontroller, animated: true)

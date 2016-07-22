@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController" customModule="esc" customModuleProvider="target">
             <connections>
                 <outlet property="descriptionField" destination="nUO-Ht-yKw" id="uk1-IL-0gO"/>
+                <outlet property="eventImage" destination="rEB-xU-CKF" id="tUF-tL-S21"/>
                 <outlet property="startEndTime" destination="vb8-Ki-ByC" id="10J-Ls-CpO"/>
                 <outlet property="titleField" destination="Tic-sc-646" id="AZW-j3-Ja1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -20,23 +21,27 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rEB-xU-CKF">
-                    <rect key="frame" x="30" y="75" width="300" height="180"/>
-                    <color key="backgroundColor" red="0.091160483658313751" green="0.20029747486114502" blue="0.61087065935134888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="30" y="75" width="120" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="LQY-Bs-Ur9"/>
+                        <constraint firstAttribute="width" constant="120" id="sjD-H4-MLs"/>
+                    </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tic-sc-646">
-                    <rect key="frame" x="360" y="75" width="53" height="25"/>
+                    <rect key="frame" x="170" y="75" width="53" height="25"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="25"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUO-Ht-yKw">
-                    <rect key="frame" x="30" y="280" width="97" height="17"/>
+                    <rect key="frame" x="30" y="214" width="97" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start - End" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb8-Ki-ByC">
-                    <rect key="frame" x="360" y="131" width="92" height="17"/>
+                    <rect key="frame" x="170" y="131" width="92" height="17"/>
                     <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -47,6 +52,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="rEB-xU-CKF" secondAttribute="trailing" constant="20" id="52y-Ut-dQG"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="81H-82-4cX"/>
                 <constraint firstAttribute="trailing" secondItem="5A1-Nn-yyC" secondAttribute="trailing" id="CyO-j0-g8k"/>
                 <constraint firstItem="nUO-Ht-yKw" firstAttribute="top" secondItem="rEB-xU-CKF" secondAttribute="bottom" multiplier="1.1" id="FZ2-nw-tw7"/>
@@ -56,12 +62,17 @@
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="e74-wb-5cx"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="1:8" id="fg4-ym-td7"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="1:20" id="jDk-Tf-av0"/>
+                <constraint firstItem="Tic-sc-646" firstAttribute="leading" secondItem="rEB-xU-CKF" secondAttribute="trailing" constant="20" id="leP-oc-nKb"/>
                 <constraint firstItem="rEB-xU-CKF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="1:8" id="oBg-jY-CbP"/>
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="top" secondItem="Tic-sc-646" secondAttribute="top" multiplier="1.75" id="pPG-po-aad"/>
                 <constraint firstAttribute="bottom" secondItem="5A1-Nn-yyC" secondAttribute="bottom" constant="50" id="sHK-dd-Vcr"/>
-                <constraint firstItem="rEB-xU-CKF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="tUf-hm-g05"/>
-                <constraint firstItem="rEB-xU-CKF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5" id="zcu-dI-FQt"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="81H-82-4cX"/>
+                    <exclude reference="e74-wb-5cx"/>
+                </mask>
+            </variation>
             <point key="canvasLocation" x="473" y="399"/>
         </view>
     </objects>

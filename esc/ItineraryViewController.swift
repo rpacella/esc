@@ -93,13 +93,13 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
+//        
         let eventViewController = EventViewController(nibName: "EventViewController", bundle: nil)
         
-        eventViewController.eventTitle = trip.eventList[indexPath.row].title
+        eventViewController.eventTitle = trip.eventList[indexPath.row].title!
         eventViewController.eventTime = trip.eventList[indexPath.row].startTime + " - " + trip.eventList[indexPath.row].endTime
          eventViewController.desc = trip.eventList[indexPath.row].description
-         eventViewController.tagField.text = trip.eventList[indexPath.row].tag
+        eventViewController.tag = trip.eventList[indexPath.row].tag
             
         navigationController?.pushViewController(eventViewController, animated: true)
         

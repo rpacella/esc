@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var backgroundImageView: UIImageView!
@@ -23,7 +23,15 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
 
         logoImageView.image = UIImage(named: "logo")
+        self.emailTextField.delegate = self
+        self.passwordTextField.delegate = self
         backgroundImageView.image = UIImage(named: "background")
+        emailTextField.returnKeyType = UIReturnKeyType.Done
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     override func viewWillAppear(animated: Bool) {
