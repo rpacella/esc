@@ -36,7 +36,7 @@ class EventViewController: UIViewController {
         
         navigationController?.navigationBarHidden = false
         
-        switch tag {
+        /*switch tag {
         case "Dining": eventImage.image = UIImage(named:"Eat.png")
         case "Entertainment": eventImage.image = UIImage(named:"Entertain.png")
         case "Museum": eventImage.image = UIImage(named:"Museum.png")
@@ -48,8 +48,8 @@ class EventViewController: UIViewController {
         case "Tour": eventImage.image = UIImage(named:"Tour.png")
         default:
             break
-        }
-        eventImage.tintColor = UIColor.blackColor()
+        }*/
+//        eventImage.tintColor = UIColor.blackColor()
 
     }
     

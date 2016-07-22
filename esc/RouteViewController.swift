@@ -9,10 +9,6 @@
 import UIKit
 import MapKit
 
-class Restaurant: NSObject, MKAnnotation {
-    var title: String? = ""
-    var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
-}
 
 class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate {
 
@@ -52,7 +48,7 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         let span = MKCoordinateSpanMake(0.5, 0.5)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
-        mapView.addAnnotations(RouteViewController.spotList())
+        mapView.addAnnotations(self.setSpots())
         
         mapView.delegate = self
         tableView.delegate = self
@@ -64,12 +60,7 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         tableView.reloadData()
     }
     
-
-    class Restaurant: NSObject, MKAnnotation {
-        var title: String? = ""
-        var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
-    }
-    
+ 
     let image = UIImage(named: "newPin")
         
         //Customize pin
@@ -97,24 +88,63 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             return annotationView
         }
         
+    
+    class Restaurant: NSObject, MKAnnotation {
+        var title: String? = ""
+        var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
+    }
+   
+    
+    class func spotList() -> [Restaurant] {
         
+        let spot = Restaurant ()
+        spot.title = "Workshop 17"
+        spot.coordinate = CLLocationCoordinate2D(latitude: -33.906764,longitude: 18.4164983)
         
-        class func spotList() -> [Restaurant] {
-            
-            let spot = Restaurant ()
-            spot.title = "Workshop 17"
-            spot.coordinate = CLLocationCoordinate2D(latitude: -33.906764,longitude: 18.4164983)
-            
-            let spot2 = Restaurant ()
-            spot2.title = "Truth Coffee"
-            spot2.coordinate = CLLocationCoordinate2D(latitude: -33.9281976,longitude: 18.4227045)
-            
-            let spot3 = Restaurant ()
-            spot3.title = "Chop Chop Coffee"
-            spot3.coordinate = CLLocationCoordinate2D(latitude: -33.9271879,longitude: 18.4327055)
-            
-            return [spot,spot2, spot3]
-        }
+        let spot2 = Restaurant ()
+        spot2.title = "Truth Coffee"
+        spot2.coordinate = CLLocationCoordinate2D(latitude: -33.9281976,longitude: 18.4227045)
+        
+        let spot3 = Restaurant ()
+        spot3.title = "Chop Chop Coffee"
+        spot3.coordinate = CLLocationCoordinate2D(latitude: -33.9271879,longitude: 18.4327055)
+        
+        return [spot,spot2, spot3]
+    }
+    
+    class Spot: NSObject, MKAnnotation {
+        var title: String? = ""
+        var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
+    }
+    
+     func setSpots() -> [Spot] {
+        print(Trip.sharedInstance.eventList)
+        
+        let spot = Spot()
+        spot.title = self.trip!.eventList[0].title
+        //Trip.sharedInstance.eventList[0].title
+        spot.coordinate = self.trip!.eventList[0].coordinate
+        print(spot.coordinate)
+        //Trip.sharedInstance.eventList[0].coordinate
+        
+        let spot2  = Spot()
+        spot2.title = self.trip!.eventList[1].title
+        spot2.coordinate = self.trip!.eventList[1].coordinate
+        
+        let spot3  = Spot()
+        spot3.title = self.trip!.eventList[2].title
+        spot3.coordinate = self.trip!.eventList[2].coordinate
+        
+        let spot4 = Spot()
+        spot4.title = self.trip!.eventList[3].title
+        spot4.coordinate = self.trip!.eventList[3].coordinate
+        
+        let spot5 = Spot()
+        spot5.title = self.trip!.eventList[4].title
+        spot5.coordinate = self.trip!.eventList[4].coordinate
+        
+        return [spot, spot2, spot3, spot4, spot5]
+    }
     
     
     func backAction() {

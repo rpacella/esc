@@ -81,7 +81,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27A-u8-xYB">
-                    <rect key="frame" x="253.5" y="512" width="93" height="18"/>
+                    <rect key="frame" x="254" y="512" width="93" height="18"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" translatesAutoresizingMaskIntoConstraints="NO" id="BAB-NH-1wv">
                             <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>

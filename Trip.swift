@@ -10,7 +10,8 @@ import UIKit
 import MapKit
 
 class Trip: NSObject {
-    
+    static var sharedInstance = Trip()
+
     var eventList:[Event] = []
     
     var ID: NSUUID
