@@ -12,15 +12,28 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var button1: UIImageView!
+    @IBOutlet weak var button2: UIImageView!
+    @IBOutlet weak var button3: UIImageView!
+    @IBOutlet weak var button4: UIImageView!
+
+    
     var trip = TripController.sharedInstance.returnTrip()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBarHidden = true
 
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.registerNib(UINib(nibName: "ItineraryTableViewCell", bundle: nil), forCellReuseIdentifier: "cellidentifier")
+        
+        button1.tintColor = UIColor.whiteColor()
+        button2.tintColor = UIColor.whiteColor()
+        button3.tintColor = UIColor.whiteColor()
+        button4.tintColor = UIColor.darkGrayColor()
+
         
     }
 
@@ -83,9 +96,9 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let eventViewController = EventViewController(nibName: "EventViewController", bundle: nil)
         
-        eventViewController.titleField.text = trip.eventList[indexPath.row].title
-        eventViewController.startEndTime.text = trip.eventList[indexPath.row].startTime + " - " + trip.eventList[indexPath.row].endTime
-         eventViewController.descriptionField.text = trip.eventList[indexPath.row].description
+        eventViewController.eventTitle = trip.eventList[indexPath.row].title
+        eventViewController.eventTime = trip.eventList[indexPath.row].startTime + " - " + trip.eventList[indexPath.row].endTime
+         eventViewController.desc = trip.eventList[indexPath.row].description
          eventViewController.tagField.text = trip.eventList[indexPath.row].tag
             
         navigationController?.pushViewController(eventViewController, animated: true)

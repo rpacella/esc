@@ -24,7 +24,7 @@ class PlanDayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBarHidden = false
+        navigationController?.navigationBarHidden = true
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
         self.navigationController?.navigationBar.barTintColor = UIColor.whiteColor()
 
