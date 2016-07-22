@@ -11,29 +11,20 @@ import MapKit
 
 class EventViewController: UIViewController {
     
-    // switch start - end and tag order on view, also add constraints for tag
-    
     @IBOutlet weak var titleField: UILabel!
     
     @IBOutlet weak var startEndTime: UILabel!
     
     @IBOutlet weak var descriptionField: UILabel!
     
-    //var location: CLLocationCoordinate2D?
+    @IBOutlet weak var imageField: UIImageView!
     
     @IBOutlet weak var navBar: UINavigationBar!
     
-    var eventTitle : String
-    var eventTime : String
-    var desc: String
-    
-    init(eventTime: String, eventTitle: String, desc: String) {
-        self.eventTime = eventTime
-        self.eventTitle = eventTitle
-        self.desc = desc
-    }
-    
-
+    var eventTitle : String = ""
+    var eventTime : String = ""
+    var desc: String = ""
+    var imageTag: UIImage = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +36,7 @@ class EventViewController: UIViewController {
         titleField.text = eventTitle
         startEndTime.text = eventTime
         descriptionField.text = desc
+        imageField.image = imageTag
         
     }
     

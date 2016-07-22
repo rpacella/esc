@@ -9,6 +9,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController" customModule="esc" customModuleProvider="target">
             <connections>
                 <outlet property="descriptionField" destination="nUO-Ht-yKw" id="uk1-IL-0gO"/>
+                <outlet property="imageField" destination="rEB-xU-CKF" id="gMI-Yx-SY6"/>
                 <outlet property="startEndTime" destination="vb8-Ki-ByC" id="10J-Ls-CpO"/>
                 <outlet property="titleField" destination="Tic-sc-646" id="AZW-j3-Ja1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
