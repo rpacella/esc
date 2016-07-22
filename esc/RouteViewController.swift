@@ -56,11 +56,12 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     override func viewDidAppear(animated: Bool) {
-//        mapView.addAnnotations(Trip.sharedInstance.getEvents())
+        mapView.addAnnotations(self.setSpots())
         tableView.reloadData()
     }
     
  
+        
     let image = UIImage(named: "newPin")
         
         //Customize pin

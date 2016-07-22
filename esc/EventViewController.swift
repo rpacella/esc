@@ -33,24 +33,25 @@ class EventViewController: UIViewController {
         titleField.text = eventTitle
         startEndTime.text = eventTime
         imageField.image = imageTag
+        imageField.tintColor = UIColor.blackColor()
         
         navigationController?.navigationBarHidden = false
         
-        /*switch tag {
-        case "Dining": eventImage.image = UIImage(named:"Eat.png")
-        case "Entertainment": eventImage.image = UIImage(named:"Entertain.png")
-        case "Museum": eventImage.image = UIImage(named:"Museum.png")
-        case "Nightlife": eventImage.image = UIImage(named:"Nightlife.png")
-        case "Outdoors": eventImage.image = UIImage(named: "Outdoor.png")
-        case "Relax": eventImage.image = UIImage(named:"Relax.png")
-        case "Shopping": eventImage.image = UIImage(named:"Shopping.png")
-        case "Sightsee": eventImage.image = UIImage(named:"Sightsee.png")
-        case "Tour": eventImage.image = UIImage(named:"Tour.png")
-        default:
-            break
-        }*/
+//        switch tag {
+//        case "Dining": eventImage.image = UIImage(named:"Eat.png")
+//        case "Entertainment": eventImage.image = UIImage(named:"Entertain.png")
+//        case "Museum": eventImage.image = UIImage(named:"Museum.png")
+//        case "Nightlife": eventImage.image = UIImage(named:"Nightlife.png")
+//        case "Outdoors": eventImage.image = UIImage(named: "Outdoor.png")
+//        case "Relax": eventImage.image = UIImage(named:"Relax.png")
+//        case "Shopping": eventImage.image = UIImage(named:"Shopping.png")
+//        case "Sightsee": eventImage.image = UIImage(named:"Sightsee.png")
+//        case "Tour": eventImage.image = UIImage(named:"Tour.png")
+//        default:
+//            break
+//        }
 //        eventImage.tintColor = UIColor.blackColor()
-
+//
     }
     
     func goBack()

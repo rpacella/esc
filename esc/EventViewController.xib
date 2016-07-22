@@ -46,15 +46,17 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5A1-Nn-yyC">
-                    <rect key="frame" x="0.0" y="400" width="600" height="150"/>
+                    <rect key="frame" x="0.0" y="261" width="600" height="289"/>
                 </mapView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="rEB-xU-CKF" secondAttribute="trailing" constant="20" id="52y-Ut-dQG"/>
+                <constraint firstItem="5A1-Nn-yyC" firstAttribute="top" secondItem="nUO-Ht-yKw" secondAttribute="bottom" constant="30" id="5lA-Pr-BzG"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="81H-82-4cX"/>
+                <constraint firstItem="nUO-Ht-yKw" firstAttribute="top" secondItem="rEB-xU-CKF" secondAttribute="bottom" constant="19" id="BbL-NC-0wU"/>
                 <constraint firstAttribute="trailing" secondItem="5A1-Nn-yyC" secondAttribute="trailing" id="CyO-j0-g8k"/>
-                <constraint firstItem="5A1-Nn-yyC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="2:3" id="PW8-5l-EpI"/>
+                <constraint firstItem="nUO-Ht-yKw" firstAttribute="leading" secondItem="rEB-xU-CKF" secondAttribute="leading" id="Lr6-xr-iOS"/>
                 <constraint firstItem="5A1-Nn-yyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WhP-Vr-3e4"/>
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="e74-wb-5cx"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="1:8" id="fg4-ym-td7"/>

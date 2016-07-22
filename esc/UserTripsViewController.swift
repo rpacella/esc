@@ -67,14 +67,14 @@ class UserTripsViewController: UIViewController /*, UICollectionViewDelegate, UI
      
         profileImageView.image = UIImage(named: "profile")
         
-        let registerViewController = RegisterViewController(nibName: "RegisterView", bundle: nil)
-        if let userName = defaults.stringForKey("userName") {
-            print(userName)
-            userNameLabel.text = userName
-        }
-        else {
-        self.presentViewController(registerViewController, animated: false, completion: nil)
-        }
+//        let loginViewController = LoginViewController(nibName: "LoginView", bundle: nil)
+////        if let userName = defaults.stringForKey("userName") {
+////            print(userName)
+////            userNameLabel.text = userName
+////        }
+////        else {
+//        self.presentViewController(loginViewController, animated: false, completion: nil)
+        //}
     }
     
    
