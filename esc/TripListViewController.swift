@@ -133,14 +133,30 @@ class TripListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let viewcontroller = EventViewController (nibName: "EventViewController", bundle: nil)
         
-        viewcontroller.eventTitle = trip!.eventList[indexPath.row].title!
-        viewcontroller.eventTime = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
-        viewcontroller.desc = trip!.eventList[indexPath.row].description
+        let eventViewController = EventViewController(nibName: "EventViewController", bundle: nil)
+        
+        eventViewController.eventTitle = trip!.eventList[indexPath.row].title!
+        eventViewController.eventTime = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
+        eventViewController.desc = trip!.eventList[indexPath.row].description
+        
+        switch trip!.eventList[indexPath.row].tag {
+        case "Dining": eventViewController.imageTag = UIImage(named:"Eat.png")!
+        case "Entertainment": eventViewController.imageTag = UIImage(named:"Entertain.png")!
+        case "Museum": eventViewController.imageTag = UIImage(named:"Museum.png")!
+        case "Nightlife": eventViewController.imageTag = UIImage(named:"Nightlife.png")!
+        case "Outdoors": eventViewController.imageTag = UIImage(named: "Outdoor.png")!
+        case "Relax": eventViewController.imageTag = UIImage(named:"Relax.png")!
+        case "Shopping": eventViewController.imageTag = UIImage(named:"Shopping.png")!
+        case "Sightsee": eventViewController.imageTag = UIImage(named:"Sightsee.png")!
+        case "Tour": eventViewController.imageTag = UIImage(named:"Tour.png")!
+        default:
+            break
+            
+        }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        self.navigationController?.pushViewController(viewcontroller, animated: true)//presentViewController(viewcontroller, animated: true, completion: nil)
+        self.navigationController?.pushViewController(eventViewController, animated: true)//presentViewController(viewcontroller, animated: true, completion: nil)
     }
 
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {

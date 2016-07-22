@@ -98,9 +98,23 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         
         eventViewController.eventTitle = trip.eventList[indexPath.row].title!
         eventViewController.eventTime = trip.eventList[indexPath.row].startTime + " - " + trip.eventList[indexPath.row].endTime
-         eventViewController.desc = trip.eventList[indexPath.row].description
-        eventViewController.tag = trip.eventList[indexPath.row].tag
+        eventViewController.desc = trip.eventList[indexPath.row].description
+        
+        switch trip.eventList[indexPath.row].tag {
+        case "Dining": eventViewController.imageTag = UIImage(named:"Eat.png")!
+        case "Entertainment": eventViewController.imageTag = UIImage(named:"Entertain.png")!
+        case "Museum": eventViewController.imageTag = UIImage(named:"Museum.png")!
+        case "Nightlife": eventViewController.imageTag = UIImage(named:"Nightlife.png")!
+        case "Outdoors": eventViewController.imageTag = UIImage(named: "Outdoor.png")!
+        case "Relax": eventViewController.imageTag = UIImage(named:"Relax.png")!
+        case "Shopping": eventViewController.imageTag = UIImage(named:"Shopping.png")!
+        case "Sightsee": eventViewController.imageTag = UIImage(named:"Sightsee.png")!
+        case "Tour": eventViewController.imageTag = UIImage(named:"Tour.png")!
+        default:
+            break
             
+        }
+
         navigationController?.pushViewController(eventViewController, animated: true)
         
     }
@@ -118,7 +132,7 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.reloadData()
         
         // make another pull request for data, reload tableview data
-        print("requested new itinerary")
+        
     }
     
     

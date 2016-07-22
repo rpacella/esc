@@ -15,25 +15,14 @@ class EventViewController: UIViewController {
     
     @IBOutlet weak var startEndTime: UILabel!
     
-    @IBOutlet weak var descriptionField: UILabel!
-    
-    @IBOutlet weak var eventImage: UIImageView!
-    //var location: CLLocationCoordinate2D?
+    @IBOutlet weak var imageField: UIImageView!
     
     @IBOutlet weak var navBar: UINavigationBar!
     
     var eventTitle : String = ""
     var eventTime : String = ""
     var desc: String = ""
-    var tag: String = ""
-//    
-//    init(eventTime: String, eventTitle: String, desc: String) {
-//        self.eventTime = eventTime
-//        self.eventTitle = eventTitle
-//        self.desc = desc
-//    }
-    
-
+    var imageTag: UIImage = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +32,7 @@ class EventViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = button
         titleField.text = eventTitle
         startEndTime.text = eventTime
-        descriptionField.text = desc
+        imageField.image = imageTag
         
         navigationController?.navigationBarHidden = false
         

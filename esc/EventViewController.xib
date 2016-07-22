@@ -8,8 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventViewController" customModule="esc" customModuleProvider="target">
             <connections>
-                <outlet property="descriptionField" destination="nUO-Ht-yKw" id="uk1-IL-0gO"/>
-                <outlet property="eventImage" destination="rEB-xU-CKF" id="tUF-tL-S21"/>
+                <outlet property="imageField" destination="rEB-xU-CKF" id="gMI-Yx-SY6"/>
                 <outlet property="startEndTime" destination="vb8-Ki-ByC" id="10J-Ls-CpO"/>
                 <outlet property="titleField" destination="Tic-sc-646" id="AZW-j3-Ja1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -55,8 +54,6 @@
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="rEB-xU-CKF" secondAttribute="trailing" constant="20" id="52y-Ut-dQG"/>
                 <constraint firstItem="Tic-sc-646" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="81H-82-4cX"/>
                 <constraint firstAttribute="trailing" secondItem="5A1-Nn-yyC" secondAttribute="trailing" id="CyO-j0-g8k"/>
-                <constraint firstItem="nUO-Ht-yKw" firstAttribute="top" secondItem="rEB-xU-CKF" secondAttribute="bottom" multiplier="1.1" id="FZ2-nw-tw7"/>
-                <constraint firstItem="nUO-Ht-yKw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="1:20" id="Mbh-98-c50"/>
                 <constraint firstItem="5A1-Nn-yyC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="2:3" id="PW8-5l-EpI"/>
                 <constraint firstItem="5A1-Nn-yyC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="WhP-Vr-3e4"/>
                 <constraint firstItem="vb8-Ki-ByC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="3:5" id="e74-wb-5cx"/>
