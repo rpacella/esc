@@ -45,7 +45,7 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         navigationItem.setRightBarButtonItems([routeLabel, listButton], animated: true)
         
         let location = CLLocationCoordinate2D(latitude: -34, longitude: 18.5)
-        let span = MKCoordinateSpanMake(0.5, 0.5)
+        let span = MKCoordinateSpanMake(0.35, 0.35)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
         mapView.addAnnotations(self.setSpots())
