@@ -123,10 +123,8 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         let spot = Spot()
         spot.title = self.trip!.eventList[0].title
-        //Trip.sharedInstance.eventList[0].title
         spot.coordinate = self.trip!.eventList[0].coordinate
         print(spot.coordinate)
-        //Trip.sharedInstance.eventList[0].coordinate
         
         let spot2  = Spot()
         spot2.title = self.trip!.eventList[1].title
@@ -209,7 +207,8 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         eventViewController.eventTitle = trip!.eventList[indexPath.row].title!
         eventViewController.eventTime = trip!.eventList[indexPath.row].startTime + " - " + trip!.eventList[indexPath.row].endTime
-        eventViewController.desc = trip!.eventList[indexPath.row].description
+        eventViewController.desc = trip!.eventList[indexPath.row].eventDescription
+        eventViewController.location = trip!.eventList[indexPath.row].coordinate
         
         switch trip!.eventList[indexPath.row].tag {
         case "Dining": eventViewController.imageTag = UIImage(named:"Eat.png")!
