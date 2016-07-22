@@ -13,11 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var navigationController : UINavigationController!
+    let tabBarController = UITabBarController()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        let tabBarController = UITabBarController()
+        self.window = UIWindow(frame:UIScreen.mainScreen().bounds)
         
         let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
         let searchViewController = SearchViewController(nibName: "SearchViewController", bundle: nil)
@@ -39,12 +40,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let icon3 = UITabBarItem(title: "", image: searchpic, tag: 3)
         searchPage.tabBarItem = icon3
         
-        tabBarController.tabBar.tintColor = UIColor.redColor()
+        self.tabBarController.tabBar.tintColor = UIColor.redColor()
         
-        tabBarController.viewControllers = [searchPage, newTripNavCon, userNavCon]
-        tabBarController.selectedIndex = 2
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        self.window?.rootViewController = tabBarController
+        self.tabBarController.setViewControllers([searchPage, newTripNavCon, userNavCon], animated: false)
+        
+        let loginView = LoginViewController(nibName: "LoginView", bundle: nil)
+        self.tabBarController.selectedIndex = 2
+        self.window?.rootViewController = loginView
         self.window?.makeKeyAndVisible()
         
         return true

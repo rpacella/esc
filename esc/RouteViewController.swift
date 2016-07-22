@@ -9,10 +9,10 @@
 import UIKit
 import MapKit
 
-class Restaurant: NSObject, MKAnnotation {
-    var title: String? = ""
-    var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
-}
+//class Restaurant: NSObject, MKAnnotation {
+//    var title: String? = ""
+//    var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
+//}
 
 class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate {
 
@@ -52,7 +52,7 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         let span = MKCoordinateSpanMake(0.5, 0.5)
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
-        mapView.addAnnotations(RouteViewController.spotList())
+        mapView.addAnnotations(self.setSpots())
         
         mapView.delegate = self
         tableView.delegate = self
@@ -60,14 +60,37 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     override func viewDidAppear(animated: Bool) {
-//        mapView.addAnnotations(Trip.sharedInstance.getEvents())
+        mapView.addAnnotations(self.setSpots())
         tableView.reloadData()
     }
     
-
-    class Restaurant: NSObject, MKAnnotation {
+    class Spots : NSObject, MKAnnotation {
         var title: String? = ""
         var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
+    }
+    
+    func setSpots() -> [Spots] {
+        let spot = Spots ()
+        spot.title = trip?.eventList[0].title
+        spot.coordinate = (trip?.eventList[0].coordinate)!
+        
+        let spot2 = Spots ()
+        spot2.title = trip?.eventList[1].title
+        spot2.coordinate = locations![1]
+        
+        let spot3 = Spots ()
+        spot3.title = trip?.eventList[2].title
+        spot3.coordinate = locations![2]
+        
+        let spot4 = Spots ()
+        spot4.title = trip?.eventList[3].title
+        spot4.coordinate = locations![3]
+        
+        let spot5 = Spots ()
+        spot5.title = trip?.eventList[4].title
+        spot5.coordinate = locations![4]
+        
+        return [spot, spot2, spot3, spot4, spot5]
     }
     
     let image = UIImage(named: "newPin")
@@ -97,24 +120,33 @@ class RouteViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             return annotationView
         }
         
-        
-        
-        class func spotList() -> [Restaurant] {
-            
-            let spot = Restaurant ()
-            spot.title = "Workshop 17"
-            spot.coordinate = CLLocationCoordinate2D(latitude: -33.906764,longitude: 18.4164983)
-            
-            let spot2 = Restaurant ()
-            spot2.title = "Truth Coffee"
-            spot2.coordinate = CLLocationCoordinate2D(latitude: -33.9281976,longitude: 18.4227045)
-            
-            let spot3 = Restaurant ()
-            spot3.title = "Chop Chop Coffee"
-            spot3.coordinate = CLLocationCoordinate2D(latitude: -33.9271879,longitude: 18.4327055)
-            
-            return [spot,spot2, spot3]
-        }
+//        class func spotList() -> [Trip] {
+//            
+//            let spot = Restaurant ()
+//            spot.title = "Workshop 17"
+//            spot.coordinate = CLLocationCoordinate2D(latitude: -33.906764,longitude: 18.4164983)
+//            
+//            let spot2 = Restaurant ()
+//            spot2.title = "Truth Coffee"
+//            spot2.coordinate = CLLocationCoordinate2D(latitude: -33.9281976,longitude: 18.4227045)
+//            
+//            let spot3 = Restaurant ()
+//            spot3.title = "Chop Chop Coffee"
+//            spot3.coordinate = CLLocationCoordinate2D(latitude: -33.9271879,longitude: 18.4327055)
+//            
+//            let spot4 = Restaurant ()
+//            spot3.title = "Chop Chop Coffee"
+//            spot3.coordinate = CLLocationCoordinate2D(latitude: -33.9271879,longitude: 18.4327055)
+//            
+//            let spot5 = Restaurant ()
+//            spot3.title = "Chop Chop Coffee"
+//            spot3.coordinate = CLLocationCoordinate2D(latitude: -33.9271879,longitude: 18.4327055)
+//            
+//            
+//            
+//            return [spot,spot2, spot3]
+//        }
+    
     
     
     func backAction() {
