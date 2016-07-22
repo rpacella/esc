@@ -35,6 +35,22 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerButtonPressed(sender: AnyObject) {
+        
+        if emailTextField.text == "" || passwordTextField.text == "" {
+            let failAlert = UIAlertController(title: "Unable to register", message: "Please fill in all fields", preferredStyle:UIAlertControllerStyle.Alert)
+            
+            let alertAction = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            
+            failAlert.addAction(alertAction)
+            
+            self.presentViewController(failAlert, animated: true, completion: nil)
+            
+            return
+        
+        }
+        
+         
+        
         let userTripsViewController = UserTripsViewController(nibName: "UserTripsView", bundle: nil)
         let userName = emailTextField.text
         let password = passwordTextField.text
