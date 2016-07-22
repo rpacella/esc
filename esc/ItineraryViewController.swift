@@ -17,6 +17,13 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var button3: UIImageView!
     @IBOutlet weak var button4: UIImageView!
 
+    @IBOutlet weak var saveButton: UIButton!
+    
+    @IBOutlet weak var regenerateButton: UIButton!
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var transparentImage: UIImageView!
     
     var trip = TripController.sharedInstance.returnTrip()
     
@@ -34,12 +41,23 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         button3.tintColor = UIColor.whiteColor()
         button4.tintColor = UIColor.darkGrayColor()
 
+        configureButton(saveButton)
+        configureButton(regenerateButton)
+        
+        self.tableView.backgroundView = transparentImage
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func configureButton(button: UIButton) {
+        button.backgroundColor = UIColor.clearColor()
+        button.layer.cornerRadius = 5
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.whiteColor().CGColor
     }
     
     
@@ -77,6 +95,11 @@ class ItineraryViewController: UIViewController, UITableViewDelegate, UITableVie
         
         return cell
         
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.alpha = 0.6
+        //cell.backgroundColor = UIColor.clearColor()
     }
     
     func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
